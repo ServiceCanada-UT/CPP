@@ -1,0 +1,1548 @@
+
+
+	<!DOCTYPE html>
+	<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+	<!--[if gt IE 8]><!--><html class="no-js" lang="en" dir="ltr"><!--<![endif]-->
+		<head>
+<meta charset="utf-8"/>
+
+<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+     wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+
+<title>Canada Pension Plan – Disability Benefits Application – Medical condition</title>
+
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/cdts/compiled/soyutils.js"></script>
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/cdts/compiled/wet-en.js"></script>
+
+<noscript>
+	<!--[if gte IE 9 | !IE ]><!-->
+	<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/assets/favicon.ico" rel="icon" type="image/x-icon"/>
+	<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/css/theme.min.css" />
+	<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/cdts/cdtsfixes.css">
+	<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/cdts/cdtsapps.css">
+	 <link rel="stylesheet" href="https://srv136.services.gc.ca/sc/msca-mdsc/portal-portail/pro/cppd-rpci/static/cppd/css/cppd.css">
+	 <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/wet-boew/css/theme.min.css">
+	 
+	<!--<![endif]-->
+
+	<!--[if lt IE 9]>
+	<link rel="shortcut icon" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/assets/favicon.ico" />
+	<![endif]-->
+
+	<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/css/noscript.min.css" />
+	<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/cdts/cdtsnoscript.css" />
+</noscript>
+
+<script type="text/javascript">
+	document.write(wet.builder.refTop({
+		"cdnEnv": "prod",
+		"isApplication" : true,
+		"secure" : true,
+			"webAnalytics" : [{
+				"custom" : ""
+			}],
+	}));
+</script>
+<style>
+/*!
+ * cppd CSS Template
+ * Copyright (C) 2018 Employment and Social Development Canada - Canada.ca
+ *
+ * Vendor resources:
+ *
+ *   WETv4 by Treasury Board of Canada Secretariat - Canada.ca
+ *   License - https://wet-boew.github.io/v4.0-ci/License-en.html
+ */
+
+/** Custom styled radio lists */
+.c-radio
+:has
+ 
+(
+input
+:checked
+ 
+)
+{
+z-index
+:
+ 
+1
+}
+.c-radio:focus-within {
+	z-index: 1
+}
+
+.c-radio-list {
+	font-size: 0px; /* font size 0 to get rid of small gaps */
+	display: flex;
+}
+
+.c-radio-list .c-radio:focus-within {
+	outline: 2px dotted;
+}
+
+.c-radio-list .form-group {
+	margin: 0;
+	left: 0;
+	top: 0;
+}
+
+.c-radio-list [type=radio] {
+	position: absolute;
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.c-radio-list [type=radio]+.spacer {
+	min-height: 45px;
+	height: 100%;
+	background-color: #ffffff;
+	left: 0;
+	-webkit-border-radius: inherit;
+	-moz-border-radius: inherit;
+	border-radius: inherit;
+	display: flex;
+	align-items: center;
+}
+
+.c-radio-list [type=radio]:checked+.spacer {
+	background-color: #335075;
+}
+
+.c-radio-list .radio-text {
+	font-size: 16px;
+	padding: 0px 20px 0px 20px;
+}
+
+.c-radio-list [type=radio]:checked+.spacer>.radio-text {
+	color: #ffffff;
+}
+
+.c-radio-list fieldset {
+	padding: 0;
+}
+
+.c-radio-list legend {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+
+.c-radio-list .c-radio {
+	border: 1px solid #cccccc;
+	border-right-width: 0px;
+	display: flex;
+}
+
+.c-radio-list .c-radio:first-child {
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	-webkit-border-top-right-radius: 0px;
+	-moz-border-radius-topright: 0px;
+	border-top-right-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+	-moz-border-radius-bottomright: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.c-radio-list .c-radio:last-child {
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	-webkit-border-top-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	border-top-left-radius: 0px;
+	-webkit-border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	border-bottom-left-radius: 0px;
+	border-right-width: 1px;
+}
+
+.c-radio-list label {
+	-webkit-border-radius: inherit;
+	-moz-border-radius: inherit;
+	border-radius: inherit;
+	margin: 0;
+}
+
+.s-text-input-group-error {
+	background-color: #f3e9e8;
+	border: 1px solid #d3080c;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	margin-bottom: 15px;
+	padding: 10px;
+}
+
+header .error-block {
+	color: #d3080c;
+	display: block;
+	font-size: 90%;
+	font-style: normal;
+	font-weight: 700;
+}
+
+label  .error-block {
+	color: #d3080c;
+	display: block;
+	font-size: 90%;
+	font-style: normal;
+	font-weight: 700;
+	padding: 3px;
+}
+
+legend .error-block {
+	color: #d3080c;
+	display: block;
+	font-size: 90%;
+	font-style: normal;
+	font-weight: 700;
+	padding: 3px;
+}
+
+.error-panel {
+	border: 1px solid #d3080c;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.s-radio-list-error .panel {
+	background-color: #f3e9e8;
+	border: 1px solid #d3080c;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+/** Circles **/
+.progress-icon {
+	
+}
+
+.circle-large {
+	display: inline-block;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	vertical-align: top;
+}
+
+.circle-large-superscript {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	height: 28px;
+	width: 28px;
+	position: absolute;
+	left: 32px;
+	bottom: 32px;
+	z-index: 10;
+}
+
+.check-large-superscript {
+	position: absolute;
+	left: 32px;
+	bottom: 32px;
+	z-index: 11;
+}
+
+.circle-small {
+	display: inline-block;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	vertical-align: top;
+}
+
+.circle-small-superscript {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	height: 18px;
+	width: 18px;
+	position: absolute;
+	left: 27px;
+	bottom: 27px;
+	z-index: 10;
+}
+
+.check-small-superscript {
+	position: absolute;
+	left: 27px;
+	bottom: 27px;
+	z-index: 11;
+}
+
+.circle-active {
+	background-color: #2572B4;
+	-webkit-box-shadow: inset 0px 0px 0px 2px rgba(109, 210, 218, 1);
+	-moz-box-shadow: inset 0px 0px 0px 2px rgba(109, 210, 218, 1);
+	box-shadow: inset 0px 0px 0px 2px rgba(109, 210, 218, 1);
+}
+
+.circle-complete {
+	background-color: #278400;
+	-webkit-box-shadow: inset 0px 0px 0px 2px rgba(216, 238, 202, 1);
+	-moz-box-shadow: inset 0px 0px 0px 2px rgba(216, 238, 202, 1);
+	box-shadow: inset 0px 0px 0px 2px rgba(216, 238, 202, 1);
+}
+
+.circle-incomplete {
+	background-color: #ffffff;
+	-webkit-box-shadow: inset 0px 0px 0px 2px rgba(215, 215, 215, 1);
+	-moz-box-shadow: inset 0px 0px 0px 2px rgba(215, 215, 215, 1);
+	box-shadow: inset 0px 0px 0px 2px rgba(215, 215, 215, 1);
+}
+
+.circle-hiddenOrDisabled {
+	background-color: #ffffff;
+	-webkit-box-shadow: inset 0px 0px 0px 2px rgba(215, 215, 215, 1);
+	-moz-box-shadow: inset 0px 0px 0px 2px rgba(215, 215, 215, 1);
+	box-shadow: inset 0px 0px 0px 2px rgba(215, 215, 215, 1);
+}
+
+.progress-text {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 18px;
+}
+
+.progress-text .active {
+	color: #ffffff;
+}
+
+.progress-text .complete {
+	color: #ffffff;
+}
+
+.progress-text .incomplete {
+	color: #000000;
+}
+
+a.main-menu-step-link {
+	text-decoration: none;
+}
+
+.main-menu-step {
+	margin-right: 23%;
+	padding-bottom: 1%;
+	padding-top: 1%;
+	border-top: 1px solid #D3D3D3;
+	white-space: normal;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.main-menu-step div {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.main-menu-step:last-child {
+	border-bottom: 1px solid #D3D3D3;
+}
+
+.main-menu-step>:last-child {
+	text-align: right;
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	-moz-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+}
+
+.main-menu-step-subsection {
+	text-align: left;
+	margin-left: 5%;
+	padding-bottom: 1%;
+	padding-top: 2%;
+	border-top: 1px solid #D3D3D3;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+}
+
+.main-menu-step-subsection>:last-child {
+	text-align: right;
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	-moz-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+}
+
+.sectionProgressStatus {
+	margin-left: 10px
+}
+
+.sectionTitle {
+	margin-left: 10px;
+	font-size: 20px
+}
+
+.continueButton {
+	font-family: 'sans-serif';
+	font-weight: 700;
+}
+
+.progress-icon2 {
+	margin-right: 10px;
+}
+
+hr {
+	height: 2px;
+	color: #000000;
+	/*border:solid 1px;*/
+}
+
+.hideDiv {
+	display: none;
+}
+
+.helpTextMessage {
+	display: none;
+}
+
+.disableButton {
+	display: none;
+}
+
+}
+.displayBlock {
+	display: block;
+}
+
+.maritalStatus {
+	margin-left: 10px;
+}
+
+.btn-new-app {
+	margin-left: 30px
+}
+
+.btn-add-illness {
+	margin-left: 5px
+}
+
+.terminalIllnessNoDesc {
+	margin-bottom: 10px;
+}
+/** Used for toggling hidden sections.  The initial state will be hidden. This css is used in conjunction with toggleSection**/
+.indentToggleSection {
+	margin-left: 30px;
+	display: none;
+}
+/** Used to add margin starting from the left side **/
+.indentSection {
+	margin-left: 30px;
+}
+
+.radioBtnFormat {
+	margin: 40px 40px 40px 40px;
+}
+/** Align more than one form controls in the same row **/
+.alignInOneRow {
+	display: inline-block;
+}
+/** Used to display the left arrow on the previous button **/
+.glyphiconArrowLeft {
+	margin-right: 5px;
+}
+/** Used to display the left arrow on the next or submit or start application button **/
+.glyphiconArrowRight {
+	margin-left: 5px;
+}
+/** Used to add space below form controls **/
+.addMarginBelowControl {
+	margin-bottom: 10px;
+}
+/** Used to add space above form controls **/
+.addMarginAboveControl {
+	margin-top: 10px;
+}
+/** Used to add margin starting from the right side **/
+.indentSectionRight {
+	margin-right: 30px;
+}
+
+.subSectionProgressStatus {
+	display: none;
+	margin-top: 10px;
+	width: 100%;
+}
+
+.addMarginAbove {
+	margin-top: 100px
+}
+
+.panel-body dl * {
+	border-top: none;
+	padding: 0;
+}
+
+.textarea-div textarea {
+	resize: none;
+}
+
+.text-limit {
+	float: left;
+	margin-top: -38px;
+	margin-left: 11px;
+	opacity: 0.8;
+	font-size: 14px;
+}
+
+.lbx-modal, .lbx-modal:hover {
+	text-decoration: none
+}
+
+input[type="date"].form-control, input[type="datetime-local"].form-control,
+	input[type="month"].form-control, input[type="time"].form-control {
+	line-height: 24px;
+}
+
+.removeTextBoxBorder {
+	background-color: transparent;
+	border: 0px solid;
+}
+
+#helpPageMedicalConditionTable th {
+	background: #D3D3D3;
+}
+
+#medical-conditions-col-group {
+	text-align: center;
+}
+
+ul.dashed {
+	list-style-type: none;
+}
+
+ul.dashed>li::before {
+	content: "- ";
+	margin-left: -10px;
+}
+
+.vertical-centered {
+	vertical-align: middle;
+}
+
+dl.grouped-dl dt {
+	margin-bottom: 0;
+	padding: 5px;
+	padding-bottom: 0;
+	border: solid 0 #ccc;
+	border-width: 1px;
+	border-bottom: 0;
+}
+
+dl.grouped-dl dd {
+	border: solid 0 #ccc;
+	border-width: 1px;
+	border-top: 0;
+	padding: 5px;
+	padding-top: 0;
+}
+
+/***
+ *
+ * progress stepper styles
+ *
+ ***/
+ol.steps {
+	counter-reset: step;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	position: relative;
+	font-family: Arial;
+	font-size: 16px;
+	line-height: 1.25;
+	margin: auto;
+	padding: 0;
+	overflow: hidden;
+	text-align: center;
+}
+
+ol.steps li {
+	list-style-type: none;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	position: relative;
+	padding: 0 5px;
+}
+
+ol.steps li:before {
+	display: block;
+	content: counter(step);
+	counter-increment: step;
+	background-color: #fff;
+	color: #000;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	margin: 0 auto 10px auto;
+	border: 2px solid #d7d7d7;
+	font-weight: bold;
+}
+
+ol.steps li:first-child:after {
+	content: none;
+}
+
+ol.steps li:after {
+	content: "";
+	width: 100%;
+	height: 4px;
+	background-color: #d7d7d7;
+	position: absolute;
+	left: -50%;
+	top: 24px;
+	z-index: -1;
+}
+
+ol.steps li.active {
+	font-weight: bold;
+}
+
+ol.steps li.complete { /* placeholder */
+	
+}
+
+ol.steps li.incomplete {
+	color: #6f6f6f;
+}
+
+ol.steps li.active:before {
+	background-color: #2572B4;
+	color: #fff;
+	border-color: #6dd2da;
+}
+
+ol.steps li.complete:before {
+	content: "\2714"; /* unicode checkmark */
+	background-color: #278400;
+	color: #fff;
+	border-color: #d8eeca;
+}
+
+ol.steps li.incomplete:before { /* placeholder */
+	
+}
+
+@media ( max-width : 992px) {
+	ol.steps {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+	ol.steps li {
+		list-style-type: none;
+		-webkit-box-flex: 1;
+		-ms-flex: 1;
+		flex: 1;
+		position: relative;
+		text-align: left;
+		display: -webkit-inline-box;
+		display: -ms-inline-flexbox;
+		display: inline-flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+	ol.steps li:before {
+		display: inline-block;
+		float: none;
+		width: 35px;
+		height: 35px;
+		line-height: 35px;
+		margin: 5px 10px;
+		text-align: center;
+		-ms-flex-negative: 0;
+		flex-shrink: 0;
+	}
+	ol.steps li:first-child:after {
+		content: none;
+	}
+	ol.steps li:after {
+		content: "";
+		width: 4px;
+		height: 100%;
+		background-color: #d7d7d7;
+		position: absolute;
+		left: 30px;
+		top: -50%;
+		z-index: -1;
+	}
+	ol.steps li.active:before {
+		background-color: #2572B4;
+		color: #fff;
+		border-color: #6dd2da;
+	}
+}
+
+/* hack to target IE10+ */
+@media ( max-width : 992px) and screen and (-ms-high-contrast: active) , (
+		max-width : 992px) and (-ms-high-contrast: none) {
+	/* IE flex implementation does not like not having a height with column flex */
+	ol.steps {
+		height: 100vh;
+	}
+
+	/* These custom radio styled prevent overflow, upholding the letter of the law, but does so by horribly violating the spirit of the law */
+	/* I am confident few people will use IE on a resolution small enough that it matters (note: it still looks the same on resolution >~700px) */
+	.c-radio-list {
+		flex-wrap: wrap;
+		/* TODO: Make this look nicer on 400-700px resolutions */
+	}
+	.c-radio-list [type=radio]+.spacer {
+		display: table;
+	}
+	.c-radio-list .radio-text {
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+
+/***
+ *
+ * END progress stepper styles
+ *
+ ***/
+
+/** increase filepond font size by 75% */
+.filepond--root {
+	font-size: 1.75rem;
+}
+
+/** ensure that the upload button does not appear for upload files*/
+.filepond--action-process-item {
+	visibility: hidden;
+}
+
+.filepond--file-info .filepond--file-info-sub {
+	opacity: 0.8;
+}
+
+label[id^=filepond--drop-label] .help-block {
+	color: #6b6b6b;
+}
+
+li[data-filepond-item-state='busy'] .filepond--file-status-sub, li[data-filepond-item-state='processing'] .filepond--file-status-sub
+	{
+	display: none;
+}
+
+li[data-filepond-item-state='load-invalid'] .filepond--file-status-sub {
+	opacity: 0.98;
+}
+
+.filepond--file-action-button.filepond--action-retry-item-processing,
+	.filepond--file-action-button.filepond--action-abort-item-processing {
+	display: none;
+}
+/** warning message */
+.label-text-input-warning {
+	color: #d3080c;
+	font-weight: bold;
+	margin-bottom: 15px;
+	padding: 10px;
+}
+
+dl.review-grouped-dl dd:after {
+	content: '';
+	display: block;
+}
+
+dl.review-grouped-dl dd {
+	margin-left: 5px;
+	display: inline;
+	font-weight: bold;
+}
+
+dl.review-grouped-dl dt {
+	min-width: 50px;
+	display: inline;
+	font-weight: normal;
+}
+
+span.section-glyphicon {
+	font-size: 12px;
+}
+
+.span-tag-no-wrap {
+	white-space: nowrap;
+}
+
+.span-tag-new-line {
+	display: block;
+	padding-top: 10px;
+}
+
+.focusWidth {
+	padding: 2px;
+}
+
+strong.required{
+	color:#d3080c;
+	font-weight: bold;
+}
+
+#certification .fa-asterisk::before {
+	font-weight: 700;
+	color: #d3080c
+}
+
+#certification span.required {
+	font-weight: 700;
+	color: #d3080c
+}
+</style>
+	<meta property="dcterms:title" content="Canada Pension Plan – Disability Benefits Application – Medical condition-cppd"/>
+	<meta property="dcterms:language" content="eng"/>
+	<meta property="dcterms:creator" content="Employment and Social Development Canada"/>
+	<meta property="dcterms:service" content="ESDC-EDSC_MSCA-MDSC_CPPD-RPCI"/>
+	<meta property="dcterms:accessRights" content="1"/>
+		</head>
+		
+		<body vocab="http://schema.org/" typeof="WebPage">
+
+<div id="def-top">
+	<noscript>
+		
+<ul id="wb-tphp">
+	<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to main content</a></li>
+	<li class="wb-slc visible-sm visible-md visible-lg"><a class="wb-sl" href="#wb-info">Skip to &quot;About this site&quot;</a></li>
+	<li class="wb-slc"><a class="wb-sl" rel="alternate" href="?wbdisable=true">Switch to basic HTML version</a></li>
+</ul>
+
+<header role="banner">
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-8 col-sm-9 col-md-6">
+				<a href="https://www.canada.ca/en.html">
+					<object type="image/svg+xml" tabindex="-1" data="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/assets/sig-blk-en.svg"></object>
+					<span class="wb-inv">
+						<span>
+							Government of Canada
+						</span>
+						<span>/</span>
+						<span lang="fr">
+							Gouvernement du Canada
+						</span>
+					</span>
+				</a>
+			</div>
+			<section id="wb-lng" class="text-right col-xs-3 col-sm-4 col-md-6">
+				<h2 class="wb-inv">Language selection</h2>
+				<ul class="list-inline margin-bottom-none">
+					<li>
+						<a href="/sc/msca-mdsc/portal-portail/pro/vupi-vupi/direct-deposit?step=form&amp;cache-key=55ec4800-4529-48e3-a838-6bee35fdf9cc&amp;Lang=fra" lang="fr" >
+								Français
+						</a>
+					</li>
+				</ul>
+			</section>
+		</div>
+	</div>
+	<nav role="navigation" id="wb-bc" property="breadcrumb">
+		<h2>You are here:</h2>
+		<div class="container">
+			<div class="row">
+				<ol class="breadcrumb">
+					<li>
+						<a href="https://srv136.services.gc.ca/sc/msca-mdsc/portal-portail/pro/home-accueil">
+							Home
+						</a>
+					</li>
+					<li><a href='https://srv136.services.gc.ca/sc/msca-mdsc/portal-portail/pro/home-accueil/landing-page-cpp-oas'>Canada Pension Plan</a></li><li><span>Payment Destination</span></li>
+				</ol>
+			</div>
+		</div>
+	</nav>
+</header>
+	</noscript>
+</div>
+
+<script type="text/javascript">
+	document.getElementById("def-top").outerHTML = wet.builder.appTop({
+		"appName" : [{
+			"text" : "My Service Canada Account",
+			"href" : "https://srv136.services.gc.ca/sc/msca-mdsc/portal-portail/pro/home-accueil"
+		}],
+		"cdnEnv": "prod",
+		"lngLinks" : [{
+			"lang" : "fr",
+			"text" : "Français",
+			"href" : "/sc/msca-mdsc/portal-portail/pro/vupi-vupi/direct-deposit?step=form&amp;cache-key=55ec4800-4529-48e3-a838-6bee35fdf9cc&amp;Lang=fra"
+		}],
+		"breadcrumbs" : [{"title":"My Service Canada Account","href":"https://srv136.services.gc.ca/sc/msca-mdsc/portal-portail/pro/home-accueil?Lang=eng"},{"title":"Canada Pension Plan","href":"https://srv136.services.gc.ca/sc/msca-mdsc/portal-portail/pro/home-accueil/landing-page-cpp-oas?Lang=eng"},{"title":"Payment Destination"}],
+		"search" : false,
+		"signOut" : [{
+			"href" : "/sc/msca-mdsc/portal-portail/pro/vupi-vupi/logout"
+		}],
+		"siteMenu" : false,
+		"showPreContent" : false
+	});
+</script>
+			
+	<section id="wb-so">
+		<h2 class="wb-inv">Application Information</h2>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 text-left">
+						<div class="col-md-6 text-left">
+							<a href="#help" aria-controls="help" class="overlay-lnk btn btn-default btn-lg" role="button">
+								Help
+							</a>
+							<section id="help" class="wb-overlay modal-content overlay-def wb-popup-mid">
+
+<header class="modal-header">
+	<h2 class="modal-title" id="help-title">Help</h2>
+</header>
+<div class="modal-body">
+	<ul>
+		<li>
+			<strong><a href="#q0">General information</a></strong>
+			<ul>
+				<li><a href="#q1">Eligibility</a></li>
+			</ul>
+		</li>
+		<li>
+			<strong><a href="#q2">Making changes</a></strong>
+			<ul>
+				<li><a href="#q3">Updating other information</a></li>
+				<li><a href="#q4">Approving updates</a></li>
+				<li><a href="#q5">Postal code format</a></li>
+				<li><a href="#q6">Mandatory fields</a></li>
+				<li><a href="#q7">Number suffix</a></li>
+				<li><a href="#q8">Delivery mode</a></li>
+				<li><a href="#q9">Address length</a></li>
+				<li><a href="#q10">Entering a future effective date</a></li>
+				<li><a href="#q11">Branch and institution numbers</a></li>
+				<li><a href="#q13">Entering direct deposit information</a></li>
+				<li><a href="#q14">Telephone number</a></li>
+			</ul>
+		</li>
+		<li>
+			<strong><a href="#q16">Payment information</a></strong>
+			<ul>
+				<li><a href="#q17">Gross entitlement amount</a></li>
+				<li><a href="#q18">Types of deductions</a></li>
+				<li><a href="#q19">Types of reimbursements</a></li>
+				<li><a href="#q20">Net payment amount</a></li>
+				<li><a href="#q21">Payment status</a></li>
+				<li><a href="#q22">Payment method</a></li>
+				<li><a href="#q25">Payment frequency</a></li>
+			</ul>
+		</li>
+	</ul>
+	<hr/>
+	
+	<h3 id="q0">General information</h3>
+	
+	<h4 id="q1">Eligibility</h4>
+	<p>People living in Canada may view and change their address, telephone number and payment destination online.</p>
+	<p><strong>Exceptions:</strong></p>
+	<ul>
+		<li>
+			If you have an address outside Canada, you can only view your information online. It is not yet possible to change foreign addresses or direct deposit online. Please <a href="https://service.canada.ca/en/contact-us">contact us</a> to update your information.
+		</li>
+		<li>
+			If you receive children's benefits and are between the ages of 18 and 25, you may not be able to access this online service due to system limitations. If you wish to make changes, please <a href="https://service.canada.ca/en/contact-us">contact us</a>.
+		</li>
+		<li>
+			If you receive a Quebec Pension Plan benefit, please contact <a href="http://www.servicecanada.gc.ca/cgi-bin/op-so/msca/redirection.asp?linkmsca=29e.html">Retraite Québec</a> for more information.
+		</li>	
+	</ul>
+	<hr/>
+	
+	<h3 id="q2">Making changes</h3>
+	
+	<h4 id="q3">Updating other information, such as name, marital status or date of birth</h4>
+	<p>
+		These services may be available online in the future, but are not at this time. Please <a href="https://service.canada.ca/en/contact-us">contact us</a> to make these types of changes.
+	</p>
+	<hr/>
+	
+	<h4 id="q4">Approving updates</h4>
+	<p>After you check that the information you entered is correct, select &quot;Confirm&quot; to complete your update. Online, your changes will show immediately. Please review them.</p>
+	<p>Selecting "Cancel" will end your session. You will remain logged in, but <strong>your changes will not be saved or recorded</strong>.</p>
+	
+	<hr/>
+	
+	<h4 id="q5">Postal code format</h4>
+	<p>
+		Please enter the postal code of your <strong>new</strong> address. Postal codes are six characters long and are <strong>always</strong> in letter-number format, such as: A1A 1A1, (where A = any letter and 1 = any number). If you have trouble, check that the letters "O" or lowercase "L" are not substituted for zeros or ones, or vice-versa. If you do not know your postal code you can look it up on the <a href="http://www.servicecanada.gc.ca/cgi-bin/op-so/msca/redirection.asp?linkmsca=103e.html">Canada Post</a> web site. At this time, postal codes can only be updated online for Canadian addresses. Please <a href="https://service.canada.ca/en/contact-us">contact us</a> for changes to addresses outside Canada.
+	</p>
+	
+	<hr/>
+	
+	<h4 id="q6">Mandatory fields</h4>
+	<p>Fields marked with an asterisk (*) must be completed. Some fields may be filled in based on the postal code you entered. To change the information, select &quot;Enter a different postal code&quot; or &quot;Enter a different address for this postal code&quot;.</p>
+	
+	<hr/>
+	
+	<h4 id="q7">Number suffix</h4>
+	<p>Some addresses include a suffix, for example: 123 ½ Main St., where ½ is the suffix and not an apartment number. If you do not have a number suffix, please leave this field blank.</p>
+	
+	<hr/>
+	
+	<h4 id="q8">Delivery mode</h4>
+	<p>If you have mail delivery to your door, please select &quot;None&quot; from the pull-down menu.</p>
+	<p>Otherwise, select from the following methods of mail delivery:</p>
+	<ul>
+		<li><strong>MR - mobile route</strong> is a variation on door-to-door delivery, when street is served by a delivery route service.</li>
+		<li><strong>PO Box - post office box</strong></li>
+		<li><strong>RR - rural route</strong> is a delivery route service from a delivery installation.</li>
+		<li><strong>GD - general delivery</strong> is mail held at a post office until it is picked up in person.</li>
+		<li><strong>SS - suburban service</strong> is mail delivery to group mail boxes; usually found near, or on the edge of, urban areas.</li>
+	</ul>
+	
+	<hr/>
+	
+	<h4 id="q9">Address length</h4>
+	<p>The database where address information is stored allows for a maximum of 30 characters per line, including spaces and punctuation. If longer, your address must be shortened. Note: Street types such as Blvd (Boulevard) and Ave (Avenue) are part of your address and should not be removed.</p>
+	
+	<hr/>
+	
+	<h4 id="q10">Entering a future effective date</h4>
+	<p>When you select &quot;Change&quot; to enter your new information, you can either accept today&#39;s date as shown, or enter an effective  date up to 180 days in the future. When choosing a future effective date, you must ensure the date you are choosing is one month greater than the month you are currently in.</p>
+	<p>For example, if you want your January payment to be sent to a new destination, you must have an effective date of no later than December 31.</p>
+	<p>
+		If you provide the information close to, or past the first day of the month, you might have missed the cut-off date. <a href="https://service.canada.ca/en/contact-us">Contact us</a> to check that your change will take effect on the desired date before making any changes.
+	</p>
+	
+	<hr/>
+	
+	<h4 id="q11">Branch and institution numbers</h4>
+	<ul>
+		<li>
+			The branch number is a code that identifies the location of your financial institution. It appears at the bottom of your cheques:
+			<ul>
+				<li>On personalized cheques, this code is the second series of numbers from the left.</li>
+				<li>On non-personalized cheques, this code is the first series of numbers from the left.</li>
+			</ul>
+		</li>
+		<li>
+			The institution number is a code that identifies the name of your financial institution. This code appears at the bottom of your cheques:
+			<ul>
+				<li>On personalized cheques, this code is the third series of numbers from the left.</li>
+				<li>On non-personalized cheques, this code is the second series of numbers from the left.</li>
+			</ul>
+		</li>
+		<li>The institution and branch numbers can also be found inside your bank book, on your bank statements or by contacting your financial institution.</li>
+		<li>Do not use the numbers on your bank or debit cards.</li>	
+	</ul>
+	
+	<hr/>
+	
+	<h4 id="q13">Entering direct deposit information</h4>
+	<p>
+	<img class="img-thumbnail"  src="/sc/msca-mdsc/portal-portail/pro/vupi-vupi/static/vupi/img/cheque-eng.gif"}" alt="Cheque Sample"/></p>
+	<p><strong>Cheque number</strong>: If you use personalized cheques, the first set of numbers is your three-digit personal cheque number. <strong>Do not enter this number</strong>.</p>
+	<p><strong>Branch number</strong>: The second set of numbers on personalized cheques, or the first set of numbers on non-personalized cheques, is your five-digit branch number. Enter this number in the first entry field.</p>
+	<p><strong>Institution number</strong>: The next set of numbers is your three-digit institution number. Enter this number in the second entry field.</p>
+	<p><strong>Account number</strong>: The last set of numbers is your bank account number. The number of digits varies depending on the financial institution. Enter your account number in the third entry field.</p>
+		
+	<hr/>
+	
+	<h4 id="q14">Telephone number</h4>
+	<p><strong>International telephone number format</strong></p>
+	<p>If you enter an international telephone number, you must include a country code.</p>
+	<p>Enter the country code up to five digits, e.g. 12345.</p>
+	<p>If your telephone number is in Canada or the United States, do not enter a country code.</p>
+	<p><strong>Telephone number format</strong></p>
+	<p>When you select to add a telephone number you have the option to include a home, mobile and work number.</p>
+	<p>Please enter your three-digit area code, followed by a seven-digit phone number (e.g. 123-4567890).</p>
+	<p>The area code must have three digits. If your area code is less than 3 numbers, enter &quot;0&quot; in front of the area code.</p>
+	<p><strong>Work telephone number extension format</strong></p>
+	<p>When you select to add a new work number, you will have the option to include an extension.</p>
+	<p>Enter your extension number up to five digits, e.g. 12345.</p>
+	
+	<hr/>
+	
+	<h3 id="q16">Payment information</h3>
+	<h4 id="q17">Gross entitlement amount</h4>
+	<p>The amount shown represents the gross entitlement in Canadian funds. This is the amount owed to you before any deductions such as non-resident tax or voluntary tax withholds.</p>
+	<p>If applicable, the child rearing provision is factored into the calculation of this amount.</p>
+	<p>Since January 2019, the CPP has been enhanced for those who have worked and made contributions to the CPP in 2019 or later. The enhancement increases CPP retirement, disability and survivor’s pensions as well as the post-retirement benefit. If the enhancement applies to you, it will be factored into the calculation of your gross CPP benefit amount.</p>
+	
+	
+	<hr/>
+	
+	<h4 id="q18">Types of deductions</h4>
+	<p>Refers to one of the following deduction types:</p>
+		<ul>
+			<li><strong>Administrative penalty</strong> - a fine charged to someone who knowingly gives Service Canada false or misleading information, or leaves out information related to their benefit.</li>
+			<li><strong>Canada Revenue Agency recovery tax</strong> - to recover an income tax debt.</li>
+			<li><strong>Employment Insurance recovery </strong> - to recover an Employment Insurance debt.</li>
+			<li><strong>Family Orders Enforcement Payment</strong> - related to the <i>Family Orders and Agreements Enforcement Assistance Act</i>.</li>
+			<li><strong>Family orders enforcement fees</strong> -  to pay family court proceedings related to the <i>Family Orders and Agreements Enforcement Assistance Act</i>.</li>
+			<li><strong>Non-resident tax</strong> - taxes on benefits paid to people who live outside Canada. The amount varies from 0 to 25 percent of the payment amount, depending on the country in which you live.</li>
+			<li><strong>OAS pension recovery tax</strong> - repayment of some or all of your OAS pension, if your net income is more than a certain amount for the year.</li>
+			<li><strong>Overpayment recovery</strong> - repayment of an overpayment.</li>
+			<li><strong>Voluntary federal tax</strong> - a percentage or amount you asked to be deducted each month for income tax purposes.</li>
+			<li><strong>Voluntary provincial tax</strong> - an amount you asked be deducted each month for income tax purposes.</li>
+			<li><strong>Veterans Affairs Canada recovery</strong> -  to recover a Veterans Affairs Canada debt.</li>
+		</ul>
+	
+	<hr/>
+	
+	<h4 id="q19">Types of reimbursements</h4>
+	<p>Refers to one of the following:</p>
+		<ul>
+			<li><strong>Reimbursement to private insurer</strong> - for months you were eligible for CPP disability benefit and private insurance entitlement. </li>
+			<li><strong>Reimbursement to province or municipality</strong> - for assistance you received from a provincial or municipal authority while you were waiting for a decision about your benefit application.</li>
+			<li><strong>Reimbursement to Veterans Affairs Canada</strong> -  for assistance you received from Veterans Affairs Canada while you were waiting for a decision about your benefit application.</li>
+		</ul>
+	
+	<hr/>
+	
+	<h4 id="q20">Net payment amount</h4>
+	<p>The payment Service Canada is issuing you, in Canadian dollars, after any applicable deductions.</p>
+	
+	<hr/>
+	
+	
+	<h4 id="q21">Payment status</h4>
+	<p>Refers to one of the following:</p>
+		<ul>
+			<li><strong>Issued</strong> - your payment has been processed and soon will be mailed to you or deposited into your account.</li>
+			<li><strong>Paid</strong> -  your payment was mailed to you or deposited into your account.</li>
+		</ul>
+	
+	<hr/>
+	
+	<h4 id="q22">Payment method</h4>
+	<p>Refers to one of the following:</p>
+		<ul>
+			<li>Cheque</li>
+			<li>Direct deposit</li>
+		</ul>
+	<hr/>
+	
+	<h4 id="q25">Payment frequency</h4>
+	<p>By default, your payment will be directly deposited to your bank account every month. If you didn’t choose direct deposit, a cheque will be mailed to you during the last 3 business days of each month. View <a href="http://www.servicecanada.gc.ca/cgi-bin/op-so/msca/redirection.asp?linkmsca=28e.html">payment dates</a>.</p>
+	<p>If you have requested that your payment be adjusted to bi-monthly, quarterly, semi-annually, or annually, your payment dates will be adjusted accordingly.</p>
+	<hr/>
+
+</div>							</section> 
+						</div>
+				</div>
+				<div class="col-md-6 text-right">
+						Signed in as
+						<span class="wb-so-uname"><strong>MUHAMMAD KHAN</strong></span>
+				</div>
+			</div>
+		</div>
+	</section>
+			
+			<main role="main" property="mainContentOfPage" class="container">
+	<h1 property="name" id="wb-cont">Add Payment Destination</h1>
+	<section class="alert alert-info">
+		<p><strong>Answers to fields and questions with an asterisk (*) are mandatory</strong></p>
+	</section>
+
+	
+	<section id="payment-destination">
+		<fieldset>
+			<legend><strong>Enter your new payment destination</strong></legend>
+			<form action="/sc/msca-mdsc/portal-portail/pro/vupi-vupi/direct-deposit?step=form" method="POST">
+	<input type="hidden" name="_csrf" value="e146f1f0-fad4-4bb8-920c-45ad1a4da2b9">
+				<p><strong>Note:</strong> The account must be in your name. A joint account is also acceptable.</p>
+				<div class="row">
+					<div>
+						<div>
+							<p>You can find your account information inside your bank book, on a bank statement or at the bottom of your cheque:</p>
+							<img class="img-thumbnail" src="/sc/msca-mdsc/portal-portail/pro/vupi-vupi/static/vupi/img/cheque-eng.gif" alt="Cheque Sample"/>
+						</div>
+	
+	<div class="s-text-input">
+	<div id="branchNumber" class="c-text-input">
+		<div class="form-group">
+		
+			<label for="branchNumber-text-input" class="control-label required">		<span>Branch Number: (5 digits)</span>
+		<strong class="required">(required)</strong>
+		
+</label>
+			
+				<input id="branchNumber-text-input" name="branchNumber" type="text" value="" class="form-control" size='5' maxlength='5' aria-describedby='startDate'/>
+
+		</div>
+	</div>
+	</div>
+	<div class="s-text-input">
+	<div id="financialInstitutionNumber" class="c-text-input">
+		<div class="form-group">
+		
+			<label for="financialInstitutionNumber-text-input" class="control-label required">		<span>Institution Number: (3 digits)</span>
+		<strong class="required">(required)</strong>
+		
+</label>
+			
+				<input id="financialInstitutionNumber-text-input" name="financialInstitutionNumber" type="text" value="" class="form-control" size='3' maxlength='3' aria-describedby='startDate'/>
+
+		</div>
+	</div>
+	</div>
+	<div class="s-text-input">
+	<div id="accountNumber" class="c-text-input">
+		<div class="form-group">
+		
+			<label for="accountNumber-text-input" class="control-label required">		<span>Account Number:</span>
+		<strong class="required">(required)</strong>
+		
+</label>
+			
+				<input id="accountNumber-text-input" name="accountNumber" type="text" value="" class="form-control" size='12' maxlength='12' aria-describedby='startDate'/>
+
+		</div>
+	</div>
+	</div>
+						<p id="accountNames">Name(s) on the account:</p>
+	<div class="s-text-input">
+	<div id="accountHolder1" class="c-text-input">
+		<div class="form-group">
+		
+			<label for="accountHolder1-text-input" class="control-label ">		<span>Name 1</span>
+		
+		
+</label>
+			
+				<input id="accountHolder1-text-input" name="accountHolder1" type="text" value="" class="form-control" size='30' maxlength='30' aria-describedby='accountNames startDate'/>
+
+		</div>
+	</div>
+	</div>
+	<div class="s-text-input">
+	<div id="accountHolder2" class="c-text-input">
+		<div class="form-group">
+		
+			<label for="accountHolder2-text-input" class="control-label ">		<span>Name 2</span>
+		
+		
+</label>
+			
+				<input id="accountHolder2-text-input" name="accountHolder2" type="text" value="" class="form-control" size='30' maxlength='30' aria-describedby='accountNames startDate'/>
+
+		</div>
+	</div>
+	</div>
+
+							<dl id="startDate" class="mrgm-bttm-0">
+								<dt>Your change will take effect on:</dt>
+								<dd class="mrgn-bttm-0">2026-09-03</dd>
+							</dl>
+					</div>
+				</div>
+				<div class="form-group">
+					<button id="change-button" name="action" type="submit" value="Submit" class="btn btn-primary" onclick="disableButtons()" data-gc-analytics-customclick="ESDC-EDSC_MSCA-MDSC_VUPI-VMRP:Add/change payment destination:Continue">Continue</button>
+					<a id="cancel-button"href="/sc/msca-mdsc/portal-portail/pro/vupi-vupi/external-application?step=redirect&amp;isChangeMade=false" class="btn btn-default" onclick="disableButtons()">Cancel</a>
+				</div>	
+			</form>
+		</fieldset>
+	</section>
+		
+	<section id="request-payment-destination">
+		<h2 id="request-payment">Retrieving your banking information from CRA</h2>
+
+		<div id="request-payment-destination-statement">
+			<p>For Employment and Social Development Canada (ESDC) and the Canada Revenue Agency (CRA) to share your personal and direct deposit information, your consent is required.</p>
+			<p>
+				By selecting "<strong>I agree</strong>", you confirm that you have read and understood the ESDC Privacy Notice Statement and that you agree with these two statements:
+			</p>
+			<ul>
+				<li>I consent to the CRA sharing with ESDC my direct deposit information used for income tax refunds, working income tax benefit advance payments and GST/HST credit payments. The information will be used to make Canada Pension Plan payments to me, until I tell ESDC to stop using it for my CPP payments.</li>
+				<li class="mrgn-tp-md">I consent to ESDC sharing with the CRA my Social Insurance Number, last name, and date of birth so that the CRA can identify me correctly.</li>
+			</ul>
+			
+			<p>
+				If you select <strong>"I do not agree"</strong>, your information will not be shared. You may still update your direct deposit information for your CPP payments using your My Service Canada Account.
+			</p>
+			<p>
+				For more details about the handling of your personal information by ESDC, please see the ESDC's <a href=https://www.canada.ca/en/transparency/privacy.html>Privacy Notice Statement</a>.
+			</p>
+			<p>
+				For more details about the handling of your personal information by the CRA, please see the CRA's <a href=https://www.canada.ca/en/revenue-agency/services/e-services/account-important-notices.html#ndvdl>Banking Information Privacy Notice</a>.
+			</p>
+
+			<form id="request-payment-destination-form">
+				<a id="agree-button" href="/sc/msca-mdsc/portal-portail/pro/vupi-vupi/direct-deposit?step=redirect&amp;flow=retrieve&amp;program=CPP&amp;future=true" class="btn btn-primary" onclick="disableButtons()">I agree</a>
+				<a id="disagree-button" href="/sc/msca-mdsc/portal-portail/pro/vupi-vupi/direct-deposit?step=redirect&amp;flow=ADD&amp;program=CPP&amp;future=true" class="btn btn-default" onclick="disableButtons()">I do not agree</a>
+			</form>
+		</div>
+	</section>
+	
+	<script>
+		document.getElementById("request-payment-destination").classList.add("hidden");
+		
+		var pullFromCraYesRadio = document.getElementById("pull-from-cra-yes");
+		pullFromCraYesRadio.onchange = function(){
+			if(this.checked){
+				document.getElementById("payment-destination").classList.remove("show");
+				document.getElementById("payment-destination").classList.add("hidden");
+				document.getElementById("request-payment-destination").classList.remove("hidden");
+				document.getElementById("request-payment-destination").classList.add("show");
+			}
+		}		
+		
+		var pullFromCraNoRadio = document.getElementById("pull-from-cra-no");
+		
+		if(document.getElementById("error-alert")) {
+			pullFromCraNoRadio.checked = true;
+			document.getElementById("payment-destination").classList.remove("hidden");
+			document.getElementById("payment-destination").classList.add("show");
+			document.getElementById("request-payment-destination").classList.remove("show");
+			document.getElementById("request-payment-destination").classList.add("hidden");
+		}
+		 
+		pullFromCraNoRadio.onchange = function(){
+			if(this.checked) {
+				document.getElementById("payment-destination").classList.remove("hidden");
+				document.getElementById("payment-destination").classList.add("show");
+				document.getElementById("request-payment-destination").classList.remove("show");
+				document.getElementById("request-payment-destination").classList.add("hidden");
+			}
+		}		
+		
+		function disableButtons() {
+			$("#change-button").addClass("disabled");
+			$("#cancel-button").addClass("disabled");
+			$("#agree-button").addClass("disabled");
+			$("#disagree-button").addClass("disabled");
+		}
+		
+		function enableButtons() {
+			$("#change-button").removeClass("disabled");
+			$("#cancel-button").removeClass("disabled");
+			$("#agree-button").removeClass("disabled");
+			$("#disagree-button").removeClass("disabled");
+		}
+		
+		function startDateHandler(e) {
+			const form = document.querySelector('form');
+			if(form.reportValidity()) {
+				enableButtons();
+			}
+			else {
+				disableButtons();
+			}
+		}
+	</script>
+
+					<section id="wb-contentfooter">
+	<p class="mrgn-tp-lg"><a href="https://srv136.services.gc.ca/sc/msca-mdsc/portal-portail/pro/home-accueil?Lang=eng">Return to My Service Canada Account home page</a></p>
+</section>
+
+
+<div id="def-preFooter">
+	<noscript>
+		
+<div class="row pagedetails">	
+	<div class="datemod col-xs-12 mrgn-tp-lg">
+		<dl id="wb-dtmd">
+							<dt class="pull-left">Screen Identifier:</dt>
+				<dd class="pull-left mrgn-bttm-sm mrgn-lft-sm" property="identifier">
+					SBT F 024
+				</dd>
+			
+			<dt class="pull-left">Date modified:</dt>
+			<dd class="pull-left mrgn-bttm-sm mrgn-lft-sm">
+				<time property="dateModified">2026-08-14</time>
+			</dd>
+		</dl>
+	</div>
+</div>
+	</noscript>
+</div>
+
+<script type="text/javascript">
+	document.getElementById("def-preFooter").outerHTML = wet.builder.preFooter({
+		"cdnEnv": "prod",
+		"dateModified" : "2026-08-14",
+		"showPostContent" : false,
+		"showFeedback" : false,
+		"showShare" : false,
+		"screenIdentifier" : "SBT F 024"
+	});
+		adobeDataLayer.push({ 
+			"page": {
+				"id": "SBT F 024"
+			}
+		});
+</script>
+			</main>
+			
+
+<div id="def-footer">
+	<noscript>
+<footer id="wb-info">
+<h2 class="wb-inv">About this site</h2>
+	<div class="gc-contextual">
+		<div class="container">
+			<nav>
+				<h3>My Service Canada Account</h3>
+				<ul class="list-col-xs-1 list-col-sm-2 list-col-md-3"><li><a href="https://service.canada.ca/en/contact-us">Contact us</a></li></ul>
+			</nav>
+		</div>
+	</div>
+	<div class="gc-sub-footer">
+		<div class="container d-flex align-items-center">
+			<nav>
+				<h3 class="wb-inv">Government of Canada</h3>
+				<ul>
+					<li><a href="https://srv136.services.gc.ca/ecas-seca/rascl/SCL/TC.aspx?mode=ReadOnly&amp;lang=eng#terms">Terms and conditions</a></li>
+					<li><a href="https://srv136.services.gc.ca/ecas-seca/rascl/SCL/TC.aspx?mode=ReadOnly&amp;lang=eng#privacy">Privacy</a></li>
+				</ul>
+			</nav>
+			<div class="wtrmrk align-self-end">
+				<img src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/wet-boew/assets/wmms-blk.svg" alt="Symbol of the Government of Canada"/>
+			</div>
+		</div>
+	</div>
+</footer>	</noscript>
+</div>
+
+<script type="text/javascript">
+	document.getElementById("def-footer").outerHTML = wet.builder.appFooter({
+		"cdnEnv": "prod",
+		"footerSections": {
+	        "title":"My Service Canada Account",
+	        "links": [{
+	            "href": "https://service.canada.ca/en/contact-us",
+	            "text": "Contact us"
+	        }]
+    	},
+		"termsLink" : [{
+			"href" : "https://srv136.services.gc.ca/ecas-seca/rascl/SCL/TC.aspx?mode=ReadOnly&amp;lang=eng#terms"
+		}],
+		"privacyLink" : [{
+			"href" : "https://srv136.services.gc.ca/ecas-seca/rascl/SCL/TC.aspx?mode=ReadOnly&amp;lang=eng#privacy"
+		}]
+	});
+</script>
+	
+<script type="text/javascript">
+	document.write(wet.builder.refFooter({
+		"cdnEnv": "prod",
+		"isApplication" : true,
+		"exitSecureSite" : {
+        	"exitScript" : true,
+        	"displayModal" : true,
+        	"exitURL": "/sc/msca-mdsc/portal-portail/pro/vupi-vupi/logout",
+				"exitMsg": "The information you have requested is located outside our secure environment.  Select &quot;Yes&quot; to access the information.  When you are ready to return, select the back button from your browser to return to your session. Be aware that if you do not return to your session within 15 minutes, you will be logged out as a security measure.",
+        		"cancelMsg": "Cancel",
+        		"yesMsg" : "Yes",
+        	"exitDomains": "service.canada.ca",
+        	"displayModalForNewWindow" : false,
+    	},
+			"webAnalytics": true
+
+	}));
+</script>
+
+
+<span class="wb-sessto" data-wb-sessto='{
+	"inactivity" : 900000,
+	"logouturl" : "/sc/msca-mdsc/portal-portail/pro/vupi-vupi/logout",
+	"method" : "GET",
+	"reactionTime" : 60000,
+	"refreshCallbackUrl" : "/sc/msca-mdsc/portal-portail/pro/vupi-vupi/session-refresh",
+	"refreshOnClick" : false
+}'></span>
+
+			<script>
+		function doPopup(popupId) {
+			$(document).trigger('open.wb-lbx',[[{src: popupId,type:'inline'}]]);
+		}
+		
+		$('#external-link-yes-button').click(function(){
+			window.open($("input[name='external-link-target-url']").val());
+		});
+	
+		function doPopupWithInput(popupId, inputName, inputValue) {
+			$("input[name=" + inputName + "]").val(inputValue);
+			
+			$(document).trigger('open.wb-lbx',[[{src: popupId,type:'inline'}]]);
+			
+			return false;
+		}	
+							/**
+ * vupi JavaScript Template
+ * Copyright (C) 2018 Employment and Social Development Canada - Canada.ca
+ */
+$(document).ready(function() { 
+	const errorFields = [];
+	var name = "ESDC-EDSC_MSCA-MDSC_VUPI-VMRP:"
+			
+	if(false) {
+	}
+	if(false) {
+		var errorFieldsJoined = errorFields.join("|");
+		var fullName = name.concat(errorFieldsJoined);
+		
+		adobeDataLayer.push({ 
+			"event": "error",
+			"error": {
+				"name": fullName
+			}
+		});
+	}
+});
+			</script>
+			<link href="/sc/msca-mdsc/portal-portail/pro/vupi-vupi/static/vupi/css/vupi.css" media="screen" rel="stylesheet"/>
+			<link href="/sc/msca-mdsc/portal-portail/pro/vupi-vupi/webjars/font-awesome/5.15.1/css/all.min.css" media="screen" rel="stylesheet"/>
+		</body>
+	</html>

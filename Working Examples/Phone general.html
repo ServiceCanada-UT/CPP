@@ -1,0 +1,1097 @@
+
+
+	<!DOCTYPE html>
+	<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+	<!--[if gt IE 8]><!--><html class="no-js" lang="en" dir="ltr"><!--<![endif]-->
+		<head>
+<meta charset="utf-8"/>
+
+<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+     wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+
+<title>Canada Pension Plan – Disability Benefits Application – Medical condition</title>
+
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/cdts/compiled/soyutils.js"></script>
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/cdts/compiled/wet-en.js"></script>
+
+<noscript>
+	<!--[if gte IE 9 | !IE ]><!-->
+	<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/assets/favicon.ico" rel="icon" type="image/x-icon"/>
+	<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/css/theme.min.css" />
+	<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/cdts/cdtsfixes.css">
+	<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/cdts/cdtsapps.css">
+	 <link rel="stylesheet" href="https://srv136.services.gc.ca/sc/msca-mdsc/portal-portail/pro/cppd-rpci/static/cppd/css/cppd.css">
+	 <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/wet-boew/css/theme.min.css">
+	 
+	<!--<![endif]-->
+
+	<!--[if lt IE 9]>
+	<link rel="shortcut icon" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/assets/favicon.ico" />
+	<![endif]-->
+
+	<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/css/noscript.min.css" />
+	<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/cdts/cdtsnoscript.css" />
+</noscript>
+
+<script type="text/javascript">
+	document.write(wet.builder.refTop({
+		"cdnEnv": "prod",
+		"isApplication" : true,
+		"secure" : true,
+			"webAnalytics" : [{
+				"custom" : ""
+			}],
+	}));
+</script>
+<style>
+/*!
+ * cppd CSS Template
+ * Copyright (C) 2018 Employment and Social Development Canada - Canada.ca
+ *
+ * Vendor resources:
+ *
+ *   WETv4 by Treasury Board of Canada Secretariat - Canada.ca
+ *   License - https://wet-boew.github.io/v4.0-ci/License-en.html
+ */
+
+/** Custom styled radio lists */
+.c-radio
+:has
+ 
+(
+input
+:checked
+ 
+)
+{
+z-index
+:
+ 
+1
+}
+.c-radio:focus-within {
+	z-index: 1
+}
+
+.c-radio-list {
+	font-size: 0px; /* font size 0 to get rid of small gaps */
+	display: flex;
+}
+
+.c-radio-list .c-radio:focus-within {
+	outline: 2px dotted;
+}
+
+.c-radio-list .form-group {
+	margin: 0;
+	left: 0;
+	top: 0;
+}
+
+.c-radio-list [type=radio] {
+	position: absolute;
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.c-radio-list [type=radio]+.spacer {
+	min-height: 45px;
+	height: 100%;
+	background-color: #ffffff;
+	left: 0;
+	-webkit-border-radius: inherit;
+	-moz-border-radius: inherit;
+	border-radius: inherit;
+	display: flex;
+	align-items: center;
+}
+
+.c-radio-list [type=radio]:checked+.spacer {
+	background-color: #335075;
+}
+
+.c-radio-list .radio-text {
+	font-size: 16px;
+	padding: 0px 20px 0px 20px;
+}
+
+.c-radio-list [type=radio]:checked+.spacer>.radio-text {
+	color: #ffffff;
+}
+
+.c-radio-list fieldset {
+	padding: 0;
+}
+
+.c-radio-list legend {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+
+.c-radio-list .c-radio {
+	border: 1px solid #cccccc;
+	border-right-width: 0px;
+	display: flex;
+}
+
+.c-radio-list .c-radio:first-child {
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	-webkit-border-top-right-radius: 0px;
+	-moz-border-radius-topright: 0px;
+	border-top-right-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+	-moz-border-radius-bottomright: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.c-radio-list .c-radio:last-child {
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	-webkit-border-top-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	border-top-left-radius: 0px;
+	-webkit-border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	border-bottom-left-radius: 0px;
+	border-right-width: 1px;
+}
+
+.c-radio-list label {
+	-webkit-border-radius: inherit;
+	-moz-border-radius: inherit;
+	border-radius: inherit;
+	margin: 0;
+}
+
+.s-text-input-group-error {
+	background-color: #f3e9e8;
+	border: 1px solid #d3080c;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	margin-bottom: 15px;
+	padding: 10px;
+}
+
+header .error-block {
+	color: #d3080c;
+	display: block;
+	font-size: 90%;
+	font-style: normal;
+	font-weight: 700;
+}
+
+label  .error-block {
+	color: #d3080c;
+	display: block;
+	font-size: 90%;
+	font-style: normal;
+	font-weight: 700;
+	padding: 3px;
+}
+
+legend .error-block {
+	color: #d3080c;
+	display: block;
+	font-size: 90%;
+	font-style: normal;
+	font-weight: 700;
+	padding: 3px;
+}
+
+.error-panel {
+	border: 1px solid #d3080c;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.s-radio-list-error .panel {
+	background-color: #f3e9e8;
+	border: 1px solid #d3080c;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+/** Circles **/
+.progress-icon {
+	
+}
+
+.circle-large {
+	display: inline-block;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	vertical-align: top;
+}
+
+.circle-large-superscript {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	height: 28px;
+	width: 28px;
+	position: absolute;
+	left: 32px;
+	bottom: 32px;
+	z-index: 10;
+}
+
+.check-large-superscript {
+	position: absolute;
+	left: 32px;
+	bottom: 32px;
+	z-index: 11;
+}
+
+.circle-small {
+	display: inline-block;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	vertical-align: top;
+}
+
+.circle-small-superscript {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	height: 18px;
+	width: 18px;
+	position: absolute;
+	left: 27px;
+	bottom: 27px;
+	z-index: 10;
+}
+
+.check-small-superscript {
+	position: absolute;
+	left: 27px;
+	bottom: 27px;
+	z-index: 11;
+}
+
+.circle-active {
+	background-color: #2572B4;
+	-webkit-box-shadow: inset 0px 0px 0px 2px rgba(109, 210, 218, 1);
+	-moz-box-shadow: inset 0px 0px 0px 2px rgba(109, 210, 218, 1);
+	box-shadow: inset 0px 0px 0px 2px rgba(109, 210, 218, 1);
+}
+
+.circle-complete {
+	background-color: #278400;
+	-webkit-box-shadow: inset 0px 0px 0px 2px rgba(216, 238, 202, 1);
+	-moz-box-shadow: inset 0px 0px 0px 2px rgba(216, 238, 202, 1);
+	box-shadow: inset 0px 0px 0px 2px rgba(216, 238, 202, 1);
+}
+
+.circle-incomplete {
+	background-color: #ffffff;
+	-webkit-box-shadow: inset 0px 0px 0px 2px rgba(215, 215, 215, 1);
+	-moz-box-shadow: inset 0px 0px 0px 2px rgba(215, 215, 215, 1);
+	box-shadow: inset 0px 0px 0px 2px rgba(215, 215, 215, 1);
+}
+
+.circle-hiddenOrDisabled {
+	background-color: #ffffff;
+	-webkit-box-shadow: inset 0px 0px 0px 2px rgba(215, 215, 215, 1);
+	-moz-box-shadow: inset 0px 0px 0px 2px rgba(215, 215, 215, 1);
+	box-shadow: inset 0px 0px 0px 2px rgba(215, 215, 215, 1);
+}
+
+.progress-text {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 18px;
+}
+
+.progress-text .active {
+	color: #ffffff;
+}
+
+.progress-text .complete {
+	color: #ffffff;
+}
+
+.progress-text .incomplete {
+	color: #000000;
+}
+
+a.main-menu-step-link {
+	text-decoration: none;
+}
+
+.main-menu-step {
+	margin-right: 23%;
+	padding-bottom: 1%;
+	padding-top: 1%;
+	border-top: 1px solid #D3D3D3;
+	white-space: normal;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.main-menu-step div {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.main-menu-step:last-child {
+	border-bottom: 1px solid #D3D3D3;
+}
+
+.main-menu-step>:last-child {
+	text-align: right;
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	-moz-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+}
+
+.main-menu-step-subsection {
+	text-align: left;
+	margin-left: 5%;
+	padding-bottom: 1%;
+	padding-top: 2%;
+	border-top: 1px solid #D3D3D3;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+}
+
+.main-menu-step-subsection>:last-child {
+	text-align: right;
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	-moz-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+}
+
+.sectionProgressStatus {
+	margin-left: 10px
+}
+
+.sectionTitle {
+	margin-left: 10px;
+	font-size: 20px
+}
+
+.continueButton {
+	font-family: 'sans-serif';
+	font-weight: 700;
+}
+
+.progress-icon2 {
+	margin-right: 10px;
+}
+
+hr {
+	height: 2px;
+	color: #000000;
+	/*border:solid 1px;*/
+}
+
+.hideDiv {
+	display: none;
+}
+
+.helpTextMessage {
+	display: none;
+}
+
+.disableButton {
+	display: none;
+}
+
+}
+.displayBlock {
+	display: block;
+}
+
+.maritalStatus {
+	margin-left: 10px;
+}
+
+.btn-new-app {
+	margin-left: 30px
+}
+
+.btn-add-illness {
+	margin-left: 5px
+}
+
+.terminalIllnessNoDesc {
+	margin-bottom: 10px;
+}
+/** Used for toggling hidden sections.  The initial state will be hidden. This css is used in conjunction with toggleSection**/
+.indentToggleSection {
+	margin-left: 30px;
+	display: none;
+}
+/** Used to add margin starting from the left side **/
+.indentSection {
+	margin-left: 30px;
+}
+
+.radioBtnFormat {
+	margin: 40px 40px 40px 40px;
+}
+/** Align more than one form controls in the same row **/
+.alignInOneRow {
+	display: inline-block;
+}
+/** Used to display the left arrow on the previous button **/
+.glyphiconArrowLeft {
+	margin-right: 5px;
+}
+/** Used to display the left arrow on the next or submit or start application button **/
+.glyphiconArrowRight {
+	margin-left: 5px;
+}
+/** Used to add space below form controls **/
+.addMarginBelowControl {
+	margin-bottom: 10px;
+}
+/** Used to add space above form controls **/
+.addMarginAboveControl {
+	margin-top: 10px;
+}
+/** Used to add margin starting from the right side **/
+.indentSectionRight {
+	margin-right: 30px;
+}
+
+.subSectionProgressStatus {
+	display: none;
+	margin-top: 10px;
+	width: 100%;
+}
+
+.addMarginAbove {
+	margin-top: 100px
+}
+
+.panel-body dl * {
+	border-top: none;
+	padding: 0;
+}
+
+.textarea-div textarea {
+	resize: none;
+}
+
+.text-limit {
+	float: left;
+	margin-top: -38px;
+	margin-left: 11px;
+	opacity: 0.8;
+	font-size: 14px;
+}
+
+.lbx-modal, .lbx-modal:hover {
+	text-decoration: none
+}
+
+input[type="date"].form-control, input[type="datetime-local"].form-control,
+	input[type="month"].form-control, input[type="time"].form-control {
+	line-height: 24px;
+}
+
+.removeTextBoxBorder {
+	background-color: transparent;
+	border: 0px solid;
+}
+
+#helpPageMedicalConditionTable th {
+	background: #D3D3D3;
+}
+
+#medical-conditions-col-group {
+	text-align: center;
+}
+
+ul.dashed {
+	list-style-type: none;
+}
+
+ul.dashed>li::before {
+	content: "- ";
+	margin-left: -10px;
+}
+
+.vertical-centered {
+	vertical-align: middle;
+}
+
+dl.grouped-dl dt {
+	margin-bottom: 0;
+	padding: 5px;
+	padding-bottom: 0;
+	border: solid 0 #ccc;
+	border-width: 1px;
+	border-bottom: 0;
+}
+
+dl.grouped-dl dd {
+	border: solid 0 #ccc;
+	border-width: 1px;
+	border-top: 0;
+	padding: 5px;
+	padding-top: 0;
+}
+
+/***
+ *
+ * progress stepper styles
+ *
+ ***/
+ol.steps {
+	counter-reset: step;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	position: relative;
+	font-family: Arial;
+	font-size: 16px;
+	line-height: 1.25;
+	margin: auto;
+	padding: 0;
+	overflow: hidden;
+	text-align: center;
+}
+
+ol.steps li {
+	list-style-type: none;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	position: relative;
+	padding: 0 5px;
+}
+
+ol.steps li:before {
+	display: block;
+	content: counter(step);
+	counter-increment: step;
+	background-color: #fff;
+	color: #000;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	margin: 0 auto 10px auto;
+	border: 2px solid #d7d7d7;
+	font-weight: bold;
+}
+
+ol.steps li:first-child:after {
+	content: none;
+}
+
+ol.steps li:after {
+	content: "";
+	width: 100%;
+	height: 4px;
+	background-color: #d7d7d7;
+	position: absolute;
+	left: -50%;
+	top: 24px;
+	z-index: -1;
+}
+
+ol.steps li.active {
+	font-weight: bold;
+}
+
+ol.steps li.complete { /* placeholder */
+	
+}
+
+ol.steps li.incomplete {
+	color: #6f6f6f;
+}
+
+ol.steps li.active:before {
+	background-color: #2572B4;
+	color: #fff;
+	border-color: #6dd2da;
+}
+
+ol.steps li.complete:before {
+	content: "\2714"; /* unicode checkmark */
+	background-color: #278400;
+	color: #fff;
+	border-color: #d8eeca;
+}
+
+ol.steps li.incomplete:before { /* placeholder */
+	
+}
+
+@media ( max-width : 992px) {
+	ol.steps {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+	ol.steps li {
+		list-style-type: none;
+		-webkit-box-flex: 1;
+		-ms-flex: 1;
+		flex: 1;
+		position: relative;
+		text-align: left;
+		display: -webkit-inline-box;
+		display: -ms-inline-flexbox;
+		display: inline-flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+	ol.steps li:before {
+		display: inline-block;
+		float: none;
+		width: 35px;
+		height: 35px;
+		line-height: 35px;
+		margin: 5px 10px;
+		text-align: center;
+		-ms-flex-negative: 0;
+		flex-shrink: 0;
+	}
+	ol.steps li:first-child:after {
+		content: none;
+	}
+	ol.steps li:after {
+		content: "";
+		width: 4px;
+		height: 100%;
+		background-color: #d7d7d7;
+		position: absolute;
+		left: 30px;
+		top: -50%;
+		z-index: -1;
+	}
+	ol.steps li.active:before {
+		background-color: #2572B4;
+		color: #fff;
+		border-color: #6dd2da;
+	}
+}
+
+/* hack to target IE10+ */
+@media ( max-width : 992px) and screen and (-ms-high-contrast: active) , (
+		max-width : 992px) and (-ms-high-contrast: none) {
+	/* IE flex implementation does not like not having a height with column flex */
+	ol.steps {
+		height: 100vh;
+	}
+
+	/* These custom radio styled prevent overflow, upholding the letter of the law, but does so by horribly violating the spirit of the law */
+	/* I am confident few people will use IE on a resolution small enough that it matters (note: it still looks the same on resolution >~700px) */
+	.c-radio-list {
+		flex-wrap: wrap;
+		/* TODO: Make this look nicer on 400-700px resolutions */
+	}
+	.c-radio-list [type=radio]+.spacer {
+		display: table;
+	}
+	.c-radio-list .radio-text {
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+
+/***
+ *
+ * END progress stepper styles
+ *
+ ***/
+
+/** increase filepond font size by 75% */
+.filepond--root {
+	font-size: 1.75rem;
+}
+
+/** ensure that the upload button does not appear for upload files*/
+.filepond--action-process-item {
+	visibility: hidden;
+}
+
+.filepond--file-info .filepond--file-info-sub {
+	opacity: 0.8;
+}
+
+label[id^=filepond--drop-label] .help-block {
+	color: #6b6b6b;
+}
+
+li[data-filepond-item-state='busy'] .filepond--file-status-sub, li[data-filepond-item-state='processing'] .filepond--file-status-sub
+	{
+	display: none;
+}
+
+li[data-filepond-item-state='load-invalid'] .filepond--file-status-sub {
+	opacity: 0.98;
+}
+
+.filepond--file-action-button.filepond--action-retry-item-processing,
+	.filepond--file-action-button.filepond--action-abort-item-processing {
+	display: none;
+}
+/** warning message */
+.label-text-input-warning {
+	color: #d3080c;
+	font-weight: bold;
+	margin-bottom: 15px;
+	padding: 10px;
+}
+
+dl.review-grouped-dl dd:after {
+	content: '';
+	display: block;
+}
+
+dl.review-grouped-dl dd {
+	margin-left: 5px;
+	display: inline;
+	font-weight: bold;
+}
+
+dl.review-grouped-dl dt {
+	min-width: 50px;
+	display: inline;
+	font-weight: normal;
+}
+
+span.section-glyphicon {
+	font-size: 12px;
+}
+
+.span-tag-no-wrap {
+	white-space: nowrap;
+}
+
+.span-tag-new-line {
+	display: block;
+	padding-top: 10px;
+}
+
+.focusWidth {
+	padding: 2px;
+}
+
+strong.required{
+	color:#d3080c;
+	font-weight: bold;
+}
+
+#certification .fa-asterisk::before {
+	font-weight: 700;
+	color: #d3080c
+}
+
+#certification span.required {
+	font-weight: 700;
+	color: #d3080c
+}
+</style>
+	<meta property="dcterms:title" content="Canada Pension Plan – Disability Benefits Application – Medical condition-cppd"/>
+	<meta property="dcterms:language" content="eng"/>
+	<meta property="dcterms:creator" content="Employment and Social Development Canada"/>
+	<meta property="dcterms:service" content="ESDC-EDSC_MSCA-MDSC_CPPD-RPCI"/>
+	<meta property="dcterms:accessRights" content="1"/>
+		</head>
+		
+		<body vocab="http://schema.org/" typeof="WebPage">
+
+<div id="def-top">
+	<noscript>
+		
+<ul id="wb-tphp">
+	<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to main content</a></li>
+	<li class="wb-slc visible-sm visible-md visible-lg"><a class="wb-sl" href="#wb-info">Skip to &quot;About this site&quot;</a></li>
+	<li class="wb-slc"><a class="wb-sl" rel="alternate" href="?wbdisable=true">Switch to basic HTML version</a></li>
+</ul>
+
+<header role="banner">
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-8 col-sm-9 col-md-6">
+				<a href="https://www.canada.ca/en.html">
+					<object type="image/svg+xml" tabindex="-1" data="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/assets/sig-blk-en.svg"></object>
+					<span class="wb-inv">
+						<span>
+							Government of Canada
+						</span>
+						<span>/</span>
+						<span lang="fr">
+							Gouvernement du Canada
+						</span>
+					</span>
+				</a>
+			</div>
+			<section id="wb-lng" class="text-right col-xs-3 col-sm-4 col-md-6">
+				<h2 class="wb-inv">Language selection</h2>
+				<ul class="list-inline margin-bottom-none">
+					<li>
+						<a href="/sc/msca-mdsc/portal-portail/pro/vupi-vupi/phone?Lang=fra" lang="fr" >
+								Français
+						</a>
+					</li>
+				</ul>
+			</section>
+		</div>
+	</div>
+	<nav role="navigation" id="wb-bc" property="breadcrumb">
+		<h2>You are here:</h2>
+		<div class="container">
+			<div class="row">
+				<ol class="breadcrumb">
+					<li>
+						<a href="https://srv136.services.gc.ca/sc/msca-mdsc/portal-portail/pro/home-accueil">
+							Home
+						</a>
+					</li>
+					
+				</ol>
+			</div>
+		</div>
+	</nav>
+</header>
+	</noscript>
+</div>
+
+<script type="text/javascript">
+	document.getElementById("def-top").outerHTML = wet.builder.appTop({
+		"appName" : [{
+			"text" : "My Service Canada Account",
+			"href" : "https://srv136.services.gc.ca/sc/msca-mdsc/portal-portail/pro/home-accueil"
+		}],
+		"cdnEnv": "prod",
+		"lngLinks" : [{
+			"lang" : "fr",
+			"text" : "Français",
+			"href" : "/sc/msca-mdsc/portal-portail/pro/vupi-vupi/phone?Lang=fra"
+		}],
+		
+		"search" : false,
+		"signOut" : [{
+			"href" : "/sc/msca-mdsc/portal-portail/pro/vupi-vupi/logout"
+		}],
+		"siteMenu" : false,
+		"showPreContent" : false
+	});
+</script>
+			
+			
+			<main role="main" property="mainContentOfPage" class="container">
+		<script>
+			adobeDataLayer.push({ 
+				"event": "error",
+				"error": {
+					"name": "Unable to continue: Pay future pending"
+				}
+			});
+		</script>
+	<h1 property="name" id="wb-cont">Unable to continue</h1>
+	<p>To view or change your information, you must either be receiving or have a pension or benefit pending from CPP.</p>
+	
+	
+	<p>If you are currently receiving Old Age Security (OAS) benefits and would like to view or change your information, please navigate to the <a href="https://srv136.services.gc.ca/ecas-seca/rascl/Curam/SAMLIdentityProvider.aspx?link=%2Foas-sv%2FBenefits%2Faccount&amp;appCode=CURAM-OAS&amp;Lang=eng">OAS - Profile</a> page.</p>
+
+					<section id="wb-contentfooter">
+	<p class="mrgn-tp-lg"><a href="https://srv136.services.gc.ca/sc/msca-mdsc/portal-portail/pro/home-accueil?Lang=eng">Return to My Service Canada Account home page</a></p>
+</section>
+
+
+<div id="def-preFooter">
+	<noscript>
+		
+<div class="row pagedetails">	
+	<div class="datemod col-xs-12 mrgn-tp-lg">
+		<dl id="wb-dtmd">
+							<dt class="pull-left">Screen Identifier:</dt>
+				<dd class="pull-left mrgn-bttm-sm mrgn-lft-sm" property="identifier">
+					SBT F 046 
+				</dd>
+			
+			<dt class="pull-left">Date modified:</dt>
+			<dd class="pull-left mrgn-bttm-sm mrgn-lft-sm">
+				<time property="dateModified">2026-08-14</time>
+			</dd>
+		</dl>
+	</div>
+</div>
+	</noscript>
+</div>
+
+<script type="text/javascript">
+	document.getElementById("def-preFooter").outerHTML = wet.builder.preFooter({
+		"cdnEnv": "prod",
+		"dateModified" : "2026-08-14",
+		"showPostContent" : false,
+		"showFeedback" : false,
+		"showShare" : false,
+		"screenIdentifier" : "SBT F 046 "
+	});
+		adobeDataLayer.push({ 
+			"page": {
+				"id": "SBT F 046 "
+			}
+		});
+</script>
+			</main>
+			
+
+<div id="def-footer">
+	<noscript>
+<footer id="wb-info">
+<h2 class="wb-inv">About this site</h2>
+	<div class="gc-contextual">
+		<div class="container">
+			<nav>
+				<h3>My Service Canada Account</h3>
+				<ul class="list-col-xs-1 list-col-sm-2 list-col-md-3"><li><a href="https://service.canada.ca/en/contact-us">Contact us</a></li></ul>
+			</nav>
+		</div>
+	</div>
+	<div class="gc-sub-footer">
+		<div class="container d-flex align-items-center">
+			<nav>
+				<h3 class="wb-inv">Government of Canada</h3>
+				<ul>
+					<li><a href="https://srv136.services.gc.ca/ecas-seca/rascl/SCL/TC.aspx?mode=ReadOnly&amp;lang=eng#terms">Terms and conditions</a></li>
+					<li><a href="https://srv136.services.gc.ca/ecas-seca/rascl/SCL/TC.aspx?mode=ReadOnly&amp;lang=eng#privacy">Privacy</a></li>
+				</ul>
+			</nav>
+			<div class="wtrmrk align-self-end">
+				<img src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/wet-boew/assets/wmms-blk.svg" alt="Symbol of the Government of Canada"/>
+			</div>
+		</div>
+	</div>
+</footer>	</noscript>
+</div>
+
+<script type="text/javascript">
+	document.getElementById("def-footer").outerHTML = wet.builder.appFooter({
+		"cdnEnv": "prod",
+		"footerSections": {
+	        "title":"My Service Canada Account",
+	        "links": [{
+	            "href": "https://service.canada.ca/en/contact-us",
+	            "text": "Contact us"
+	        }]
+    	},
+		"termsLink" : [{
+			"href" : "https://srv136.services.gc.ca/ecas-seca/rascl/SCL/TC.aspx?mode=ReadOnly&amp;lang=eng#terms"
+		}],
+		"privacyLink" : [{
+			"href" : "https://srv136.services.gc.ca/ecas-seca/rascl/SCL/TC.aspx?mode=ReadOnly&amp;lang=eng#privacy"
+		}]
+	});
+</script>
+	
+<script type="text/javascript">
+	document.write(wet.builder.refFooter({
+		"cdnEnv": "prod",
+		"isApplication" : true,
+		"exitSecureSite" : {
+        	"exitScript" : true,
+        	"displayModal" : true,
+        	"exitURL": "/sc/msca-mdsc/portal-portail/pro/vupi-vupi/logout",
+				"exitMsg": "The information you have requested is located outside our secure environment.  Select &quot;Yes&quot; to access the information.  When you are ready to return, select the back button from your browser to return to your session. Be aware that if you do not return to your session within 15 minutes, you will be logged out as a security measure.",
+        		"cancelMsg": "Cancel",
+        		"yesMsg" : "Yes",
+        	"exitDomains": "service.canada.ca",
+        	"displayModalForNewWindow" : false,
+    	},
+			"webAnalytics": true
+
+	}));
+</script>
+
+
+<span class="wb-sessto" data-wb-sessto='{
+	"inactivity" : 900000,
+	"logouturl" : "/sc/msca-mdsc/portal-portail/pro/vupi-vupi/logout",
+	"method" : "GET",
+	"reactionTime" : 60000,
+	"refreshCallbackUrl" : "/sc/msca-mdsc/portal-portail/pro/vupi-vupi/session-refresh",
+	"refreshOnClick" : false
+}'></span>
+
+			<script>
+		function doPopup(popupId) {
+			$(document).trigger('open.wb-lbx',[[{src: popupId,type:'inline'}]]);
+		}
+		
+		$('#external-link-yes-button').click(function(){
+			window.open($("input[name='external-link-target-url']").val());
+		});
+	
+		function doPopupWithInput(popupId, inputName, inputValue) {
+			$("input[name=" + inputName + "]").val(inputValue);
+			
+			$(document).trigger('open.wb-lbx',[[{src: popupId,type:'inline'}]]);
+			
+			return false;
+		}	
+					</script>
+			<link href="/sc/msca-mdsc/portal-portail/pro/vupi-vupi/static/vupi/css/vupi.css" media="screen" rel="stylesheet"/>
+			<link href="/sc/msca-mdsc/portal-portail/pro/vupi-vupi/webjars/font-awesome/5.15.1/css/all.min.css" media="screen" rel="stylesheet"/>
+		</body>
+	</html>

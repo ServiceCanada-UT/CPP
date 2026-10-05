@@ -1,0 +1,2457 @@
+
+
+	<!DOCTYPE html>
+	<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+	<!--[if gt IE 8]><!--><html class="no-js" lang="en" dir="ltr"><!--<![endif]-->
+		<head>
+<meta charset="utf-8"/>
+
+<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+     wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+
+<title>Canada Pension Plan – Disability Benefits Application – Medical condition</title>
+
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/cdts/compiled/soyutils.js"></script>
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/cdts/compiled/wet-en.js"></script>
+
+<noscript>
+	<!--[if gte IE 9 | !IE ]><!-->
+	<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/assets/favicon.ico" rel="icon" type="image/x-icon"/>
+	<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/css/theme.min.css" />
+	<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/cdts/cdtsfixes.css">
+	<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/cdts/cdtsapps.css">
+	 <link rel="stylesheet" href="https://srv136.services.gc.ca/sc/msca-mdsc/portal-portail/pro/cppd-rpci/static/cppd/css/cppd.css">
+	 <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/wet-boew/css/theme.min.css">
+	 
+	<!--<![endif]-->
+
+	<!--[if lt IE 9]>
+	<link rel="shortcut icon" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/assets/favicon.ico" />
+	<![endif]-->
+
+	<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/css/noscript.min.css" />
+	<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/cdts/cdtsnoscript.css" />
+</noscript>
+
+<script type="text/javascript">
+	document.write(wet.builder.refTop({
+		"cdnEnv": "prod",
+		"isApplication" : true,
+		"secure" : true,
+			"webAnalytics" : [{
+				"custom" : ""
+			}],
+	}));
+</script>
+<style>
+/*!
+ * cppd CSS Template
+ * Copyright (C) 2018 Employment and Social Development Canada - Canada.ca
+ *
+ * Vendor resources:
+ *
+ *   WETv4 by Treasury Board of Canada Secretariat - Canada.ca
+ *   License - https://wet-boew.github.io/v4.0-ci/License-en.html
+ */
+
+/** Custom styled radio lists */
+.c-radio
+:has
+ 
+(
+input
+:checked
+ 
+)
+{
+z-index
+:
+ 
+1
+}
+.c-radio:focus-within {
+	z-index: 1
+}
+
+.c-radio-list {
+	font-size: 0px; /* font size 0 to get rid of small gaps */
+	display: flex;
+}
+
+.c-radio-list .c-radio:focus-within {
+	outline: 2px dotted;
+}
+
+.c-radio-list .form-group {
+	margin: 0;
+	left: 0;
+	top: 0;
+}
+
+.c-radio-list [type=radio] {
+	position: absolute;
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.c-radio-list [type=radio]+.spacer {
+	min-height: 45px;
+	height: 100%;
+	background-color: #ffffff;
+	left: 0;
+	-webkit-border-radius: inherit;
+	-moz-border-radius: inherit;
+	border-radius: inherit;
+	display: flex;
+	align-items: center;
+}
+
+.c-radio-list [type=radio]:checked+.spacer {
+	background-color: #335075;
+}
+
+.c-radio-list .radio-text {
+	font-size: 16px;
+	padding: 0px 20px 0px 20px;
+}
+
+.c-radio-list [type=radio]:checked+.spacer>.radio-text {
+	color: #ffffff;
+}
+
+.c-radio-list fieldset {
+	padding: 0;
+}
+
+.c-radio-list legend {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+
+.c-radio-list .c-radio {
+	border: 1px solid #cccccc;
+	border-right-width: 0px;
+	display: flex;
+}
+
+.c-radio-list .c-radio:first-child {
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	-webkit-border-top-right-radius: 0px;
+	-moz-border-radius-topright: 0px;
+	border-top-right-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+	-moz-border-radius-bottomright: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.c-radio-list .c-radio:last-child {
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	-webkit-border-top-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	border-top-left-radius: 0px;
+	-webkit-border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	border-bottom-left-radius: 0px;
+	border-right-width: 1px;
+}
+
+.c-radio-list label {
+	-webkit-border-radius: inherit;
+	-moz-border-radius: inherit;
+	border-radius: inherit;
+	margin: 0;
+}
+
+.s-text-input-group-error {
+	background-color: #f3e9e8;
+	border: 1px solid #d3080c;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	margin-bottom: 15px;
+	padding: 10px;
+}
+
+header .error-block {
+	color: #d3080c;
+	display: block;
+	font-size: 90%;
+	font-style: normal;
+	font-weight: 700;
+}
+
+label  .error-block {
+	color: #d3080c;
+	display: block;
+	font-size: 90%;
+	font-style: normal;
+	font-weight: 700;
+	padding: 3px;
+}
+
+legend .error-block {
+	color: #d3080c;
+	display: block;
+	font-size: 90%;
+	font-style: normal;
+	font-weight: 700;
+	padding: 3px;
+}
+
+.error-panel {
+	border: 1px solid #d3080c;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.s-radio-list-error .panel {
+	background-color: #f3e9e8;
+	border: 1px solid #d3080c;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+/** Circles **/
+.progress-icon {
+	
+}
+
+.circle-large {
+	display: inline-block;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	vertical-align: top;
+}
+
+.circle-large-superscript {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	height: 28px;
+	width: 28px;
+	position: absolute;
+	left: 32px;
+	bottom: 32px;
+	z-index: 10;
+}
+
+.check-large-superscript {
+	position: absolute;
+	left: 32px;
+	bottom: 32px;
+	z-index: 11;
+}
+
+.circle-small {
+	display: inline-block;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	vertical-align: top;
+}
+
+.circle-small-superscript {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	height: 18px;
+	width: 18px;
+	position: absolute;
+	left: 27px;
+	bottom: 27px;
+	z-index: 10;
+}
+
+.check-small-superscript {
+	position: absolute;
+	left: 27px;
+	bottom: 27px;
+	z-index: 11;
+}
+
+.circle-active {
+	background-color: #2572B4;
+	-webkit-box-shadow: inset 0px 0px 0px 2px rgba(109, 210, 218, 1);
+	-moz-box-shadow: inset 0px 0px 0px 2px rgba(109, 210, 218, 1);
+	box-shadow: inset 0px 0px 0px 2px rgba(109, 210, 218, 1);
+}
+
+.circle-complete {
+	background-color: #278400;
+	-webkit-box-shadow: inset 0px 0px 0px 2px rgba(216, 238, 202, 1);
+	-moz-box-shadow: inset 0px 0px 0px 2px rgba(216, 238, 202, 1);
+	box-shadow: inset 0px 0px 0px 2px rgba(216, 238, 202, 1);
+}
+
+.circle-incomplete {
+	background-color: #ffffff;
+	-webkit-box-shadow: inset 0px 0px 0px 2px rgba(215, 215, 215, 1);
+	-moz-box-shadow: inset 0px 0px 0px 2px rgba(215, 215, 215, 1);
+	box-shadow: inset 0px 0px 0px 2px rgba(215, 215, 215, 1);
+}
+
+.circle-hiddenOrDisabled {
+	background-color: #ffffff;
+	-webkit-box-shadow: inset 0px 0px 0px 2px rgba(215, 215, 215, 1);
+	-moz-box-shadow: inset 0px 0px 0px 2px rgba(215, 215, 215, 1);
+	box-shadow: inset 0px 0px 0px 2px rgba(215, 215, 215, 1);
+}
+
+.progress-text {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 18px;
+}
+
+.progress-text .active {
+	color: #ffffff;
+}
+
+.progress-text .complete {
+	color: #ffffff;
+}
+
+.progress-text .incomplete {
+	color: #000000;
+}
+
+a.main-menu-step-link {
+	text-decoration: none;
+}
+
+.main-menu-step {
+	margin-right: 23%;
+	padding-bottom: 1%;
+	padding-top: 1%;
+	border-top: 1px solid #D3D3D3;
+	white-space: normal;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.main-menu-step div {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.main-menu-step:last-child {
+	border-bottom: 1px solid #D3D3D3;
+}
+
+.main-menu-step>:last-child {
+	text-align: right;
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	-moz-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+}
+
+.main-menu-step-subsection {
+	text-align: left;
+	margin-left: 5%;
+	padding-bottom: 1%;
+	padding-top: 2%;
+	border-top: 1px solid #D3D3D3;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+}
+
+.main-menu-step-subsection>:last-child {
+	text-align: right;
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	-moz-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+}
+
+.sectionProgressStatus {
+	margin-left: 10px
+}
+
+.sectionTitle {
+	margin-left: 10px;
+	font-size: 20px
+}
+
+.continueButton {
+	font-family: 'sans-serif';
+	font-weight: 700;
+}
+
+.progress-icon2 {
+	margin-right: 10px;
+}
+
+hr {
+	height: 2px;
+	color: #000000;
+	/*border:solid 1px;*/
+}
+
+.hideDiv {
+	display: none;
+}
+
+.helpTextMessage {
+	display: none;
+}
+
+.disableButton {
+	display: none;
+}
+
+}
+.displayBlock {
+	display: block;
+}
+
+.maritalStatus {
+	margin-left: 10px;
+}
+
+.btn-new-app {
+	margin-left: 30px
+}
+
+.btn-add-illness {
+	margin-left: 5px
+}
+
+.terminalIllnessNoDesc {
+	margin-bottom: 10px;
+}
+/** Used for toggling hidden sections.  The initial state will be hidden. This css is used in conjunction with toggleSection**/
+.indentToggleSection {
+	margin-left: 30px;
+	display: none;
+}
+/** Used to add margin starting from the left side **/
+.indentSection {
+	margin-left: 30px;
+}
+
+.radioBtnFormat {
+	margin: 40px 40px 40px 40px;
+}
+/** Align more than one form controls in the same row **/
+.alignInOneRow {
+	display: inline-block;
+}
+/** Used to display the left arrow on the previous button **/
+.glyphiconArrowLeft {
+	margin-right: 5px;
+}
+/** Used to display the left arrow on the next or submit or start application button **/
+.glyphiconArrowRight {
+	margin-left: 5px;
+}
+/** Used to add space below form controls **/
+.addMarginBelowControl {
+	margin-bottom: 10px;
+}
+/** Used to add space above form controls **/
+.addMarginAboveControl {
+	margin-top: 10px;
+}
+/** Used to add margin starting from the right side **/
+.indentSectionRight {
+	margin-right: 30px;
+}
+
+.subSectionProgressStatus {
+	display: none;
+	margin-top: 10px;
+	width: 100%;
+}
+
+.addMarginAbove {
+	margin-top: 100px
+}
+
+.panel-body dl * {
+	border-top: none;
+	padding: 0;
+}
+
+.textarea-div textarea {
+	resize: none;
+}
+
+.text-limit {
+	float: left;
+	margin-top: -38px;
+	margin-left: 11px;
+	opacity: 0.8;
+	font-size: 14px;
+}
+
+.lbx-modal, .lbx-modal:hover {
+	text-decoration: none
+}
+
+input[type="date"].form-control, input[type="datetime-local"].form-control,
+	input[type="month"].form-control, input[type="time"].form-control {
+	line-height: 24px;
+}
+
+.removeTextBoxBorder {
+	background-color: transparent;
+	border: 0px solid;
+}
+
+#helpPageMedicalConditionTable th {
+	background: #D3D3D3;
+}
+
+#medical-conditions-col-group {
+	text-align: center;
+}
+
+ul.dashed {
+	list-style-type: none;
+}
+
+ul.dashed>li::before {
+	content: "- ";
+	margin-left: -10px;
+}
+
+.vertical-centered {
+	vertical-align: middle;
+}
+
+dl.grouped-dl dt {
+	margin-bottom: 0;
+	padding: 5px;
+	padding-bottom: 0;
+	border: solid 0 #ccc;
+	border-width: 1px;
+	border-bottom: 0;
+}
+
+dl.grouped-dl dd {
+	border: solid 0 #ccc;
+	border-width: 1px;
+	border-top: 0;
+	padding: 5px;
+	padding-top: 0;
+}
+
+/***
+ *
+ * progress stepper styles
+ *
+ ***/
+ol.steps {
+	counter-reset: step;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	position: relative;
+	font-family: Arial;
+	font-size: 16px;
+	line-height: 1.25;
+	margin: auto;
+	padding: 0;
+	overflow: hidden;
+	text-align: center;
+}
+
+ol.steps li {
+	list-style-type: none;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	position: relative;
+	padding: 0 5px;
+}
+
+ol.steps li:before {
+	display: block;
+	content: counter(step);
+	counter-increment: step;
+	background-color: #fff;
+	color: #000;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	margin: 0 auto 10px auto;
+	border: 2px solid #d7d7d7;
+	font-weight: bold;
+}
+
+ol.steps li:first-child:after {
+	content: none;
+}
+
+ol.steps li:after {
+	content: "";
+	width: 100%;
+	height: 4px;
+	background-color: #d7d7d7;
+	position: absolute;
+	left: -50%;
+	top: 24px;
+	z-index: -1;
+}
+
+ol.steps li.active {
+	font-weight: bold;
+}
+
+ol.steps li.complete { /* placeholder */
+	
+}
+
+ol.steps li.incomplete {
+	color: #6f6f6f;
+}
+
+ol.steps li.active:before {
+	background-color: #2572B4;
+	color: #fff;
+	border-color: #6dd2da;
+}
+
+ol.steps li.complete:before {
+	content: "\2714"; /* unicode checkmark */
+	background-color: #278400;
+	color: #fff;
+	border-color: #d8eeca;
+}
+
+ol.steps li.incomplete:before { /* placeholder */
+	
+}
+
+@media ( max-width : 992px) {
+	ol.steps {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+	ol.steps li {
+		list-style-type: none;
+		-webkit-box-flex: 1;
+		-ms-flex: 1;
+		flex: 1;
+		position: relative;
+		text-align: left;
+		display: -webkit-inline-box;
+		display: -ms-inline-flexbox;
+		display: inline-flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+	ol.steps li:before {
+		display: inline-block;
+		float: none;
+		width: 35px;
+		height: 35px;
+		line-height: 35px;
+		margin: 5px 10px;
+		text-align: center;
+		-ms-flex-negative: 0;
+		flex-shrink: 0;
+	}
+	ol.steps li:first-child:after {
+		content: none;
+	}
+	ol.steps li:after {
+		content: "";
+		width: 4px;
+		height: 100%;
+		background-color: #d7d7d7;
+		position: absolute;
+		left: 30px;
+		top: -50%;
+		z-index: -1;
+	}
+	ol.steps li.active:before {
+		background-color: #2572B4;
+		color: #fff;
+		border-color: #6dd2da;
+	}
+}
+
+/* hack to target IE10+ */
+@media ( max-width : 992px) and screen and (-ms-high-contrast: active) , (
+		max-width : 992px) and (-ms-high-contrast: none) {
+	/* IE flex implementation does not like not having a height with column flex */
+	ol.steps {
+		height: 100vh;
+	}
+
+	/* These custom radio styled prevent overflow, upholding the letter of the law, but does so by horribly violating the spirit of the law */
+	/* I am confident few people will use IE on a resolution small enough that it matters (note: it still looks the same on resolution >~700px) */
+	.c-radio-list {
+		flex-wrap: wrap;
+		/* TODO: Make this look nicer on 400-700px resolutions */
+	}
+	.c-radio-list [type=radio]+.spacer {
+		display: table;
+	}
+	.c-radio-list .radio-text {
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+
+/***
+ *
+ * END progress stepper styles
+ *
+ ***/
+
+/** increase filepond font size by 75% */
+.filepond--root {
+	font-size: 1.75rem;
+}
+
+/** ensure that the upload button does not appear for upload files*/
+.filepond--action-process-item {
+	visibility: hidden;
+}
+
+.filepond--file-info .filepond--file-info-sub {
+	opacity: 0.8;
+}
+
+label[id^=filepond--drop-label] .help-block {
+	color: #6b6b6b;
+}
+
+li[data-filepond-item-state='busy'] .filepond--file-status-sub, li[data-filepond-item-state='processing'] .filepond--file-status-sub
+	{
+	display: none;
+}
+
+li[data-filepond-item-state='load-invalid'] .filepond--file-status-sub {
+	opacity: 0.98;
+}
+
+.filepond--file-action-button.filepond--action-retry-item-processing,
+	.filepond--file-action-button.filepond--action-abort-item-processing {
+	display: none;
+}
+/** warning message */
+.label-text-input-warning {
+	color: #d3080c;
+	font-weight: bold;
+	margin-bottom: 15px;
+	padding: 10px;
+}
+
+dl.review-grouped-dl dd:after {
+	content: '';
+	display: block;
+}
+
+dl.review-grouped-dl dd {
+	margin-left: 5px;
+	display: inline;
+	font-weight: bold;
+}
+
+dl.review-grouped-dl dt {
+	min-width: 50px;
+	display: inline;
+	font-weight: normal;
+}
+
+span.section-glyphicon {
+	font-size: 12px;
+}
+
+.span-tag-no-wrap {
+	white-space: nowrap;
+}
+
+.span-tag-new-line {
+	display: block;
+	padding-top: 10px;
+}
+
+.focusWidth {
+	padding: 2px;
+}
+
+strong.required{
+	color:#d3080c;
+	font-weight: bold;
+}
+
+#certification .fa-asterisk::before {
+	font-weight: 700;
+	color: #d3080c
+}
+
+#certification span.required {
+	font-weight: 700;
+	color: #d3080c
+}
+</style>
+	<meta property="dcterms:title" content="Canada Pension Plan – Disability Benefits Application – Medical condition-cppd"/>
+	<meta property="dcterms:language" content="eng"/>
+	<meta property="dcterms:creator" content="Employment and Social Development Canada"/>
+	<meta property="dcterms:service" content="ESDC-EDSC_MSCA-MDSC_CPPD-RPCI"/>
+	<meta property="dcterms:accessRights" content="1"/>
+		</head>
+		
+		<body vocab="http://schema.org/" typeof="WebPage">
+
+<div id="def-top">
+	<noscript>
+		
+<ul id="wb-tphp">
+	<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to main content</a></li>
+	<li class="wb-slc visible-sm visible-md visible-lg"><a class="wb-sl" href="#wb-info">Skip to &quot;About this site&quot;</a></li>
+	<li class="wb-slc"><a class="wb-sl" rel="alternate" href="?wbdisable=true">Switch to basic HTML version</a></li>
+</ul>
+
+<header role="banner">
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-8 col-sm-9 col-md-6">
+				<a href="https://www.canada.ca/en.html">
+					<object type="image/svg+xml" tabindex="-1" data="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/assets/sig-blk-en.svg"></object>
+					<span class="wb-inv">
+						<span>
+							Government of Canada
+						</span>
+						<span>/</span>
+						<span lang="fr">
+							Gouvernement du Canada
+						</span>
+					</span>
+				</a>
+			</div>
+			<section id="wb-lng" class="text-right col-xs-3 col-sm-4 col-md-6">
+				<h2 class="wb-inv">Language selection</h2>
+				<ul class="list-inline margin-bottom-none">
+					<li>
+						<a href="/sc/msca-mdsc/portal-portail/pro/cppd-rpci/terminalIllness?step=step1&amp;cache-key=d50c48c0-9ad3-4e52-881b-4df13cc9961e&amp;Lang=fra" lang="fr" >
+								Français
+						</a>
+					</li>
+				</ul>
+			</section>
+		</div>
+	</div>
+	<nav role="navigation" id="wb-bc" property="breadcrumb">
+		<h2>You are here:</h2>
+		<div class="container">
+			<div class="row">
+				<ol class="breadcrumb">
+					<li>
+						<a href="https://srv136.services.gc.ca/sc/msca-mdsc/portal-portail/pro/home-accueil">
+							Home
+						</a>
+					</li>
+					<ul><li><span>Apply for My CPP Disability Benefits – Medical condition</span></li></ul>
+				</ol>
+			</div>
+		</div>
+	</nav>
+</header>
+	</noscript>
+</div>
+
+<script type="text/javascript">
+	document.getElementById("def-top").outerHTML = wet.builder.appTop({
+		"appName" : [{
+			"text" : "My Service Canada Account",
+			"href" : "https://srv136.services.gc.ca/sc/msca-mdsc/portal-portail/pro/home-accueil"
+		}],
+		"cdnEnv": "prod",
+		"lngLinks" : [{
+			"lang" : "fr",
+			"text" : "Français",
+			"href" : "/sc/msca-mdsc/portal-portail/pro/cppd-rpci/terminalIllness?step=step1&amp;cache-key=d50c48c0-9ad3-4e52-881b-4df13cc9961e&amp;Lang=fra"
+		}],
+		"breadcrumbs" : [{"title":"My Service Canada Account","href":"https://srv136.services.gc.ca/sc/msca-mdsc/portal-portail/pro/home-accueil?Lang=eng"},{"title":"Canada Pension Plan","href":"https://srv136.services.gc.ca/sc/msca-mdsc/portal-portail/pro/home-accueil/landing-page-cpp-oas?Lang=eng"},{"title":"Apply for My CPP Disability Benefits – Medical condition"}],
+		"search" : false,
+		"signOut" : [{
+			"href" : "/sc/msca-mdsc/portal-portail/pro/cppd-rpci/logout"
+		}],
+		"siteMenu" : false,
+		"showPreContent" : false
+	});
+</script>
+			
+				<section id="wb-so">
+	<h2 class="wb-inv">Application Information</h2>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2 text-left">
+				<button id="help-button" name="help-page" type="button" class="btn btn-default" onclick="helpPage()">Help</button>                                                                       
+			</div>
+			<div class="col-md-10 text-right">
+				<span class="mrgn-rght-md vertical-centered">
+					Signed in as
+					<span class="wb-so-uname"><strong>MUHAMMAD KHAN</strong></span>
+				</span>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="help-page-popup" class="mfp-hide modal-dialog modal-content overlay-def wb-popup-mid">
+    <header class="modal-header">
+        <h2 class="modal-title">Help - Canada Pension Plan Disability Benefits</h2>
+    </header>
+    <div class="modal-body">
+<p>This page contains general information concerning the for the Canada Pension Plan Disability Benefits</p>
+
+<hr/>
+
+<ul>
+	<li>
+        <a href="#L1">General information</a>
+		<ul>
+			<li><a href="#L1.1">Eligibility for the Canada Pension Plan Disability Benefits</a></li>
+    		<li><a href="#L1.2">How do I qualify for CPP disability benefits</a></li>
+    	</ul>
+	</li>
+	<li>
+        <a href="#L2">If you need time to complete the application</a>
+	</li>
+    <li>
+        <a href="#L3">If you have been diagnosed with a terminal illness</a>
+    </li>
+    <li>
+        <a href="#L4">Medical conditions for Canada Pension Plan Disability</a>
+    </li>    
+    <li>
+        <a href="#L5">Medical report</a>
+    </li>
+    <li>
+        <a href="#L6">If you are eligible for more than one CPP benefit</a>
+    </li>
+    <li>
+        <a href="#L7">Post-retirement Disability benefit</a>
+    </li>
+    <li>
+        <a href="#L8">Benefits for children under age 25</a>
+        <ul>
+            <li><a href="#L8.1">Eligibility</a></li>
+            <li><a href="#L8.2">When to apply</a></li>
+        </ul>        
+    </li>
+    <li>
+        <a href="#L9">Recover application in progress</a>
+    </li>
+    <li>
+        <a href="#L10">Apply for My CPP Disability Benefits</a>
+    </li>    
+    <li>
+        <a href="#L11">Information about you</a>
+        <ul>
+            <li><a href="#L11.1">Change of address</a></li>
+            <li><a href="#L11.2">Postal code format</a></li>
+            <li><a href="#L11.3">Direct Deposit</a></li>
+            <li><a href="#L11.4">Telephone number</a></li>
+            <li><a href="#L11.5">Marital status</a></li>
+        </ul>                            
+    </li>    
+    <li>
+        <a href="#L12">Information about your work history</a>
+    </li>    
+    <li>
+        <a href="#L13">Information about your children</a>
+    </li>    
+    <li>
+        <a href="#L14">Child rearing provision</a>
+    </li>    
+    <li>
+        <a href="#L15">Functional assessment</a>
+    </li>    
+    <li>
+        <a href="#L16">Consent to communicate information to an authorized person</a>
+    </li>                                                
+</ul>
+
+<hr/>
+
+<h2 id="L1">General information</h2>
+
+<h3 id="L1.1">Eligibility for the Canada Pension Plan Disability Benefits</h3>
+
+<p>
+    The CPP disability benefit and the CPP post-retirement disability benefit are taxable monthly payments available to people who made contributions to CPP, 
+    are under the age 65 and are not able to work regularly at any job because of a disability.
+</p>
+
+<p>
+    The CPP disability benefit is intended for individuals who are not receiving a CPP retirement pension, and the CPP post-retirement disability benefit 
+    is intended for individuals who become disabled after they begin to receive a CPP retirement pension.
+</p>
+
+<p>A benefit may also be available to their children.</p>
+
+<hr/>
+
+<h3 id="L1.2">How do I qualify for CPP disability benefits?</h3>
+
+<p>To qualify for CPP disability benefits, 3 conditions must be met:</p>
+
+<ol>
+    <li>You must be under the age of 65</li>
+    
+    <li>
+        <p>You must have the minimum amount of valid CPP contributions</p>
+        
+        <p>Contributions to the CPP are made while you are working.</p>
+        
+        <p>
+           Service Canada will review your contribution history to determine if you made the minimum amount of valid CPP contributions to qualify for CPP 
+           disability benefits.
+        </p>
+        
+        <p>
+           The disability benefit amount you could qualify for is based on how long and much you contributed to the CPP plus a flat rate. 
+           The post-retirement disability benefit is a flat rate component of the CPP disability benefit.
+        </p>
+        
+        <p>
+           The information you provide in <em>Information about you</em> and <em>certain provisions</em> along with the information on your account will help us determine 
+           if you made the minimum amount of valid contributions to the CPP.        
+        </p>
+    </li>
+    
+    <li>
+        <p>
+           You must have a mental or physical medical condition(s) that prevents you from regularly working at any job. 
+           The medical condition(s) must be found to be both severe and prolonged when you last met the minimum amount of valid CPP contributions to qualify, 
+           and you must have been unable to work continuously since then. 
+        </p>
+        
+        <p>For the CPP:</p>
+        
+        <p>
+           <strong>Severe</strong> means that you have a mental and/or physical disability that regularly stops you from doing any type of substantially 
+           gainful work. 
+        </p>
+        
+        <p>
+           <strong>Substantially gainful work or occupation</strong> is considered to be any profession or work one might pursue to earn a living. 
+           If the total amount of earnings from this work is more than 12 times the maximum monthly CPP disability benefit amount, 
+           a person is normally considered to be doing substantially gainful work.
+        </p>
+        
+        <p><strong>Prolonged</strong> means that the disability is long-term and of indefinite duration or is likely to result in death.</p>
+        
+        <p>
+           Service Canada will review the information you provide along with the medical information we receive from your doctor, nurse practitioner, 
+           insurance company or provincial/territorial agency. This will help us determine how your medical condition(s) impacts your capability to 
+           perform work-related activities.        
+        </p>
+    </li>    
+    
+</ol>
+
+<hr/>
+
+<h2 id="L2">If you need time to complete the application</h2>
+
+<p>
+    Past applicants have reported that it takes time to complete the application. Some have suggested that it was easier to complete it in multiple sittings. 
+    You may want to consider saving your application after each section. 
+</p>
+
+<p>You must keep in mind that the date Service Canada receives your application is important as it could affect when your benefits start.</p>
+
+<hr/>
+
+<h2 id="L3">If you have been diagnosed with a terminal illness</h2>
+
+<p>
+    For the purposes of CPP, a terminal medical condition is a disease or illness that cannot be cured or adequately treated and is reasonably expected 
+    to result in the death in 6 months.
+</p>
+
+<p>
+    Applications from patients with a terminal illness receive priority handling. Our goal is to make a decision within 5 business days 
+    of receiving your complete Terminal Illness application.
+</p>
+
+<hr/>
+
+<h2 id="L4">Medical conditions for Canada Pension Plan Disability</h2>
+<table id="helpPageMedicalConditionTable" class="table table-bordered table-condensed">
+	<colgroup span="2"></colgroup>
+	<thead>
+		<tr>
+			<th id="condition-col" scope="col">Condition</th>
+			<th id="other-name-col" scope="col">Other Names</th>
+		</tr>					
+	</thead>				
+    <tbody>
+        <tr>
+            <td headers="condition-col">Acute Lymphoblastic Leukemia</td>
+            <td headers="other-name-col">
+            	<ul>
+					<li>acute lymphocytic leukemia</li>
+					<li>precursor B cell acute lymphoblastic leukemia</li>
+					<li>precursor B cell lymphoblastic leukemia</li>
+					<li>precursor T cell acute lymphoblastic leukemia</li>
+					<li>precursor T cell lymphoblastic leukemia</li>
+				</ul>
+            </td>
+        </tr>
+        <tr>
+            <td headers="condition-col">Acute Myeloid Leukemia</td>
+            <td headers="other-name-col">
+            	<ul>
+					<li>acute myelogenous leukemia</li>
+					<li>acute non-lymphotic leukemia</li>
+
+					<li>acute myeloblastic leukemia</li>
+					<li>acute granulocytic leukemia</li>
+					<li>acute myelocytic leukemia</li>
+					<li>acute monocytic leukemia</li>
+					<li>acute myeloid leukemia with recurrent genetic abnormalities</li>
+					<li>AML with myelodysplasia-related changes</li>
+					<li>acute promyelocytic leukemia</li>
+				</ul>
+            </td>
+        </tr>       
+        <tr>
+            <td headers="condition-col">Adrenocortical Cancer</td>
+            <td headers="other-name-col">
+            	<ul>
+					<li>adrenal cancer</li>
+					<li>suprarenal</li>
+					<li>adrenal carcinoma</li>
+					<li>adrenocortical carcinoma</li>
+					<li>cancer of the adrenal cortex</li>
+				</ul>
+            </td>
+        </tr>
+        <tr>
+            <td headers="condition-col">Alzheimer’s Disease: Early Onset (Less Than Age 60)</td>
+            <td headers="other-name-col">
+            	<ul>
+					<li>Alzheimer’s dementia</li>
+					<li>Early onset Alzheimer’s disease (EOAD)</li>
+					<li>Alzheimer’s type dementia (ATD)</li>
+					<li>familial Alzheimer’s disease (FAD)</li>
+					<li>pre-senile dementia of Alzheimer’s disease</li>
+				</ul>
+            </td>
+        </tr>   
+        <tr>
+        	<td headers="condition-col">Amyloidosis</td>
+        	<td headers="other-name-col">
+        		<ul>
+        			<li>familial dementia (British, Danish, or Finnish)</li>
+        			<li>primary amyloidosis</li>
+        			<li>secondary amyloidosis</li>
+        			<li>dialysis-related amyloidosis</li>
+        			<li>prion protein-related TSE (transmissible spongiform encephalopathy)</li>
+        			<li>Creutzfeldt-Jakob disease</li>
+        			<li>fatal familial insomnia </li>
+        			<li>Gerstmann-Straussler-Scheinker syndrome</li>
+        			<li>age-related (senile) systemic amyloidosis</li>
+        			<li>organ-specific amyloidosis</li>        			
+        		</ul>
+        	</td>
+        </tr> 
+        <tr>
+            <td headers="condition-col">Amyotrophic Lateral Sclerosis (ALS)</td>
+            <td headers="other-name-col">
+            	<ul>
+					<li>Duchenne-Aran muscular atrophy</li>
+					<li>Lou Gehrig’s disease</li>
+					<li>motor neuron disease</li>
+				</ul>
+            </td>
+        </tr>         
+        <tr>
+            <td headers="condition-col">Anal Cancer</td>
+            <td headers="other-name-col">
+            	<ul>
+					<li>squamous cell cancer</li>
+					<li>cancer of the rectosigmoid junction</li>
+				</ul>
+            </td>
+        </tr>       
+        <tr>
+            <td headers="condition-col">Appendiceal Cancer</td>
+            <td headers="other-name-col">
+            	<ul>
+					<li>cancer of the appendix  (carcinoid type)</li>
+					<li>appendiceal neoplasm</li>
+					<li>appendiceal adenocarcinoma (mucinous or goblet cell)</li>
+					<li>appendiceal neuroendocrine neoplasm or carcinoma</li>
+					<li>mixed neuro-endocrine /non-endocrine appendiceal neoplasm</li>
+				</ul>
+            </td>
+        </tr>          
+        <tr>
+            <td headers="condition-col">Bladder Cancer (metastatic, stage IV)</td>
+            <td headers="other-name-col">
+            	<ul>
+					<li>invasive metastatic bladder cancer</li>
+					<li>malignant neoplasm of bladder</li>
+					<li>metastatic transitional cell carcinoma</li>
+					<li>metastatic squamous cell carcinoma</li>
+					<li>metastatic adenocarcinoma of the bladder</li>
+					<li>metastatic urinary cancer</li>
+					<li>metastatic urothelial cancer</li>
+				</ul>
+            </td>
+        </tr>        
+        <tr>
+            <td headers="condition-col">Brain Cancer</td>
+            <td headers="other-name-col">
+            	<ul>
+					<li>malignant neoplasm of the brain</li>
+					<li>any primary cancer with brain (secondary) metastasis</li>
+					<li>astrocytoma</li>
+					<li>anaplastic astrocytoma</li>
+					<li>gioblastoma multiforme</li>
+					<li>malignant glioma</li>
+					<li>anaplastic glioma</li>
+					<li>spongioblastoma multiforme</li>
+				</ul>
+            </td>
+        </tr>    
+        <tr>
+            <td headers="condition-col">Breast Cancer –Metastatic Recurrent</td>
+            <td headers="other-name-col">
+            	<ul>
+					<li>metastatic breast carcinoma/cancer</li>
+					<li>ductal carcinoma of the breast (stage lV)</li>
+					<li>metastatic/recurrent invasive carcinoma/cancer of the breast</li>
+					<li>metastatic lobular carcinoma of the breast</li>
+					<li>metastatic mucinous carcinoma of the breast</li>
+					<li>metastatic mixed type (ductal and lobular) carcinoma of the breast</li>
+					<li>metastatic metaplastic carcinoma of the breast</li>
+					<li>inflammatory carcinoma of the breast</li>
+				</ul>
+            </td>
+        </tr>  
+        <tr>
+            <td headers="condition-col">Cervical Carcinoma</td>
+            <td headers="other-name-col">
+            	<ul>
+					<li>cancer of the cervix/ uterine cervix</li>
+					<li>squamous cell carcinoma of the cervix</li>
+					<li>small cell carcinoma of the cervix</li>
+					<li>adenocarcinoma of the cervix</li>
+					<li>cervical carcinoma</li>					
+				</ul>
+            </td>
+        </tr>  
+        <tr>
+            <td headers="condition-col">Chronic Kidney Disease (CKD)</td>
+            <td headers="other-name-col">
+            	<ul>
+					<li>chronic renal failure</li>
+					<li>chronic renal insufficiency</li>
+					<li>Stage IV or later</li>
+					<li>end stage renal disease (ESRD)</li>
+				</ul>
+            </td>
+        </tr> 
+        <tr>
+            <td headers="condition-col">Chronic Liver Disease</td>
+            <td headers="other-name-col">
+            	<ul>
+					<li>end stage liver disease (ESLD)</li>
+					<li>alcoholic hepatic failure</li>
+					<li>cirrhosis of the liver without mention of alcohol</li>
+					<li>chronic hepatic failure</li>
+					<li>chronic liver failure</li>
+					<li>liver failure</li>
+					<li>primary biliary cirrhosis</li>
+					<li>portal hypertension</li>
+					<li>sequela of chronic liver disease</li>									
+				</ul>
+            </td>
+        </tr> 
+        <tr>
+            <td headers="condition-col">Colorectal Cancer</td>
+            <td headers="other-name-col">
+            	<ul>
+					<li>malignant neoplasm of the colon</li>
+					<li>colon cancer</li>
+					<li>metastatic/recurrent colon cancer</li>
+					<li>adenocarcinoma of the colon/rectum</li>
+					<li>mucinous carcinoma of the colon/rectum </li>
+					<li>cancer of the appendix (see Appendiceal Cancer)</li>
+				</ul>
+            </td>
+        </tr>       
+        <tr>
+            <td headers="condition-col">Endometrial Cancer </td>
+            <td headers="other-name-col">
+            	<ul>
+					<li>cancer of the uterus</li>
+					<li>malignant neoplasm of the uterus</li>
+					<li>cancer of the uterine endometrium</li>
+					<li>endometrioid cell cancer</li>
+					<li>serous cell endometrial cancer</li>
+					<li>squamous cell endometrial cancer</li>
+					<li>clear cell endometrial cancer</li>
+					<li>mucinous endometrial cancer</li>
+					<li>transitional cell endometrial cancer</li>
+					<li>mesonephric endometrial cancer</li>
+					<li>undifferentiated endometrial cancer</li>
+				</ul>
+            </td>
+        </tr>   
+        <tr>
+            <td headers="condition-col">Esophagus Cancer</td>
+            <td headers="other-name-col">
+            	<ul>
+					<li>malignant neoplasm of the esophagus</li>
+					<li>adenocarcinoma of the esophagus or the esophagus/gastric junction</li>
+					<li>squamous cell carcinoma of the esophagus or esophagus/gastric junction</li>
+				</ul>
+            </td>
+        </tr>
+        <tr>
+            <td headers="condition-col">Follicular Lymphoma</td>
+            <td headers="other-name-col">
+            	<ul>
+					<li>nodular follicular lymphoma</li>
+					<li>primary intestinal follicular lymphoma</li>
+					<li>primary cutaneous follicle center lymphoma</li>
+				</ul>
+            </td>
+        </tr>   
+        <tr>
+            <td headers="condition-col">Frontotemporal Dementia (FTD)</td>
+            <td headers="other-name-col">
+            	<ul>
+					<li>frontal lobe dementia</li> 
+					<li>frontal lobe degeneration</li>
+					<li>fronto-temporal lobar degeneration</li>
+					<li>Pick’s disease/Pick complex</li>
+					<li>Wilhelmsen-Lynch disease</li>
+				</ul>
+            </td>
+        </tr> 
+        <tr>
+            <td headers="condition-col">Gallbladder Cancer</td>
+            <td headers="other-name-col"> 
+            	<ul>
+					<li>malignant neoplasm of the gallbladder</li>
+					<li>adenocarcinoma of the gallbladder</li>
+					<li>adenosquamous carcinoma of the gallbladder</li>
+					<li>Klatskin tumour</li>
+					<li>Cancer of the bile ducts</li>
+					<li>cholangiocarcinoma</li>
+					<li>biliary duct/tract cancer and extrahepatic bile ducts</li>
+				</ul>
+            </td>
+        </tr>  
+        <tr>
+            <td headers="condition-col">Huntington Disease</td>
+            <td headers="other-name-col">
+            	<ul>
+					<li>Huntington’s chorea disease</li>
+					<li>chorea disease</li>
+					<li>juvenile Huntington’s disease</li>
+					<li>Westphal variant of Huntington’s disease</li>
+				</ul>
+            </td>
+        </tr>  
+        <tr>
+            <td headers="condition-col">Idiopathic Pulmonary Fibrosis (IPF)</td>
+            <td headers="other-name-col">
+            	<ul>
+					<li>alveolar and parietoalveolar pneumopathy</li>
+					<li>cryptogenic fibrosing alveolitis</li>
+					<li>diffuse fibrosing aleveolitis</li>
+					<li>idiopathic fibrosing aleveolitis</li>
+					<li>idiopathic diffuse interstitial pulmonary fibrosis</li>
+					<li>pulmonary fibrosis</li>
+				</ul>
+            </td>
+        </tr>  
+        <tr>
+            <td headers="condition-col">Kidney Cancer</td>
+            <td headers="other-name-col">
+            	<ul>
+					<li>malignant neoplasm of the kidney and unspecified urinary organs</li>
+					<li>renal cell carcinoma</li>
+					<li>renal cell cancer</li>
+					<li>renal pelvis cancer</li>
+					<li>renal sarcoma</li>
+					<li>clear cell sarcoma of the kidney</li>
+				</ul>
+            </td>
+        </tr>    
+        <tr>
+            <td headers="condition-col">Liver Cancer</td>
+            <td headers="other-name-col">
+            	<ul>
+					<li>malignant neoplasm of the liver and intrahepatic bile ducts</li>
+					<li>adenocarcinoma of the liver</li>
+					<li>hepatocellular carcinoma</li>
+					<li>intra-hepatocellular (liver) cancer</li>
+					<li>intrahepatic bile duct cancer</li>
+				</ul>
+            </td>
+        </tr>          
+        <tr>
+            <td headers="condition-col">Lung Cancer</td>
+            <td headers="other-name-col">
+            	<ul>
+					<li>malignant neoplasm of the trachea, bronchus and  lung</li>
+					<li>carcinoma of the lung</li>
+					<li>bronchogenic carcinoma</li>
+					<li>small/oat cell lung carcinoma</li>
+					<li>non-small cell lung carcinoma</li>
+					<li>squamous cell carcinoma of the lung</li>
+					<li>adenocarcinoma of the lung</li>
+					<li>large cell carcinoma of the lung</li>
+				</ul>
+            </td>
+        </tr> 
+        <tr>
+            <td headers="condition-col">Malignant Melanoma</td>
+            <td headers="other-name-col">
+            	<ul>
+					<li>malignant melanoma of skin</li>
+					<li>cutaneous melanoma</li>
+					<li>metastatic melanoma of the skin</li>
+				</ul>
+            </td>
+        </tr>  
+        <tr>
+            <td headers="condition-col">Malignant Tumours of the Small Intestine</td>
+            <td headers="other-name-col">
+            	<ul>
+					<li>adenocarcinoma/malignant tumours of the duodenum</li>
+					<li>cancer of the small intestine</li>
+					<li>carcinoid tumour</li>
+					<li>malignant carcinoid tumour of the small intestine</li>
+					<li>malignant poorly differentiated neuroendocrine tumour</li>
+				</ul>
+            </td>
+        </tr>  
+        <tr>
+            <td headers="condition-col">Multiple Myeloma</td>
+            <td headers="other-name-col">
+            	<ul>
+					<li>plasma cell myeloma/leukemia</li>
+					<li>immunoproliferative neoplasms</li>
+				</ul>
+            </td>
+        </tr>      
+        <tr>
+            <td headers="condition-col">Muscular Dystrophy (Adult Onset)</td>
+            <td headers="other-name-col">
+            	<ul>
+					<li>distal muscular dystrophy</li>
+					<li>distal myopathies of Laing, Nonaka, and new Finnish</li>
+					<li>Emery-Dreifuss muscular dystrophy</li>
+					<li>facioscapulohumeral muscular dystrophy</li>
+					<li>limb-girdle muscular dystrophy</li>
+					<li>Miyoshi muscular dystrophy</li>
+					<li>myotonic muscular dystrophy</li>
+					<li>oculopharyngeal muscular dystrophy</li>
+				</ul>
+            </td>
+        </tr>    
+        <tr>
+            <td headers="condition-col">Ovarian Cancer</td>
+            <td headers="other-name-col">
+            	<ul>
+					<li>malignant neoplasm of the ovary and other uterine adnexa</li>
+					<li>ovarian epithelial carcinoma</li>
+					<li>epithelial carcinoma of the ovary</li>
+				</ul>
+            </td>
+        </tr>
+        <tr>
+        	<td headers="condition-col">Pancreatic Cancer</td>
+        	<td headers="other-name-col">
+        		<ul>
+					<li>malignant neoplasm of the pancreas</li>
+					<li>adenocarcinoma of the pancreas</li>
+					<li>pancreatic ductal adenocarcinoma</li>
+					<li>exocrine cancer</li>
+				</ul>
+			</td>	
+        </tr>
+        <tr>
+        	<td headers="condition-col">Parkinson’s Disease</td>
+        	<td headers="other-name-col">
+        		<ul>
+					<li>Lewy body disease</li>
+					<li>Parkinson disease dementia (PDD)</li>
+        		</ul>
+        	</td>	
+        </tr>
+		<tr>
+        	<td headers="condition-col">Post-inflammatory Pulmonary Fibrosis</td>
+        	<td headers="other-name-col">
+        		<ul>
+					<li>Interstitial (Non-idiopathic) Pulmonary Fibrosis</li>
+					<li>diffuse parenchymal lung diseases</li>
+					<li>collagen-vascular disease</li>
+					<li>sarcoidosis and hypersensitivity pneumonia or pneumonitis (HSP)</li>
+					<li>Hermansky-Pudiak syndrome</li>
+					<li>lymphangioleiomyomatosis (LAM)</li>
+					<li>pulmonary Langerhans cell histiocytosisis</li>
+					<li>tuberous sclerosis</li>
+				</ul>
+			</td>	
+        </tr>
+		<tr>
+        	<td headers="condition-col">Primary Cerebellar Degeneration</td>
+        	<td headers="other-name-col">
+        		<ul>
+					<li>cerebellar degeneration</li>
+					<li>cerebellar ataxia</li>
+					<li>hereditary ataxia</li>
+					<li>spinocerebellar ataxia (types SCA 1 to 36)</li>
+					<li>episodic ataxia (types EA1 to EA7)</li>
+					<li>ataxia-telangiectasia</li>
+					<li>xeroderma pigmentosum</li>
+					<li>Friedreich’s ataxia</li>
+					<li>Charlevoix-Saguenay ataxia</li>
+					<li>Cockayne syndrome</li>
+					<li>Marinesco-Sjogren syndrome</li>
+					<li>Gerstmann-Straussler-Scheinker syndrome</li>
+					<li>Machado-Joseph disease</li>
+					<li>dentatorubral-pallidoluysian atrophy</li>
+					<li>hereditary spastic paraplegia</li>
+					<li>hypomyelination, hypogonadotropic, hypogonadism and hypodontia syndrome, known as 4H syndrome</li>
+				</ul>
+			</td>	
+        </tr>
+		<tr>
+        	<td headers="condition-col">Progressive Polyneuropathy</td>
+        	<td headers="other-name-col">
+        		<ul>
+					<li>hereditary and idiopathic peripheral neuropathy</li>
+					<li>neuropathic/peroneal muscular atrophy</li>
+					<li>Charcot-Marie-Tooth disease</li>
+					<li>Refsum’s disease</li>
+					<li>chronic relapsing polyneuropathy (CRP)</li>
+					<li>peripheral neuropathy</li>
+				</ul>
+			</td>	
+        </tr>
+		<tr>
+        	<td headers="condition-col">Quadriplegia/Quadriparesis</td>
+        	<td headers="other-name-col">
+        		<ul>
+					<li>tetraplegia</li>
+					<li>complete cervical spinal cord injury</li>
+					<li>tetraparesis</li>
+        		</ul>
+        	</td>	
+        </tr>
+		<tr>
+        	<td headers="condition-col">Schizophrenia</td>
+        	<td headers="other-name-col">
+        		<ul>
+					<li>paranoid or residual type schizophrenia</li>
+					<li>schizophrenia spectrum and other psychotic disorders</li>
+				</ul>
+			</td>	
+        </tr>
+		<tr>
+        	<td headers="condition-col">Stomach Cancer</td>
+        	<td headers="other-name-col">
+        		<ul>
+					<li>malignant neoplasm of the stomach</li>
+					<li>carcinoma of the stomach</li>
+					<li>adenocarcinoma of the stomach</li>
+					<li>gastric adenocarcinoma</li>
+				</ul>
+			</td>	
+        </tr>
+		<tr>
+			<td headers="condition-col">Thymus Cancer</td>
+        	<td headers="other-name-col">
+        		<ul>
+					<li>malignant neoplasm of the thymus</li>
+					<li>cancer of the thymus</li>
+					<li>thymic cancer</li>
+					<li>thymic carcinoma</li>
+        		</ul>
+        	</td>
+		</tr>
+		<tr>
+			<td headers="condition-col">Uterine Sarcoma</td>
+			<td headers="other-name-col">
+				<ul>
+					<li>malignant neoplasm of uterus</li>
+					<li>sarcoma of the uterus</li>
+					<li>uterine leimyosarcoma</li>
+					<li>Mullerian tumours</li>
+					<li>uterine carcinosarcoma</li>
+					<li>endometrial stomal sarcoma</li>
+					<li>cancer of the body of the uterus</li>		
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td headers="condition-col">Vascular Dementia</td>
+			<td headers="other-name-col">
+				<ul>
+					<li>arteriosclerotic dementia</li>
+					<li>single or multi-infarct dementia</li>
+					<li>lacunar, hemorrhagic, cortical or subcortical lesions</li>
+					<li>mixed dementia</li>
+				</ul>
+			</td>
+		</tr>
+    </tbody>
+</table>
+
+<hr/>
+
+<h2 id="L5">Medical report</h2>
+
+<p>If you are currently receiving a disability benefit from an insurance company or a provincial/territorial agency:</p>
+    
+<ul class="dashed">
+    <li>You can ask them to send us your most current medical report(s).</li>
+</ul>
+
+<p>If you are <strong>not</strong> currently receiving a disability benefit from an insurance company or a provincial/territorial agency:</p>
+
+<ul class="dashed">        
+    <li>Complete Sections 1 and 2 of the Medical Report for Canada Pension Plan Disability Benefits (ISP2519)</li>
+    
+    <li>Write/type your Social Insurance Number at the top of each page.</li>
+    
+    <li>Sign all areas that require your signature</li>
+    
+    <li>Ask your doctor or nurse practitioner to complete Section 3 to 9 and ask them to mail it to the nearest Service Canada office.</li>
+</ul>
+
+<p>
+    <strong>DO NO WAIT</strong> for your doctor or nurse practitioner to complete the Medical report before transmitting your complete application 
+    to Service Canada. The date Service Canada receives your application could affect when your benefit starts.
+</p>
+
+<p>
+    Service Canada will help you pay for the cost of the Medical report by paying up to $85.00 directly to your doctor or nurse practitioner. 
+    Any money owing over this amount is your responsibility.
+</p>
+
+<hr/>
+
+<h2 id="L6">If you are eligible for more than one CPP benefit</h2>
+
+<p>
+    If you are eligible for both a CPP survivor's benefit and a disability pension, they will be combined into a single monthly payment. However, 
+    the combined amount you receive cannot be greater than the maximum CPP disability pension, which is more than the maximum CPP survivor's benefit. 
+</p>
+
+<hr/>
+
+<h2 id="L7">Post-Retirement Disability Benefit</h2>
+
+<p>
+    The Post-Retirement Disability Benefit is intended for Canada Pension Plan retirement 
+    pension beneficiaries found to be disabled but not eligible for a disability pension due to being CPP retirement pension beneficiaries 
+    for more than 15 months. Applicants who have made sufficient contributions may be eligible for this benefit in addition to their retirement pension. 
+</p>
+
+<p>The Post-Retirement Disability Benefit is paid in addition to the CPP retirement pension you are receiving, until the age of 65.</p>
+
+<hr/>
+
+<h2 id="L8">Benefits for children under age 25</h2>
+
+<p>The Canada Pension Plan (CPP) children's benefits provide monthly payments to the dependent children of a disabled CPP contributors.</p>
+    
+<p>The children must be either:</p>
+
+<ul class="dashed">
+    <li>Under age 18; or</li>
+    
+    <li>Under age 25 and in attendance at a recognized school or university</li>
+</ul>
+
+<p>A maximum of two children's benefit can be paid to a child.</p>
+
+<hr/>
+
+<h3 id="L8.1">Eligibility</h3>
+
+<p>To be eligible, the child must be:</p>
+
+<ul class="dashed">
+    <li>The natural child of the contributor</li>
+    
+    <li>A child adopted legally or in fact by the contributor while under the age of 21</li>     
+</ul>
+
+<p>A child may be eligible if the parent or guardian:</p>
+
+<ul class="dashed">
+    <li>Is receiving a CPP disability benefit (either the disability or the post-retirement disability benefit)</li>   
+</ul>
+
+<hr/>
+
+<h3 id="L8.2">When to apply</h3>
+
+<p>Dependent children, or their parent or guardian, should complete an application when any of the following happens:</p>
+
+<ul class="dashed">
+    <li>a parent or guardian has applied for a disability benefit (you do not have to wait for the benefit to be approved before applying);</li>
+    
+    <li>when a child comes into the decision-making responsibility and parenting time of a parent or guardian who receives a disability benefit;</li>
+    
+    <li>a parent or guardian dies.</li>     
+</ul>
+
+<p>You should apply as soon as possible. If you delay, you might lose benefits. The Canada Pension Plan can only make back payments for up to 12 months.</p>
+
+<p><strong>Note:</strong> Effective January 1, 2025, if you, or anyone else, were receiving Disabled Contributor’s Children’s Benefits, those benefits may continue after the contributor reaches age 65.</p>
+
+<hr/>
+
+<h2 id="L9">Recover application in progress</h2>
+
+<p>
+    The disability benefit application is long and you may not be able to complete it in one session. You can save your partially completed application 
+    at any time and return to it within 90 days. Service Canada will not process your application until it is complete and you have submitted it. 
+    If you have an application in progress and you decide to start a new application, your application in progress will be deleted.
+</p>
+
+<hr/>
+
+<h2 id="L10">Apply for My CPP Disability Benefits</h2>
+
+<p>You must indicate if you have been informed by your physician or nurse practitioner if your medical condition is considered a terminal illness.</p>
+
+<p>If your medical condition is not considered a terminal illness you must indicate if you have been diagnosed with one of the 41 medical conditions.</p>
+
+<hr/>
+
+<h2 id="L11">Information about you</h2>
+
+<h3 id="L11.1">Change of address</h3>
+
+<p>People living in Canada may view and change their address, telephone number and payment destination online.</p>
+
+<p><strong>Exceptions:</strong></p>
+
+<ul>
+    <li>
+        If you have an address outside Canada, you can only view your information online. It is not yet possible to change foreign addresses or direct deposit 
+        online. Sorry for the inconvenience. Please <a href="http://www.servicecanada.gc.ca/cgi-bin/op-so/msca/redirection.asp?linkmsca=56e.html" target="_blank" rel="noreferrer noopener">contact us</a> 
+        to update your information. We are working to soon offer the possibility to update your personal information online.
+    </li>
+    
+    <li>
+        If you receive children's benefits and are between the ages of 18 and 25, you may not be able to access this online service due to system limitations. 
+        If you wish to make changes, please <a href="http://www.servicecanada.gc.ca/cgi-bin/op-so/msca/redirection.asp?linkmsca=56e.html" target="_blank" rel="noreferrer noopener">contact us</a>.
+    </li>
+    
+    <li>
+        If you receive a Quebec Pension Plan benefit, please contact 
+        <a href="http://www.servicecanada.gc.ca/cgi-bin/op-so/msca/redirection.asp?linkmsca=29e.html" target="_blank" rel="noreferrer noopener">Retraite Québec</a> for more information.
+    </li>    
+</ul>
+
+<hr/>
+
+<h3 id="L11.2">Postal code format</h3>
+
+<p>
+    Please enter the postal code of your <strong>new</strong> address. Postal codes are six characters long and are <strong>always</strong>
+    in letter-number format, such as: A1A 1A1, (where A = any letter and 1 = any number). If you have trouble, check that the letters "O" 
+    or lowercase "L" are not substituted for zeros or ones, or vice-versa. If you do not know your postal code you can look it up 
+    on the <a href="http://www.servicecanada.gc.ca/cgi-bin/op-so/msca/redirection.asp?linkmsca=103e.html" target="_blank" rel="noreferrer noopener">Canada Post</a>
+    Web site. At this time, postal codes can only be updated online for Canadian addresses. 
+    Please <a href="http://www.servicecanada.gc.ca/cgi-bin/op-so/msca/redirection.asp?linkmsca=56e.html" target="_blank" rel="noreferrer noopener">contact us</a> 
+    for changes to addresses outside Canada.
+</p>
+
+<h4>Mandatory fields</h4>
+
+<p>
+    Fields marked with an asterisk (*) must be completed. Some fields may be filled in based on the postal code you entered. 
+    To change the information, select either "Enter a different postal code" or "Enter a different address for this postal code".
+</p>
+
+<h4>Number suffix</h4>
+
+<p>
+    Some addresses include a suffix, for example: 123 ½ Main St., where ½ is the suffix and not an apartment number. 
+    If you do not have a number suffix, please leave this field blank.
+</p>
+
+<h4>Delivery mode</h4>
+
+<p>If you have mail delivery to your door, please select "None" from the pull-down menu.</p>
+
+<p>Otherwise, select from the following methods of mail delivery:</p>
+
+<ul>
+    <li><strong>MR - mobile route</strong> is a variation on door-to-door delivery, when the street is served by a delivery route service.</li>
+    
+    <li><strong>PO Box - post office box</strong></li>
+    
+    <li><strong>RR - rural route</strong> is a delivery route service from a delivery installation.</li>
+    
+    <li><strong>GD - general delivery</strong> is mail held at a post office until it is picked up in person.</li>
+    
+    <li><strong>SS - suburban service</strong> is mail delivered to group mail boxes; usually found near, or on the edge of, urban areas.</li>                
+</ul>
+
+<h4>Address length</h4>
+
+<p>
+    The database where address information is stored allows for a maximum of 30 characters per line, including spaces and punctuation. 
+    If longer, your address must be shortened. Note: Street types such as Blvd (Boulevard) and Ave (Avenue) are part of your address and should not be removed.
+</p>
+
+<h4>Entering a future effective date</h4>
+
+<p>
+    When you select "Change" to enter your new information, you can either accept today's date as shown, or enter an effective date up to 180 days in the future.
+    When choosing a future effective date, you must ensure the date you are choosing is one month greater than the month you are currently in.
+</p>
+
+<p>
+    For example, if you want your January payment to be sent to a new destination, you must have an effective date of no later then December 31.
+</p>
+
+<hr/>
+
+<h3 id="L11.3">Direct deposit</h3>
+
+<p>
+    Direct deposit is the fastest and most convenient, secure and reliable way of receiving your CPP benefits entitlement. 
+    We highly encourage you to choose direct deposit as your preferred payment option. 
+</p>
+
+<p>
+    Should you wish to receive paper cheques on a monthly basis, please cancel your online application, 
+    then complete and submit the <a href="http://www.servicecanada.gc.ca/cgi-bin/op-so/msca/redirection.asp?linkmsca=61e.html" target="_blank" rel="noreferrer noopener">paper application for the CPP Disability benefit</a> to the Department.
+</p>
+
+<p>
+    If your application is approved, your monthly payments will be deposited into your account at your financial institution. 
+    The account must be in your name.  A joint account is also acceptable.
+</p>
+
+<p>
+    In order to enroll for direct deposit banking you must provide the branch financial institution 
+    and account numbers that can be found in a bank book on a bank statement or at the bottom of your cheque.
+</p>
+
+<img src="/sc/msca-mdsc/portal-portail/pro/cppd-rpci/static/cppd/img/cheque-eng.gif" alt="Cheque Sample"/>
+
+<p>
+    <strong>Cheque number: </strong>If you use personalized cheques, the first set of numbers is 
+    your three-digit personal cheque number. Do not enter this number.
+</p>
+
+<p>
+    <strong>Branch number: </strong>The second set of numbers on personalized cheques, 
+    or the first set of numbers on non-personalized cheques, is your five-digit branch number. 
+    Enter this number in the first entry field.
+</p>
+
+<p>
+    <strong>Institution number: </strong>The next set of numbers is your three-digit institution number. 
+    Enter this number in the second entry field.
+</p>
+
+<p>
+    <strong>Account number: </strong>The last set of numbers is your bank account number. 
+    The number of digits varies depending on the financial institution. 
+    Enter your account number in the third entry field.     
+</p>
+
+<hr/>
+
+<h3 id="L11.4">Telephone numbers</h3>
+
+<p>Where you select to add a telephone number, you have the option to include a home, mobile and work number.</p>
+
+<p>A telephone number is mandatory when applying for the CPP disability benefit.</p>
+
+<p>Please enter your new telephone number as three-digit area code, followed by a seven-digit phone number (e.g. 123 456-7890).</p>
+
+<hr/>
+
+<h3 id="L11.5">Marital status</h3>
+
+<p>
+    Marital status is any of several distinct options that describe a person's relationship with a partner. Married, single, divorced, common-law, 
+    living apart for reasons beyond your control and widowed are examples of marital status.
+</p>
+
+<h4>Previous relationship</h4>
+
+<p>
+    The <a href="https://www.canada.ca/en/services/benefits/publicpensions/cpp/contributions.html" target="_blank" rel="noreferrer noopener">CPP contributions</a> you and your spouse or common-law partner made during the time you lived together 
+    can be equally divided after a divorce or separation. This is called credit splitting.
+</p>
+
+<p>
+    Credits can be divided even if one spouse or common-law partner did not make contributions to the CPP. Credit splitting may help you qualify 
+    for benefits and can affect the amount of any current or future benefits under the <a href="https://www.canada.ca/en/services/benefits/publicpensions/cpp.html" target="_blank" rel="noreferrer noopener">CPP program</a> for both you and your former spouse 
+    or common-law partner.
+</p>
+
+<hr/>
+
+<h2 id="L12">Information about your work history</h2>
+
+<p>If you have stopped working completely and the reason is "Other", you must provide the details.</p>
+
+<h3>Living or working in another country</h3>
+
+<p>
+    If Canada has an international social security agreement with the country(ies) you have indicated, we will verify if it will help you qualify 
+    for the CPP disability benefit.
+</p>
+
+<hr/>
+
+<h2 id="L13">Information about your children</h2>
+
+<p>
+    If you do not have your children Social Insurance Number, enter the name and date of birth for each child. 
+    You must also answer all questions for each child.
+</p>
+
+<hr/>
+
+<h2 id="L14">Child rearing provision</h2>
+
+<p>
+    The child rearing provision may help you qualify for or receive a higher Canada Pension Plan benefit amount. The amount of benefits paid under 
+    the Canada Pension Plan is based on how long and how much you contributed to the Plan while you were working, and in some cases, 
+    your age when your benefit begins. Periods of time when you had no or low earnings normally result in a lower benefit amount. 
+    If you were not working or had low earnings while caring for a child under the age of seven, the child rearing provision can be used to exclude 
+    these periods of time form the calculation of your benefit. This may help you qualify for benefits or increase the benefit amount you can receive. 
+</p>
+
+<hr/>
+
+<h2 id="L15">Functional assessment</h2>
+
+<p>
+    We asked you to state the medical condition(s) that prevents you from working regularly. With these questions, we would like you to tell us 
+    how the medical condition(s) affects your ability to work. The answers and additional information you provide will be considered along 
+    with the medical information provided by your doctor, nurse practitioner, insurance company or provincial/territorial agency.  
+</p>
+
+<p>
+    As you are answering the questions, think about all of your physical and mental limitations, regardless of what medical problem is causing them. 
+    Focus on what you can do, not how you feel.
+</p>
+
+<p>Next, think about what it means to be a worker. All jobs area different, but working means you must be able to:</p>
+
+<ul class="dashed">
+    <li>Get hired or create your own job;</li>
+    
+    <li>Get ready for work;</li>
+    
+    <li>Travel to and from work;</li>
+    
+    <li>Deal with co-workers and clients;</li>
+    
+    <li>Deliver a quality product or service; and</li>
+    
+    <li>Follow a work schedule set by your employer and/or client</li>
+</ul>
+
+<p>
+    Then compare your limitations to the demands of work, and provide your rating on the next few pages based on your ability level most days. 
+    Assume you are using your aids such as crutches, cane, artificial limb, splints, braces, wheelchairs, hearing aid, service animal 
+    or adaptive computer equipment.    
+</p>
+
+<P>If you do not have any limitations with the ability being assessed, you can check the box at the top of each question block.</p>
+
+<p>
+    If you have any additional information about your abilities, you can provide the details in the area following each question block. 
+    The following example could help you with the explanation/information you may want to provide in these areas. 
+</p>
+
+<h3>Examples</h3>
+
+<dl class="grouped-dl">
+	<dt>Physical abilities</dt>
+	<dd>
+		It is very difficult for me to remain standing for more than 10 minutes at any given time because of my back pain, 
+		even on my good days (one or two days a week). Up until a year ago, I was able to do this without a problem. 
+		I am most comfortable lying down. Hot baths help, but only briefly.
+	</dd>
+	<dt>Behaviours and emotional abilities</dt>
+	<dd>
+		In the last few months, my depression has got worse. I have a hard time getting myself out of bed most mornings (four to six days a week) 
+		because I feel so down. I find myself crying for no reason and I am often irritable with others. On my good days, 
+		I spend some time with other people, but on my bad days, I cannot get myself to leave my home. 
+		I stopped volunteering for my son's hockey league because it's too hard being around others.
+	</dd>
+	<dt>Communication and thinking abilities</dt>
+	<dd>
+		In the last year, my fibromyalgia has made it very hard to sleep at night. On my good days (one or two days a week), 
+		I am able to sleep up to four hours, but on my bad days, I cannot sleep at all. Medications for pain and sleep leave me drowsy 
+		and "spacey" the next day. Because of this, I have a lot of difficulty organizing my thoughts and finding my words when I talk to others. 
+		I cannot concentrate on what I am supposed to do most of the time. I used to read novels for pleasure, 
+		but now I can't focus my attention for more than couple of pages.
+	</dd>
+	<dt>Other daily abilities</dt>
+	<dd>
+		Starting last year, my fatigue has been overwhelming. I used to constantly be "on the go" running my home-based bookkeeping business, 
+		seeing new clients and driving my kids to sports and other activities. That ended when my condition flared and I had to let go 
+		all my clients because I couldn't keep up. Now, I am unable to finish doing household chores without having 
+		to sit or lie down every half hour. Even washing myself has become too hard. I cannot hold my arms up long enough 
+		to finish washing my hair because I get so tired.
+	</dd>	
+</dl>
+
+<hr/>
+
+<h2 id="L16">Consent to communicate to communicate information to an authorized person</h2>
+
+<p>
+    Personal information about you and the benefits you receive is confidential.  
+    Service Canada must have your consent to communicate with another person about your benefits. 
+</p>
+
+<p>
+    If you receive Canada Pension Plan (CPP) benefits, you may want to consent to:
+</p>
+
+<ul>
+    <li>allowing someone you know to communicate with Service Canada for you;  and</li>
+    
+    <li>allowing Service Canada to give this person information about your income, your CPP payments, and your CPP contributions.</li>
+</ul>
+
+<p>
+    Your consent allows the person to contact Service Canada to report your change of address, but not the mailing address for your cheque.  
+    Also, the person is NOT allowed to:
+</p>
+
+<ul>
+    <li>apply for benefits for you;</li>
+    
+    <li>change the bank account where your cheque is deposited; or</li>
+    
+    <li>request or change federal income tax deductions from your benefits.</li>
+</ul>
+
+<p>
+    If Service Canada records show that a legal representative such as a trustee or someone with power of attorney is authorized to act for you, 
+    we will communicate only with that legal representative.
+</p>
+
+<hr/>
+
+<p>Screen Identifier: SBT K 411</p>
+
+<p>Date modified: 2026-08-14</p>    </div>               
+</section>
+
+<script>
+     function helpPage() {
+         $(document).trigger('open.wb-lbx',[[{src:'#help-page-popup',type:'inline'}]]);     
+     }    
+</script>   
+			<main role="main" property="mainContentOfPage" class="container">
+<br/>
+
+	<h1 property="name" id="wb-cont">Apply for My CPP Disability Benefits – Medical condition</h1>
+	
+
+<div class="alert alert-info">
+	<p>
+		<strong>IMPORTANT: Please read before beginning the application.</strong>
+	</p>
+	<p>
+		You will be asked if you have a terminal illness.  Before answering this question, <strong>review the information carefully.</strong>
+	</p>
+	<p>
+		If you answer "Yes", and you do not meet the criteria for a terminal illness, <strong>it could result in a delay of the processing of your application.</strong>
+	</p>
+</div>	
+	<form id="formId" action="/sc/msca-mdsc/portal-portail/pro/cppd-rpci/terminalIllness?step=step1" method="POST">
+		<input type="hidden" name="token" value="1bc4e38b-7e80-4ea7-80c5-c2e45d87e513"/>
+ 	<input type="hidden" name="_csrf" value="57d74122-53d1-4547-bea4-5268c7c902ae"/>
+
+		<div class="form-group">
+			<div id="wellPanel" class="well">
+				<div id="radioList" class="addMarginBelowControl">
+	<section>
+		<fieldset class="s-radio-list" >
+			<legend class="h5 control-label required" style="float: none; margin: 0;">
+				<span>Has your physician or nurse practitioner informed you that your medical condition is considered a terminal illness?</span>
+				<strong class="required">(required)</strong>
+				
+ 			</legend>
+ 				<p>
+ 					For the purpose of CPP-D, a terminal illness is a disease state that cannot be cured or adequately treated <strong>and is reasonably expected to result in death within six months, as attested by your medical practitioner.</strong>
+ 				</p>
+			<div>
+	<div class="c-radio-list">
+	<span class="c-radio">
+		<label>
+				<input id="hasTerminalIllness" name="hasTerminalIllness" value="1" type="radio"   class="navBtnClick"/>
+			<span class="spacer">
+				<span class="radio-text">
+					Yes
+				</span>
+			</span>
+		</label>
+	</span>
+	<span class="c-radio">
+		<label>
+				<input name="hasTerminalIllness" value="2" type="radio"   class="navBtnClick"/>
+			<span class="spacer">
+				<span class="radio-text">
+					No
+				</span>
+			</span>
+		</label>
+	</span>
+	</div>
+			</div>
+		</fieldset>
+	</section>
+				</div>
+	
+				<div id="noDescription" class="hideDiv terminalIllnessNoDesc">
+	<div class="s-select btnPosition">
+	<div class="c-select">
+		<div class="form-group">
+			<label for="illness" class="control-label ">		<span>Have you been diagnosed with one of the following illness and/or disease?</span>
+		
+		
+</label>
+				<p id="important-note"><strong>If Yes, please select the illness or disease.</strong></p>
+				<p id="note-text"><strong>If you are unsure of the name of your medical condition, please refer to the help screen for other names.</strong></p>
+			<select id="illness" name="illness" class="form-control"  aria-describedby="important-note note-text">
+	<option value="" selected > </option>
+	<option value="52"  >Acute Lymphoblastic Leukemia</option>
+	<option value="158"  >Acute Myeloid Leukemia</option>
+	<option value="53"  >Adrenocortical Cancer</option>
+	<option value="54"  >Alzheimer&#39;s Disease/Early Onset (less than age 60)</option>
+	<option value="55"  >Amyloidosis</option>
+	<option value="56"  >Amyotrophic Lateral Sclerosis (ALS)</option>
+	<option value="57"  >Anal Cancer</option>
+	<option value="157"  >Appendiceal Cancer</option>
+	<option value="159"  >Bladder Cancer (Metastatic, Stage IV)</option>
+	<option value="58"  >Brain Cancer</option>
+	<option value="160"  >Breast Cancer (Metastatic/recurrent)</option>
+	<option value="161"  >Cervical Carcinoma</option>
+	<option value="60"  >Chronic Kidney Disease (CKD)</option>
+	<option value="59"  >Chronic Liver Disease</option>
+	<option value="61"  >Colorectal Cancer</option>
+	<option value="162"  >Endometrial Cancer</option>
+	<option value="62"  >Esophagus Cancer</option>
+	<option value="163"  >Follicular Lymphoma</option>
+	<option value="63"  >Frontotemporal Dementia (FTD)</option>
+	<option value="64"  >Gallbladder Cancer</option>
+	<option value="65"  >Huntington Disease</option>
+	<option value="67"  >Idiopathic Pulmonary Fibrosis (IPF)</option>
+	<option value="68"  >Kidney Cancer</option>
+	<option value="69"  >Liver Cancer</option>
+	<option value="70"  >Lung Cancer</option>
+	<option value="71"  >Malignant Melanoma</option>
+	<option value="72"  >Malignant Tumours of Small Intestine</option>
+	<option value="73"  >Multiple Myeloma</option>
+	<option value="74"  >Muscular Dystrophy (Adult Onset)</option>
+	<option value="75"  >Ovarian Cancer</option>
+	<option value="76"  >Pancreatic Cancer</option>
+	<option value="78"  >Parkinson’s disease</option>
+	<option value="79"  >Post-inflammatory Pulmonary Fibrosis</option>
+	<option value="80"  >Primary Cerebellar Degeneration</option>
+	<option value="66"  >Progressive Polyneuropathy</option>
+	<option value="164"  >Quadriplegia/Quadriparesis</option>
+	<option value="77"  >Schizophrenia</option>
+	<option value="81"  >Stomach Cancer</option>
+	<option value="82"  >Thymus Cancer</option>
+	<option value="165"  >Uterine Sarcoma</option>
+	<option value="83"  >Vascular Dementia</option>
+			</select>
+		</div>
+	</div>
+	</div>
+	 			</div>
+	 		</div> 		
+	<ul class="pager">
+ 			<li class="previous">
+ 				<a class="btn btn-lg btn-default" id="navPrevButton" href="/sc/msca-mdsc/portal-portail/pro/cppd-rpci/before-you-begin" rel="prev">Previous</a>
+ 			</li>
+		<li class="next">
+			<button class="btn btn-lg btn-primary pull-right" id="navNextButton" rel="next" type="submit" data-gc-analytics-customclick="ESDC-EDSC_MSCA-MDSC_CPPD-RPCI:Application - Apply for My CPP Disability Benefits – Medical condition:Next">Next</button>
+		</li>
+	</ul>
+		</div>
+	</form>
+	<section id="logout-warning-message-popup" class="mfp-hide modal-dialog modal-content overlay-def wb-popup-mid">
+	    <header class="modal-header">
+	        <h2 class="modal-title">Sign out</h2>
+	    </header>
+	    <div class="modal-body">
+	        <p tabindex="0">You have clicked to &quot;Sign out&quot;.</p>
+	        <div id="continue">
+		        <p tabindex="0">If you sign out before you have completed a &quot;Step&quot;, you will lose your information for that &quot;Step&quot;. The information from previous step(s) will be saved for 90 days.</p>
+		        <p tabindex="0">Service Canada does not process an application until it is complete and it is submitted.</p>
+			</div>
+			<div id="end">
+		        <p tabindex="0">Select <strong>"Sign out"</strong> to abandon your application and sign out of My Service Canada Account or select <strong>"Continue session"</strong> to return to the CPPD Application.</p>
+	 		</div>
+	    </div>
+	    <div class="modal-footer">
+	   		<a class="btn btn-danger" href="/sc/msca-mdsc/portal-portail/pro/cppd-rpci/logout"><span class="glyphicon glyphicon-log-out"></span>Sign out</a> 
+			<a class="btn btn-primary popup-modal-dismiss" href="/sc/msca-mdsc/portal-portail/pro/cppd-rpci/logout">Continue session</a> 
+		</div>                 
+	</section> 
+
+<div id="def-preFooter">
+	<noscript>
+		
+<div class="row pagedetails">	
+	<div class="datemod col-xs-12 mrgn-tp-lg">
+		<dl id="wb-dtmd">
+							<dt class="pull-left">Screen Identifier:</dt>
+				<dd class="pull-left mrgn-bttm-sm mrgn-lft-sm" property="identifier">
+					SBT K 003
+				</dd>
+			
+			<dt class="pull-left">Date modified:</dt>
+			<dd class="pull-left mrgn-bttm-sm mrgn-lft-sm">
+				<time property="dateModified">2026-08-14</time>
+			</dd>
+		</dl>
+	</div>
+</div>
+	</noscript>
+</div>
+
+<script type="text/javascript">
+	document.getElementById("def-preFooter").outerHTML = wet.builder.preFooter({
+		"cdnEnv": "prod",
+		"dateModified" : "2026-08-14",
+		"showPostContent" : false,
+		"showFeedback" : false,
+		"showShare" : false,
+		"screenIdentifier" : "SBT K 003"
+	});
+		adobeDataLayer.push({ 
+			"page": {
+				"id": "SBT K 003"
+			}
+		});
+</script>
+			</main>
+			
+
+<div id="def-footer">
+	<noscript>
+<footer id="wb-info">
+<h2 class="wb-inv">About this site</h2>
+	<div class="gc-contextual">
+		<div class="container">
+			<nav>
+				<h3>My Service Canada Account</h3>
+				<ul class="list-col-xs-1 list-col-sm-2 list-col-md-3"><li><a href="https://service.canada.ca/en/contact-us">Contact us</a></li></ul>
+			</nav>
+		</div>
+	</div>
+	<div class="gc-sub-footer">
+		<div class="container d-flex align-items-center">
+			<nav>
+				<h3 class="wb-inv">Government of Canada</h3>
+				<ul>
+					<li><a href="https://srv136.services.gc.ca/ecas-seca/rascl/SCL/TC.aspx?mode=ReadOnly&amp;lang=eng#terms">Terms and conditions</a></li>
+					<li><a href="https://srv136.services.gc.ca/ecas-seca/rascl/SCL/TC.aspx?mode=ReadOnly&amp;lang=eng#privacy">Privacy</a></li>
+				</ul>
+			</nav>
+			<div class="wtrmrk align-self-end">
+				<img src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/wet-boew/assets/wmms-blk.svg" alt="Symbol of the Government of Canada"/>
+			</div>
+		</div>
+	</div>
+</footer>	</noscript>
+</div>
+
+<script type="text/javascript">
+	document.getElementById("def-footer").outerHTML = wet.builder.appFooter({
+		"cdnEnv": "prod",
+		"footerSections": {
+	        "title":"My Service Canada Account",
+	        "links": [{
+	            "href": "https://service.canada.ca/en/contact-us",
+	            "text": "Contact us"
+	        }]
+    	},
+		"termsLink" : [{
+			"href" : "https://srv136.services.gc.ca/ecas-seca/rascl/SCL/TC.aspx?mode=ReadOnly&amp;lang=eng#terms"
+		}],
+		"privacyLink" : [{
+			"href" : "https://srv136.services.gc.ca/ecas-seca/rascl/SCL/TC.aspx?mode=ReadOnly&amp;lang=eng#privacy"
+		}]
+	});
+</script>
+	
+<script type="text/javascript">
+	document.write(wet.builder.refFooter({
+		"cdnEnv": "prod",
+		"isApplication" : true,
+		"exitSecureSite" : {
+        	"exitScript" : true,
+        	"displayModal" : true,
+        	"exitURL": "/sc/msca-mdsc/portal-portail/pro/cppd-rpci/logout",
+				"exitMsg": "The information you have requested is located outside our secure environment.  Select &quot;Yes&quot; to access the information.  When you are ready to return, select the back button from your browser to return to your session. Be aware that if you do not return to your session within 15 minutes, you will be logged out as a security measure.",
+        		"cancelMsg": "Cancel",
+        		"yesMsg" : "Yes",
+        	"exitDomains": "service.canada.ca",
+        	"displayModalForNewWindow" : false,
+    	},
+			"webAnalytics": true
+
+	}));
+</script>
+
+
+<span class="wb-sessto" data-wb-sessto='{
+	"inactivity" : 900000,
+	"logouturl" : "/sc/msca-mdsc/portal-portail/pro/cppd-rpci/logout",
+	"method" : "GET",
+	"reactionTime" : 300000,
+	"refreshCallbackUrl" : "/sc/msca-mdsc/portal-portail/pro/cppd-rpci/session-refresh",
+	"refreshOnClick" : false
+}'></span>
+
+				<script>$(function() {
+
+	var yesVal="1";
+	var noVal="2";
+	
+	$("[name='hasTerminalIllness']").on("click", function() {
+		handleCheckedHasTerminalIllness($(this).val());
+	});
+
+	function handleCheckedHasTerminalIllness(checkedValue) {
+		if (checkedValue === yesVal) {
+			$(".hideDiv").hide();
+		}
+		else if (checkedValue === noVal) {
+			$(".hideDiv").show();
+		}
+	}
+ 
+	handleCheckedHasTerminalIllness($("[name='hasStoppedWorking']:checked").val());
+
+      $(document).on('click','.helpDiv', function()
+    {
+    	$('.helpTextMessage').toggle();
+    }); 
+    
+		$('#formId').submit(function(e) {
+			$('#navNextButton').attr('disabled','disabled');
+		});
+   
+});
+	$(document).ready(function() {
+		$('#cdts-signout-btn').on('click', function(e) {
+			e.preventDefault();
+			$(document).trigger('open.wb-lbx',[[{src:'#logout-warning-message-popup',type:'inline'}]]);
+		});
+	}); 
+</script>
+			
+				<script src="/sc/msca-mdsc/portal-portail/pro/cppd-rpci/static/cppd/js/cppd.js"></script>
+			<link href="/sc/msca-mdsc/portal-portail/pro/cppd-rpci/static/cppd/css/cppd.css" media="screen" rel="stylesheet"/>
+			<link href="/sc/msca-mdsc/portal-portail/pro/cppd-rpci/static/cppd/css/filepond.css" media="screen" rel="stylesheet"/>	
+			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+		</body>
+	</html>
+
+<script>/**
+ * CPPD JavaScript Template
+ */
+$(document).ready(function() { 
+	const errorFields = [];
+	var name = "ESDC-EDSC_MSCA-MDSC_CPPD-RPCI:"
+			
+	if(false) {
+	}
+	if(false) {
+		var errorFieldsJoined = errorFields.join("|");
+		var fullName = name.concat(errorFieldsJoined);
+		
+		adobeDataLayer.push({ 
+			"event": "error",
+			"error": {
+				"name": fullName
+			}
+		});
+	}
+});</script>

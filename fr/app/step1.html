@@ -1,0 +1,2432 @@
+<!doctype html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="fr" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="fr" dir="ltr"><!--<![endif]-->
+    <head>
+        <meta charset="utf-8" />
+
+        <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+     wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+
+        <title>Régime de pensions du Canada – Présenter ma demande de pension de retraite du RPC</title>
+
+        <meta content="width=device-width,initial-scale=1" name="viewport" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script
+            type="text/javascript"
+            src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/cdts/compiled/soyutils.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/cdts/compiled/wet-fr.js"
+        ></script>
+
+        <noscript>
+            <!--[if gte IE 9 | !IE]><!-->
+            <link
+                href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/assets/favicon.ico"
+                rel="icon"
+                type="image/x-icon"
+            />
+            <link
+                rel="stylesheet"
+                href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/css/theme.min.css"
+            />
+            <link
+                rel="stylesheet"
+                href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/cdts/cdtsfixes.css"
+            />
+            <link
+                rel="stylesheet"
+                href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/cdts/cdtsapps.css"
+            />
+            <link
+                rel="stylesheet"
+                href="https://srv136.services.gc.ca/sc/msca-mdsc/portal-portail/pro/cppd-rpci/static/cppd/css/cppd.css"
+            />
+            <link
+                rel="stylesheet"
+                href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/wet-boew/css/theme.min.css"
+            />
+
+            <!--<![endif]-->
+
+            <!--[if lt IE 9]>
+                <link
+                    rel="shortcut icon"
+                    href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/assets/favicon.ico"
+                />
+            <![endif]-->
+
+            <link
+                rel="stylesheet"
+                href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/css/noscript.min.css"
+            />
+            <link
+                rel="stylesheet"
+                href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/cdts/cdtsnoscript.css"
+            />
+        </noscript>
+
+        <script type="text/javascript">
+            document.write(
+                wet.builder.refTop({
+                    cdnEnv: "prod",
+                    isApplication: true,
+                    secure: true,
+                    webAnalytics: [
+                        {
+                            custom: "",
+                        },
+                    ],
+                })
+            );
+        </script>
+        <style>
+            /*!
+             * cppd CSS Template
+             * Copyright (C) 2018 Employment and Social Development Canada - Canada.ca
+             *
+             * Vendor resources:
+             *
+             *   WETv4 by Treasury Board of Canada Secretariat - Canada.ca
+             *   License - https://wet-boew.github.io/v4.0-ci/License-en.html
+             */
+
+            /** Custom styled radio lists */
+            .c-radio
+            :has
+
+            (
+            input
+            :checked
+
+            )
+            {
+            z-index
+            :
+
+            1
+            }
+            .c-radio:focus-within {
+            	z-index: 1
+            }
+
+            .c-radio-list {
+            	font-size: 0px; /* font size 0 to get rid of small gaps */
+            	display: flex;
+            }
+
+            .c-radio-list .c-radio:focus-within {
+            	outline: 2px dotted;
+            }
+
+            .c-radio-list .form-group {
+            	margin: 0;
+            	left: 0;
+            	top: 0;
+            }
+
+            .c-radio-list [type=radio] {
+            	position: absolute;
+            	opacity: 0;
+            	width: 0;
+            	height: 0;
+            }
+
+            .c-radio-list [type=radio]+.spacer {
+            	min-height: 45px;
+            	height: 100%;
+            	background-color: #ffffff;
+            	left: 0;
+            	-webkit-border-radius: inherit;
+            	-moz-border-radius: inherit;
+            	border-radius: inherit;
+            	display: flex;
+            	align-items: center;
+            }
+
+            .c-radio-list [type=radio]:checked+.spacer {
+            	background-color: #335075;
+            }
+
+            .c-radio-list .radio-text {
+            	font-size: 16px;
+            	padding: 0px 20px 0px 20px;
+            }
+
+            .c-radio-list [type=radio]:checked+.spacer>.radio-text {
+            	color: #ffffff;
+            }
+
+            .c-radio-list fieldset {
+            	padding: 0;
+            }
+
+            .c-radio-list legend {
+            	position: absolute;
+            	width: 1px;
+            	height: 1px;
+            	margin: -1px;
+            	padding: 0;
+            	overflow: hidden;
+            	clip: rect(0, 0, 0, 0);
+            	border: 0;
+            }
+
+            .c-radio-list .c-radio {
+            	border: 1px solid #cccccc;
+            	border-right-width: 0px;
+            	display: flex;
+            }
+
+            .c-radio-list .c-radio:first-child {
+            	-webkit-border-radius: 20px;
+            	-moz-border-radius: 20px;
+            	border-radius: 20px;
+            	-webkit-border-top-right-radius: 0px;
+            	-moz-border-radius-topright: 0px;
+            	border-top-right-radius: 0px;
+            	-webkit-border-bottom-right-radius: 0px;
+            	-moz-border-radius-bottomright: 0px;
+            	border-bottom-right-radius: 0px;
+            }
+
+            .c-radio-list .c-radio:last-child {
+            	-webkit-border-radius: 20px;
+            	-moz-border-radius: 20px;
+            	border-radius: 20px;
+            	-webkit-border-top-left-radius: 0px;
+            	-moz-border-radius-topleft: 0px;
+            	border-top-left-radius: 0px;
+            	-webkit-border-bottom-left-radius: 0px;
+            	-moz-border-radius-bottomleft: 0px;
+            	border-bottom-left-radius: 0px;
+            	border-right-width: 1px;
+            }
+
+            .c-radio-list label {
+            	-webkit-border-radius: inherit;
+            	-moz-border-radius: inherit;
+            	border-radius: inherit;
+            	margin: 0;
+            }
+
+            .s-text-input-group-error {
+            	background-color: #f3e9e8;
+            	border: 1px solid #d3080c;
+            	-webkit-border-radius: 4px;
+            	-moz-border-radius: 4px;
+            	border-radius: 4px;
+            	margin-bottom: 15px;
+            	padding: 10px;
+            }
+
+            header .error-block {
+            	color: #d3080c;
+            	display: block;
+            	font-size: 90%;
+            	font-style: normal;
+            	font-weight: 700;
+            }
+
+            label  .error-block {
+            	color: #d3080c;
+            	display: block;
+            	font-size: 90%;
+            	font-style: normal;
+            	font-weight: 700;
+            	padding: 3px;
+            }
+
+            legend .error-block {
+            	color: #d3080c;
+            	display: block;
+            	font-size: 90%;
+            	font-style: normal;
+            	font-weight: 700;
+            	padding: 3px;
+            }
+
+            .panel-body .error-block {
+            	color: #d3080c;
+            	display: block;
+            	font-size: 90%;
+            	font-style: normal;
+            	font-weight: 700;
+            	padding: 3px;
+            	margin-bottom: 10px;
+            }
+
+            .error-panel {
+            	border: 1px solid #d3080c;
+            	-webkit-border-radius: 4px;
+            	-moz-border-radius: 4px;
+            	border-radius: 4px;
+            }
+
+            .s-radio-list-error .panel {
+            	background-color: #f3e9e8;
+            	border: 1px solid #d3080c;
+            	-webkit-border-radius: 4px;
+            	-moz-border-radius: 4px;
+            	border-radius: 4px;
+            }
+
+            /** Circles **/
+            .progress-icon {
+
+            }
+
+            .circle-large {
+            	display: inline-block;
+            	-webkit-border-radius: 50%;
+            	-moz-border-radius: 50%;
+            	border-radius: 50%;
+            	height: 50px;
+            	width: 50px;
+            	vertical-align: top;
+            }
+
+            .circle-large-superscript {
+            	-webkit-border-radius: 50%;
+            	-moz-border-radius: 50%;
+            	border-radius: 50%;
+            	height: 28px;
+            	width: 28px;
+            	position: absolute;
+            	left: 32px;
+            	bottom: 32px;
+            	z-index: 10;
+            }
+
+            .check-large-superscript {
+            	position: absolute;
+            	left: 32px;
+            	bottom: 32px;
+            	z-index: 11;
+            }
+
+            .circle-small {
+            	display: inline-block;
+            	-webkit-border-radius: 50%;
+            	-moz-border-radius: 50%;
+            	border-radius: 50%;
+            	height: 40px;
+            	width: 40px;
+            	vertical-align: top;
+            }
+
+            .circle-small-superscript {
+            	-webkit-border-radius: 50%;
+            	-moz-border-radius: 50%;
+            	border-radius: 50%;
+            	height: 18px;
+            	width: 18px;
+            	position: absolute;
+            	left: 27px;
+            	bottom: 27px;
+            	z-index: 10;
+            }
+
+            .check-small-superscript {
+            	position: absolute;
+            	left: 27px;
+            	bottom: 27px;
+            	z-index: 11;
+            }
+
+            .circle-active {
+            	background-color: #2572B4;
+            	-webkit-box-shadow: inset 0px 0px 0px 2px rgba(109, 210, 218, 1);
+            	-moz-box-shadow: inset 0px 0px 0px 2px rgba(109, 210, 218, 1);
+            	box-shadow: inset 0px 0px 0px 2px rgba(109, 210, 218, 1);
+            }
+
+            .circle-complete {
+            	background-color: #278400;
+            	-webkit-box-shadow: inset 0px 0px 0px 2px rgba(216, 238, 202, 1);
+            	-moz-box-shadow: inset 0px 0px 0px 2px rgba(216, 238, 202, 1);
+            	box-shadow: inset 0px 0px 0px 2px rgba(216, 238, 202, 1);
+            }
+
+            .circle-incomplete {
+            	background-color: #ffffff;
+            	-webkit-box-shadow: inset 0px 0px 0px 2px rgba(215, 215, 215, 1);
+            	-moz-box-shadow: inset 0px 0px 0px 2px rgba(215, 215, 215, 1);
+            	box-shadow: inset 0px 0px 0px 2px rgba(215, 215, 215, 1);
+            }
+
+            .circle-hiddenOrDisabled {
+            	background-color: #ffffff;
+            	-webkit-box-shadow: inset 0px 0px 0px 2px rgba(215, 215, 215, 1);
+            	-moz-box-shadow: inset 0px 0px 0px 2px rgba(215, 215, 215, 1);
+            	box-shadow: inset 0px 0px 0px 2px rgba(215, 215, 215, 1);
+            }
+
+            .progress-text {
+            	position: relative;
+            	top: 50%;
+            	left: 50%;
+            	transform: translate(-50%, -50%);
+            	text-align: center;
+            	font-family: Arial, sans-serif;
+            	font-weight: bold;
+            	font-style: normal;
+            	font-size: 18px;
+            }
+
+            .progress-text .active {
+            	color: #ffffff;
+            }
+
+            .progress-text .complete {
+            	color: #ffffff;
+            }
+
+            .progress-text .incomplete {
+            	color: #000000;
+            }
+
+            a.main-menu-step-link {
+            	text-decoration: none;
+            }
+
+            .main-menu-step {
+            	margin-right: 23%;
+            	padding-bottom: 1%;
+            	padding-top: 1%;
+            	border-top: 1px solid #D3D3D3;
+            	white-space: normal;
+            	display: -webkit-box;
+            	display: -webkit-flex;
+            	display: -moz-box;
+            	display: -ms-flexbox;
+            	display: flex;
+            	-webkit-box-align: center;
+            	-webkit-align-items: center;
+            	-moz-box-align: center;
+            	-ms-flex-align: center;
+            	align-items: center;
+            	-webkit-flex-wrap: wrap;
+            	-ms-flex-wrap: wrap;
+            	flex-wrap: wrap;
+            }
+
+            .main-menu-step div {
+            	display: inline-block;
+            	vertical-align: middle;
+            }
+
+            .main-menu-step:last-child {
+            	border-bottom: 1px solid #D3D3D3;
+            }
+
+            .main-menu-step>:last-child {
+            	text-align: right;
+            	-webkit-box-flex: 1;
+            	-webkit-flex-grow: 1;
+            	-moz-box-flex: 1;
+            	-ms-flex-positive: 1;
+            	flex-grow: 1;
+            }
+
+            .main-menu-step-subsection {
+            	text-align: left;
+            	margin-left: 5%;
+            	padding-bottom: 1%;
+            	padding-top: 2%;
+            	border-top: 1px solid #D3D3D3;
+            	display: -webkit-box;
+            	display: -webkit-flex;
+            	display: -moz-box;
+            	display: -ms-flexbox;
+            	display: flex;
+            	-webkit-box-align: center;
+            	-webkit-align-items: center;
+            	-moz-box-align: center;
+            	-ms-flex-align: center;
+            	align-items: center;
+            	-webkit-flex-wrap: nowrap;
+            	-ms-flex-wrap: nowrap;
+            	flex-wrap: nowrap;
+            }
+
+            .main-menu-step-subsection>:last-child {
+            	text-align: right;
+            	-webkit-box-flex: 1;
+            	-webkit-flex-grow: 1;
+            	-moz-box-flex: 1;
+            	-ms-flex-positive: 1;
+            	flex-grow: 1;
+            }
+
+            .sectionProgressStatus {
+            	margin-left: 10px
+            }
+
+            .sectionTitle {
+            	margin-left: 10px;
+            	font-size: 20px
+            }
+
+            .continueButton {
+            	font-family: 'sans-serif';
+            	font-weight: 700;
+            }
+
+            .progress-icon2 {
+            	margin-right: 10px;
+            }
+
+            hr {
+            	height: 2px;
+            	color: #000000;
+            	/*border:solid 1px;*/
+            }
+
+            .hideDiv {
+            	display: none;
+            }
+
+            .helpTextMessage {
+            	display: none;
+            }
+
+            .disableButton {
+            	display: none;
+            }
+
+            }
+            .displayBlock {
+            	display: block;
+            }
+
+            .maritalStatus {
+            	margin-left: 10px;
+            }
+
+            .btn-new-app {
+            	margin-left: 30px
+            }
+
+            .btn-add-illness {
+            	margin-left: 5px
+            }
+
+            .terminalIllnessNoDesc {
+            	margin-bottom: 10px;
+            }
+            /** Used for toggling hidden sections.  The initial state will be hidden. This css is used in conjunction with toggleSection**/
+            .indentToggleSection {
+            	margin-left: 30px;
+            	display: none;
+            }
+            /** Used to add margin starting from the left side **/
+            .indentSection {
+            	margin-left: 30px;
+            }
+
+            .radioBtnFormat {
+            	margin: 40px 40px 40px 40px;
+            }
+            /** Align more than one form controls in the same row **/
+            .alignInOneRow {
+            	display: inline-block;
+            }
+            /** Used to display the left arrow on the previous button **/
+            .glyphiconArrowLeft {
+            	margin-right: 5px;
+            }
+            /** Used to display the left arrow on the next or submit or start application button **/
+            .glyphiconArrowRight {
+            	margin-left: 5px;
+            }
+            /** Used to add space below form controls **/
+            .addMarginBelowControl {
+            	margin-bottom: 10px;
+            }
+            /** Used to add space above form controls **/
+            .addMarginAboveControl {
+            	margin-top: 10px;
+            }
+            /** Used to add margin starting from the right side **/
+            .indentSectionRight {
+            	margin-right: 30px;
+            }
+
+            .subSectionProgressStatus {
+            	display: none;
+            	margin-top: 10px;
+            	width: 100%;
+            }
+
+            .addMarginAbove {
+            	margin-top: 100px
+            }
+
+            .panel-body dl * {
+            	border-top: none;
+            	padding: 0;
+            }
+
+            .textarea-div textarea {
+            	resize: none;
+            }
+
+            .text-limit {
+            	float: left;
+            	margin-top: -38px;
+            	margin-left: 11px;
+            	opacity: 0.8;
+            	font-size: 14px;
+            }
+
+            .lbx-modal, .lbx-modal:hover {
+            	text-decoration: none
+            }
+
+            input[type="date"].form-control, input[type="datetime-local"].form-control,
+            	input[type="month"].form-control, input[type="time"].form-control {
+            	line-height: 24px;
+            }
+
+            .removeTextBoxBorder {
+            	background-color: transparent;
+            	border: 0px solid;
+            }
+
+            #helpPageMedicalConditionTable th {
+            	background: #D3D3D3;
+            }
+
+            #medical-conditions-col-group {
+            	text-align: center;
+            }
+
+            ul.dashed {
+            	list-style-type: none;
+            }
+
+            ul.dashed>li::before {
+            	content: "- ";
+            	margin-left: -10px;
+            }
+
+            .vertical-centered {
+            	vertical-align: middle;
+            }
+
+            dl.grouped-dl dt {
+            	margin-bottom: 0;
+            	padding: 5px;
+            	padding-bottom: 0;
+            	border: solid 0 #ccc;
+            	border-width: 1px;
+            	border-bottom: 0;
+            }
+
+            dl.grouped-dl dd {
+            	border: solid 0 #ccc;
+            	border-width: 1px;
+            	border-top: 0;
+            	padding: 5px;
+            	padding-top: 0;
+            }
+
+            /***
+             *
+             * progress stepper styles
+             *
+             ***/
+            ol.steps {
+            	counter-reset: step;
+            	display: -webkit-box;
+            	display: -ms-flexbox;
+            	display: flex;
+            	position: relative;
+            	font-family: Arial;
+            	font-size: 16px;
+            	line-height: 1.25;
+            	margin: auto;
+            	padding: 0;
+            	overflow: hidden;
+            	text-align: center;
+            }
+
+            ol.steps li {
+            	list-style-type: none;
+            	-webkit-box-flex: 1;
+            	-ms-flex: 1;
+            	flex: 1;
+            	position: relative;
+            	padding: 0 5px;
+            }
+
+            ol.steps li:before {
+            	display: block;
+            	content: counter(step);
+            	counter-increment: step;
+            	background-color: #fff;
+            	color: #000;
+            	width: 50px;
+            	height: 50px;
+            	line-height: 50px;
+            	-webkit-border-radius: 25px;
+            	-moz-border-radius: 25px;
+            	border-radius: 25px;
+            	margin: 0 auto 10px auto;
+            	border: 2px solid #d7d7d7;
+            	font-weight: bold;
+            }
+
+            ol.steps li:first-child:after {
+            	content: none;
+            }
+
+            ol.steps li:after {
+            	content: "";
+            	width: 100%;
+            	height: 4px;
+            	background-color: #d7d7d7;
+            	position: absolute;
+            	left: -50%;
+            	top: 24px;
+            	z-index: -1;
+            }
+
+            ol.steps li.active {
+            	font-weight: bold;
+            }
+
+            ol.steps li.complete { /* placeholder */
+
+            }
+
+            ol.steps li.incomplete {
+            	color: #6f6f6f;
+            }
+
+            ol.steps li.active:before {
+            	background-color: #2572B4;
+            	color: #fff;
+            	border-color: #6dd2da;
+            }
+
+            ol.steps li.complete:before {
+            	content: "\2714"; /* unicode checkmark */
+            	background-color: #278400;
+            	color: #fff;
+            	border-color: #d8eeca;
+            }
+
+            ol.steps li.incomplete:before { /* placeholder */
+
+            }
+
+            @media ( max-width : 992px) {
+            	ol.steps {
+            		display: -webkit-box;
+            		display: -ms-flexbox;
+            		display: flex;
+            		-webkit-box-orient: vertical;
+            		-webkit-box-direction: normal;
+            		-ms-flex-direction: column;
+            		flex-direction: column;
+            	}
+            	ol.steps li {
+            		list-style-type: none;
+            		-webkit-box-flex: 1;
+            		-ms-flex: 1;
+            		flex: 1;
+            		position: relative;
+            		text-align: left;
+            		display: -webkit-inline-box;
+            		display: -ms-inline-flexbox;
+            		display: inline-flex;
+            		-webkit-box-align: center;
+            		-ms-flex-align: center;
+            		align-items: center;
+            	}
+            	ol.steps li:before {
+            		display: inline-block;
+            		float: none;
+            		width: 35px;
+            		height: 35px;
+            		line-height: 35px;
+            		margin: 5px 10px;
+            		text-align: center;
+            		-ms-flex-negative: 0;
+            		flex-shrink: 0;
+            	}
+            	ol.steps li:first-child:after {
+            		content: none;
+            	}
+            	ol.steps li:after {
+            		content: "";
+            		width: 4px;
+            		height: 100%;
+            		background-color: #d7d7d7;
+            		position: absolute;
+            		left: 30px;
+            		top: -50%;
+            		z-index: -1;
+            	}
+            	ol.steps li.active:before {
+            		background-color: #2572B4;
+            		color: #fff;
+            		border-color: #6dd2da;
+            	}
+            }
+
+            /* hack to target IE10+ */
+            @media ( max-width : 992px) and screen and (-ms-high-contrast: active) , (
+            		max-width : 992px) and (-ms-high-contrast: none) {
+            	/* IE flex implementation does not like not having a height with column flex */
+            	ol.steps {
+            		height: 100vh;
+            	}
+
+            	/* These custom radio styled prevent overflow, upholding the letter of the law, but does so by horribly violating the spirit of the law */
+            	/* I am confident few people will use IE on a resolution small enough that it matters (note: it still looks the same on resolution >~700px) */
+            	.c-radio-list {
+            		flex-wrap: wrap;
+            		/* TODO: Make this look nicer on 400-700px resolutions */
+            	}
+            	.c-radio-list [type=radio]+.spacer {
+            		display: table;
+            	}
+            	.c-radio-list .radio-text {
+            		display: table-cell;
+            		vertical-align: middle;
+            	}
+            }
+
+            /***
+             *
+             * END progress stepper styles
+             *
+             ***/
+
+            /** increase filepond font size by 75% */
+            .filepond--root {
+            	font-size: 1.75rem;
+            }
+
+            /** ensure that the upload button does not appear for upload files*/
+            .filepond--action-process-item {
+            	visibility: hidden;
+            }
+
+            .filepond--file-info .filepond--file-info-sub {
+            	opacity: 0.8;
+            }
+
+            label[id^=filepond--drop-label] .help-block {
+            	color: #6b6b6b;
+            }
+
+            li[data-filepond-item-state='busy'] .filepond--file-status-sub, li[data-filepond-item-state='processing'] .filepond--file-status-sub
+            	{
+            	display: none;
+            }
+
+            li[data-filepond-item-state='load-invalid'] .filepond--file-status-sub {
+            	opacity: 0.98;
+            }
+
+            .filepond--file-action-button.filepond--action-retry-item-processing,
+            	.filepond--file-action-button.filepond--action-abort-item-processing {
+            	display: none;
+            }
+            /** warning message */
+            .label-text-input-warning {
+            	color: #d3080c;
+            	font-weight: bold;
+            	margin-bottom: 15px;
+            	padding: 10px;
+            }
+
+            dl.review-grouped-dl dd:after {
+            	content: '';
+            	display: block;
+            }
+
+            dl.review-grouped-dl dd {
+            	margin-left: 5px;
+            	display: inline;
+            	font-weight: bold;
+            }
+
+            dl.review-grouped-dl dt {
+            	min-width: 50px;
+            	display: inline;
+            	font-weight: normal;
+            }
+
+            span.section-glyphicon {
+            	font-size: 12px;
+            }
+
+            .span-tag-no-wrap {
+            	white-space: nowrap;
+            }
+
+            .span-tag-new-line {
+            	display: block;
+            	padding-top: 10px;
+            }
+
+            .focusWidth {
+            	padding: 2px;
+            }
+
+            strong.required{
+            	color:#d3080c;
+            	font-weight: bold;
+            }
+
+            #certification .fa-asterisk::before {
+            	font-weight: 700;
+            	color: #d3080c
+            }
+
+            #certification span.required {
+            	font-weight: 700;
+            	color: #d3080c
+            }
+        </style>
+        <meta
+            property="dcterms:title"
+            content="Régime de pensions du Canada – Présenter ma demande de pension de retraite du RPC"
+        />
+        <meta property="dcterms:language" content="fra" />
+        <meta property="dcterms:creator" content="Employment and Social Development Canada" />
+        <meta property="dcterms:service" content="ESDC-EDSC_MSCA-MDSC_CPPD-RPCI" />
+        <meta property="dcterms:accessRights" content="1" />
+    </head>
+
+    <body vocab="http://schema.org/" typeof="WebPage">
+        <div id="def-top">
+            <noscript>
+                <ul id="wb-tphp">
+                    <li class="wb-slc"><a class="wb-sl" href="#wb-cont">Passer au contenu principal</a></li>
+                    <li class="wb-slc visible-sm visible-md visible-lg">
+                        <a class="wb-sl" href="#wb-info">Passer à « À propos de cette application Web »</a>
+                    </li>
+                    <li class="wb-slc">
+                        <a class="wb-sl" rel="alternate" href="?wbdisable=true">Passer à la version HTML simplifiée</a>
+                    </li>
+                </ul>
+
+                <header role="banner">
+                    <div id="wb-bnr" class="container">
+                        <div class="row">
+                            <div class="brand col-xs-8 col-sm-9 col-md-6">
+                                <a href="https://www.canada.ca/en.html">
+                                    <object
+                                        type="image/svg+xml"
+                                        tabindex="-1"
+                                        data="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/assets/sig-blk-fr.svg"
+                                    ></object>
+                                    <span class="wb-inv">
+                                        <span> Gouvernement du Canada </span> <span>/</span> <span lang="en"> Government of Canada </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <section id="wb-lng" class="text-right col-xs-3 col-sm-4 col-md-6">
+                                <h2 class="wb-inv">Sélection de la langue</h2>
+                                <ul class="list-inline margin-bottom-none">
+                                    <li>
+                                        <a href="../../app/step1.html" lang="en">Anglais</a>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                    <nav role="navigation" id="wb-bc" property="breadcrumb">
+                        <h2>Vous êtes ici :</h2>
+                        <div class="container">
+                            <div class="row">
+                                <ol class="breadcrumb">
+                                    <li>
+                                        <a
+                                            href="https://srv136.services.gc.ca/sc/msca-mdsc/portal-portail/pro/home-accueil"
+                                        >
+                                            Accueil
+                                        </a>
+                                    </li>
+                                    <ul>
+                                        <li><span>Présenter ma demande de pension de retraite du RPC</span></li>
+                                    </ul>
+                                </ol>
+                            </div>
+                        </div>
+                    </nav>
+                </header>
+            </noscript>
+        </div>
+
+        <script type="text/javascript">
+            document.getElementById("def-top").outerHTML = wet.builder.appTop({
+                appName: [
+                    {
+                        text: "Mon dossier Service Canada",
+                        href: "https://srv136.services.gc.ca/sc/msca-mdsc/portal-portail/pro/home-accueil",
+                    },
+                ],
+                cdnEnv: "prod",
+                lngLinks: [
+                    {
+                        lang: "en",
+                        text: "English",
+                        href: "../../app/step1.html",
+                    },
+                ],
+                breadcrumbs: [
+                    {
+                        title: "Mon dossier Service Canada",
+                        href: "../index.html",
+                    },
+                    {
+                        title: "Régime de pensions du Canada",
+                        href: "../index.html",
+                    },
+                    { title: "Présenter ma demande de pension de retraite du RPC" },
+                ],
+                search: false,
+                signOut: [
+                    {
+                        href: "/sc/msca-mdsc/portal-portail/pro/cppd-rpci/logout",
+                    },
+                ],
+                siteMenu: false,
+                showPreContent: false,
+            });
+        </script>
+
+        <section id="wb-so">
+            <h2 class="wb-inv">Informations sur l'application</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 text-left">
+                        <button
+                            id="help-button"
+                            name="help-page"
+                            type="button"
+                            class="btn btn-default"
+                            onclick="helpPage()"
+                        >
+                            Aide
+                        </button>
+                    </div>
+                    <div class="col-md-10 text-right">
+                        <span class="mrgn-rght-md vertical-centered">
+                            Connecté en tant que
+                            <span class="wb-so-uname"><strong>ALEX TREMBLAY</strong></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="help-page-popup" class="mfp-hide modal-dialog modal-content overlay-def wb-popup-mid">
+            <header class="modal-header">
+                <h2 class="modal-title">Aide – Ma pension de retraite du RPC</h2>
+            </header>
+            <div class="modal-body">
+<p><em>Cette page renferme de l’information générale au sujet de la pension de retraite du Régime de pensions du Canada (RPC). En cas de différence entre le contenu de cette page et le Régime de pensions du Canada (loi), la loi a toujours préséance.</em></p>
+<ul>
+<li><a href="#CPPR">À partir de quand voulez-vous recevoir votre pension?</a>
+<ul>
+<li><a href="#CPPR1">Décider quand toucher votre pension de retraite</a></li>
+<li><a href="#CPPR2">Prestation après-retraite du Régime de pensions du Canada</a></li>
+</ul>
+</li>
+<li><a href="#CPPR3">Preuve de naissance</a></li>
+<li><a href="#CPPR4">Dépôt direct</a></li>
+<li><a href="#CPPR5">Feuillets de renseignements fiscaux</a></li>
+<li><a href="#CPPR6">Retenues volontaires de l’impôt federal</a></li>
+<li><a href="#CPPR7">Prestations d’autre pays</a></li>
+<li><a href="#CPPR8">Consentement à communiquer des renseignements à une personne autorisée</a></li>
+<li><a href="#CPPR9">Clause pour élever des enfants</a></li>
+<li><a href="#CPPR10">Dans l’impossibilité de faire votre demande</a></li>
+</ul>
+<section>
+<h3 id="CPPR" class="h2">À partir de quand voulez-vous recevoir votre pension?</h3>
+<p>Vous pouvez commencer à recevoir votre pension de retraite dès le premier mois suivant votre 60e anniversaire, jusqu’au mois précédant votre 70e anniversaire.</p>
+<p>Vous devez faire la demande au moins un mois avant la date à laquelle vous souhaitez commencer à recevoir votre pension de retraite. Le paiement de la pension commencera un mois après la date indiquée sur votre demande, si nous recevons la demande à temps.</p>
+<section>
+<h4 class="h3">Pension réduite : de 60 à 65 ans</h4>
+<p>Si vous décidez de commencer à recevoir des prestations de retraite avant d’avoir 65 ans, votre pension de retraite sera <strong>réduite</strong> d’un certain pourcentage jusqu’à votre décès. Ce pourcentage est déterminé par le nombre de mois qui séparent la date à laquelle vous faites la demande et votre 65e anniversaire.</p>
+<p>Le <strong>pourcentage de réduction</strong> est basé uniquement sur l’année au cours de laquelle vous commencez à recevoir une pension, et il demeurera toujours le même.</p>
+<p>Votre pension pourrait augmenter chaque année en fonction des variations de l’Indice des prix à la consommation.</p>
+</section>
+<section>
+<h4 class="h3">Pension complète : à l’âge de 65 ans</h4>
+<p>Si vous commencez à recevoir votre pension à l’<strong>âge de 65 ans</strong>, vous recevrez le <strong>plein</strong> montant auquel vous avez droit, en fonction de vos gains et de vos cotisations. Vous commencerez à recevoir votre pension le mois suivant votre 65e anniversaire.</p>
+</section>
+<section>
+<h4 class="h3">Pension majorée après l’âge de 65 ans</h4>
+<p>Vous pouvez repousser votre pension de retraite jusqu’à ce que vous ayez 70 ans. Si vous décidez de la repousser, votre prestation sera <strong>augmentée</strong> d’un certain pourcentage. Ce pourcentage est basé sur le nombre de mois qui séparent votre 65e anniversaire et la date à laquelle vous faites la demande. <strong>Il n’y a pas davantage financier à repousser la pension au-delà de 70 ans.</strong></p>
+</section>
+<section>
+<h4 id="CPPR1" class="h3">Décider quand toucher votre pension de retraite</h4>
+<p>C’est vous qui décidez quand vous commencerez à recevoir une pension de retraite du RPC. Votre décision dépendra de votre situation. Vous devez prendre en considération les points suivants:</p>
+<ul>
+<li>le montant et la durée des cotisations au RPC;</li>
+<li>tout autre revenu de retraite;</li>
+<li>si vous participez à un régime de retraite offert par votre employeur (vérifiez auprès de votre employeur si ce régime sera touché par votre pension du RPC);</li>
+<li>si vous travaillerez ou non après l’âge de 60 ans;</li>
+<li>votre état de santé actuel et vos antécédents médicaux familiaux;</li>
+<li>vos projets de retraite.</li>
+</ul>
+<p>Pour obtenir des renseignements sur les pensions publiques du Canada ou de l’aide afin d’évaluer vos besoins en matière de revenu de retraite, vous pouvez utiliser la <a href="https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc/calculatrice-revenu-retraite.html" aria-label="calculatrice du revenu de retraite canadienne, externe" rel="external">calculatrice du revenu de retraite canadienne<span class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true" title="externe"></span></a>.</p>
+</section>
+<section>
+<h4 id="CPPR2" class="h3">Prestation après-retraite du Régime de pension du Canada</h4>
+<p>Si vous êtes âgés de 60 à 70 ans et occupez un emploi ou retournez travailler au Canada (sauf au Québec) tout en recevant une pension de retraite du Régime de pensions du Canada ou du Régime des rentes du Québec, vous pourriez être admissible à une pension après-retraite.</p>
+<p>La prestation d’après-retraite vous permettra d’augmenter votre revenu de retraite même si vous touchez déjà le montant maximum de la pension de retraite du Régime de pensions du Canada. Il s’agit d’une prestation mensuelle garantie dont le montant augmentera en fonction de la hausse du coût de la vie et qui vous sera versée jusqu’à votre décès.</p>
+<p>Vous n’avez pas à faire de demande pour recevoir la prestation après-retraite. Si vous y avez droit, elle vous sera versée automatiquement.</p>
+<p>Pour chaque année au cours de laquelle vous versez une cotisation valide au Régime de pensions du Canada tout en touchant votre pension de retraite, vous devenez admissible à une nouvelle prestation après-retraite à compter de janvier de l’année suivante. Comme pour la pension de retraite du Régime de pensions du Canada, le montant de la prestation après-retraite varie en fonction de vos gains, du montant de vos cotisations au Régime au cours de l’année précédente et de votre âge au moment de la date de prise d’effet de la prestation après-retraite.</p>
+<p>Toute nouvelle prestation après-retraite sera combinée aux prestations après-retraite antérieures et ajoutée à toute autre prestation du Régime de pensions du Canada à laquelle vous avez droit.</p>
+<p>Si vous travaillez durant l’année au cours de laquelle vous commencez à recevoir votre pension de retraite, nous déterminerons la portion des cotisations qui s’applique à la pension de retraite et celle qui s’applique, le cas échéant, à la prestation après-retraite.</p>
+<p>Si vous avez moins de 65 ans, que vous travaillez et que vous recevez une pension de retraite du RPC, votre employeur et vous devez cotiser à la prestation après-retraite. Si vous êtes travailleur autonome, vous devez faire une cotisation équivalant à la part de l’employeur et à celle de l’employé.</p>
+<p>Si vous êtes âgé de 65 ans et plus, vous avez le choix de cotiser ou non. Pour en savoir plus, communiquer avec l’Agence du revenu du Canada. À partir de 70 ans, vous ne pouvez plus faire de cotisations.</p>
+<p>Les cotisations applicables à la prestation après-retraite ne donnent pas droit à d’autres prestations du Régime de pensions du Canada, et elles n’augmentent pas le montant de ces prestations. De plus, la prestation après-retraite ne peut pas être partagée avec un ancien époux (partage des crédits de pension) ni avec un époux actuel (partage de la pension).</p>
+<p>Pour obtenir d’autres renseignements au sujet de la prestation après-retraite, veuillez consulter le site Web de <a href="http://www.servicecanada.gc.ca/cgi-bin/op-so/msca/redirection.asp?linkmsca=101f.html&amp;newWindow=true" aria-label="Canada.gc.ca., externe" rel="external">Canada.gc.ca.<span class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true" title="externe"></span></a>.</p>
+<p>Si vous travaillez au Québec pendant que vous recevez une pension de retraite du Régime de pensions du Canada ou du Régime des rentes du Québec, vous pouvez communiquer avec <a href="https://www.retraitequebec.gouv.qc.ca/fr/Pages/accueil.aspx" aria-label="Retraite Québec, externe" rel="external">Retraite Québec<span class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true" title="externe"></span></a> pour en apprendre davantage sur les cotisations au Supplément à la rente de retraite (Québec).</p>
+</section>
+</section>
+<section>
+<h3 id="CPPR3" class="h2">Preuve de naissance</h3>
+<p>Vous n’avez pas besoin de fournir une preuve de naissance avec votre demande. Toutefois, le Régime de pensions du Canada a le droit de demander une preuve de naissance en tout temps, sil le juge nécessaire.</p>
+</section>
+<section>
+<h3 id="CPPR4" class="h2">Dépôt direct</h3>
+<p>Le dépôt direct est le moyen le plus rapide, le plus sécuritaire et le plus fiable de recevoir vos prestations du RPC. Presque tous les bénéficiaires du RPC reçoivent leurs prestations par dépôt direct.</p>
+<p>Si votre demande est approuvée, vos paiements mensuels seront déposés dans votre compte à votre institution financière. Le compte doit être en votre nom. Un compte conjoint est également acceptable.</p>
+<p>Afin de vous inscrire au dépôt direct, vous devez fournir le numéro de la succursale (transit), le numéro de l’institution et le numéro de compte. Ces renseignements se trouvent dans votre livret bancaire, sur un relevé bancaire ou au bas de vos chèques personnalisés.</p>
+<section class="alert alert-info">
+<h4>Remarque :</h4>
+<p>Si vous désirez recevoir un chèque mensuel, veuillez annuler votre demande en ligne. Vous devez ensuite remplir un formulaire de <a href="https://www.canada.ca/fr/services/prestations/pensionspubliques/rpc.html" aria-label="Demande de pension de retraite du RPC, externe" rel="external">Demande de pension de retraite du RPC<span class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true" title="externe"></span></a> et l’envoyer à Service Canada.</p>
+</section>
+<div class="mrgn-bttm-lg"><img src="../../assets/cheque-sample-fr.jpg" class="img-responsive" alt="Image d’un spécimen de chèque"></div>
+<p><strong>Numéro de chèque :</strong> La première série de chiffres sur vos chèques personnalisés constitue votre numéro de chèque personnel, composé de trois chiffres. N’inscrivez pas ce numéro.</p>
+<p><strong>Numéro de succursale :</strong> La deuxième série de chiffres sur vos chèques personnalisés ou la première série de chiffres sur vos chèques non personnalisés constitue votre numéro de succursale, composé de cinq chiffres. Inscrivez ce numéro dans le premier champ.</p>
+<p><strong>Numéro d’institution :</strong> La prochaine série de chiffres constitue votre numéro d’institution, composé de trois chiffres. Inscrivez ce numéro dans le deuxième champ.</p>
+<p><strong>Numéro de compte :</strong> La dernière série de chiffres constitue votre numéro de compte bancaire. Le nombre de chiffres varie d’une institution financière à l’autre. Inscrivez ce numéro dans le troisième champ.</p>
+</section>
+<section>
+<h3 id="CPPR5" class="h2">Feuillets de renseignements fiscaux</h3>
+<p>Si vous demandez à recevoir vos feuillets de renseignements fiscaux en ligne, vous pourrez y accéder en ligne chaque année, au début de février. Vous <strong>ne recevrez pas</strong> d’avis lorsqu’ils seront disponibles.</p>
+<p>À tout moment, si vous préférez recevoir vos feuillets de renseignements fiscaux par la poste, vous pouvez ajuster vos options d’expéditions de vos feuillets de renseignements fiscaux dans MSCA.</p>
+</section>
+<section>
+<h3 id="CPPR6" class="h2">Retenues volontaires de l’impôt fédéral</h3>
+<p>Votre pension de retraite du RPC est considérée comme un revenu et elle est imposable.</p>
+<p>Vous pouvez demander que Service Canada retienne l’impôt fédéral sur votre pension et vos prestations mensuelles. La retenue peut être indiquée en dollars ou en pourcentage de la prestation totale.</p>
+<p>Si vous choisissez d’indiquer un montant en dollars ($), le chiffre dont contenir une virgule décimale, et le montant avec les cents, par exemple, 75,00 $.</p>
+<p>Si vous indiquez un pourcentage, il ne doit pas dépasser 100. <strong>Remarque</strong> si vous choisissez d’indiquer un pourcentage, la retenue s’appliquera au montant mensuel total versé en prestations du RPC et de la SV.</p>
+<p>Service Canada continuera d’effectuer la retenue de l’impôt fédéral de vos paiements tant et aussi longtemps que vous recevrez ces prestations, à moins que vous en décidiez autrement Vous pouvez mettre un terme à la retenue ou changer le montant en choisissant « Retenue volontaire d’impôt fédéral pour le RPC et la SV » dans Mon dossier Service Canada.</p>
+</section>
+<section>
+<h3 id="CPPR7" class="h2">Prestations d’autre pays</h3>
+<p>Si vous avez vécu ou travaillé au Canada et dans un autre pays, ou si vous êtes le survivant d’une personne qui a vécu ou travaillé au Canada et dans un autre pays, vous pourriez être admissible à une pension ou à d’autres prestations du Canada et/ou de l’autre pays en vertu d’un accord sur la sécurité sociale. Pour plus amples renseignements, veuillez consulter la page des <a href="http://www.servicecanada.gc.ca/cgi-bin/op-so/msca/redirection.asp?linkmsca=7f.html" aria-label="Prestations internationales, externe" rel="external">Prestations internationales<span class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true" title="externe"></span></a>.</p>
+</section>
+<section>
+<h3 id="CPPR8" class="h2">Consentement à communiquer des renseignements à une personne autorisée</h3>
+<p>Vous pouvez nommer une personne (par exemple, votre époux, un membre de votre famille, un ami ou votre comptable) qui communiquera en votre nom avec Service Canada au sujet de vos prestations du RPC.</p>
+<p>La personne que vous autorisez peut communiquer avec Service Canada au sujet de votre retenu, de vos paiements du RPC et de vos cotisations au RPC. Ils peuvent communiquer avec Service Canada pour signaler votre changement d’adresse et de numéro de téléphone.</p>
+<p>La personne n’est PAS autorisée à :</p>
+<ul>
+<li>accédez à Mon dossier Service Canada (MDSC) en votre nom;</li>
+<li>présenter une demande de prestations pour vous;</li>
+<li>changer le compte de banque dans lequel vos chèques sont déposés;</li>
+<li>demander ou modifier la retenue volontaire d’impôt fédéral sur vos prestations.</li>
+</ul>
+<p>Votre consentement demeurera valide jusqu’à ce que vous l’annuliez. Vous pouvez changer, arrêter ou ajouter d’autres personnes autorisées à tout moment dans MSCA.</p>
+<p>Si les dossiers de Service Canada indiquent qu’un représentant légal, tel qu’un fiduciaire ou une personne ayant une procuration, est autorisé à agir en votre nom, nous communiquerons uniquement avec ce représentant légal.</p>
+</section>
+<section>
+<h3 id="CPPR9" class="h2">Clause pour élever des enfants</h3>
+<p>Si vous vous êtes absenté du travail ou avez moins travaillé pour vous occuper de vos jeunes enfants, vous pourriez être en mesure de faire augmenter le montant de votre pension du RPC et d’autres prestations du RPC grâce à la clause pour élever des enfants.</p>
+<p>Pour ajouter des enfants à l’aide de ce service en ligne, toutes les conditions suivantes doivent être entièrement remplies :</p>
+<ul>
+<li>vous devez avoir été le principal responsable des soins de l’enfant pendant toute la période allant de sa naissance à l’âge de sept ans;</li>
+<li>vous devez avoir reçu des allocations familiales ou avoir été admissible à l’Allocation canadienne pour enfants (même si vous ne l’avez pas reçue) pendant toute la période, de la naissance à l’âge de sept ans;</li>
+<li>l’enfant doit avoir vécu au Canada pendant toute la période allant de sa naissance à l’âge de sept ans; et;</li>
+<li>vous devez avoir le numéro d’assurance sociale et la date de naissance de l’enfant.</li>
+</ul>
+<p>Si l’une de ces conditions n’est pas entièrement remplie, vous ne pouvez pas utiliser ce service pour demander la clause pour élever des enfants. Si vous répondez partiellement à chacune des conditions, vous pouvez quand même présenter une demande en remplissant le <a href="https://catalogue.servicecanada.gc.ca/apps/EForms/pdf/fr/ISP-1640A.pdf" aria-label="formulaire Clause pour élever des enfants, Adobe Format de document portable, externe" rel="external">formulaire Clause pour élever des enfants<span class="fa-solid fa-file-pdf" aria-hidden="true" title="Adobe PDF"></span><span class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true" title="externe"></span></a>, Régime de pensions du Canada et en nous le faisant parvenir par la poste.</p>
+</section>
+<section>
+<h3 id="CPPR10" class="h2">Dans l’impossibilité de faire votre demande</h3>
+<p>Si, en raison d’un problème médical, vous n’avez pu présenter une demande plus tôt ou encore vous n’avez pu demander à quelqu’un de le faire en votre nom, veuillez <a href="https://www.canada.ca/fr/emploi-developpement-social/ministere/coordonnees.html" aria-label="communiquer avec nous, externe" rel="external">communiquer avec nous<span class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true" title="externe"></span></a> pour obtenir le formulaire Déclaration dincapacité. Retournez-nous le formulaire dûment rempli. Si vous répondez aux critères d’admissibilité, vous pourriez demander que la date de début des prestations soit modifiée pour indiquer une date antérieure.</p>
+</section>  
+            </div>
+        </section>
+
+        <script>
+            function helpPage() {
+                $(document).trigger("open.wb-lbx", [[{ src: "#help-page-popup", type: "inline" }]]);
+            }
+        </script>
+        <main role="main" property="mainContentOfPage" class="container">
+            <br />
+
+            <h1 property="name" id="wb-cont">Étape 1 de 3 – Présenter ma demande de pension de retraite du RPC</h1>
+
+            <div class="alert alert-info">
+                <p>Les champs marqués d’un astérisque (<span class="text-danger">*</span>) doivent être remplis.</p>
+            </div>
+            <div id="error-alert" class="alert alert-danger" tabindex="-1" style="display: none;">
+                <div class="lead">
+                    <span> Veuillez corriger l'erreur suivante : </span>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#error1">
+                            <strong>Erreur 1 :</strong>
+                            <span>Vous devez ajouter votre Impôt fédéral volontaire. (erreur B105)</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <form
+                id="formId"
+                action="./step2.html"
+                method="POST"
+            >
+
+                <div class="form-group">
+                    <section id="DOBcheck">
+						<div class="row">
+							<div class="col-sm-7">
+								<section class="panel panel-info">
+									<header class="panel-heading">
+										<h3 class="panel-title"><span class="text-danger" aria-hidden="true">* </span>Est-ce votre date de naissance affichée exacte? <span class="text-danger">(obligatoire)</span></h3>
+									</header>
+									<div class="panel-body">
+										<p>Service Canada dispose actuellement des renseignements suivants dans votre dossier.</p>
+										<p>1966-10-01</p>
+											<div class="c-radio-list">
+											<span class="c-radio">
+												<label>
+														<input id="hasTerminalIllness" name="DOBcorrect" value="1" type="radio" class="navBtnClick">
+													<span class="spacer">
+														<span class="radio-text">
+															Oui
+														</span>
+													</span>
+												</label>
+											</span>
+											<span class="c-radio">
+												<label>
+														<input name="DOBcorrect" value="2" type="radio" class="navBtnClick">
+													<span class="spacer">
+														<span class="radio-text">
+															Non
+														</span>
+													</span>
+												</label>
+											</span>
+											</div>
+										<div id="DOBno" class="mrgn-tp-md" style="display: none;">
+											<div class="label-danger">	
+												<div class="alert alert-danger">
+													<p>Toute personne qui fournit des renseignements faux ou trompeurs, ou omet de fournir des renseignements dans sa demande de pension du RPC pourrait être assujettie à des pénalités. Des intérêts sont également imposés sur les pénalités et les trop-payés faisant l’objet d’une pénalité.</p>
+													<p>Vous pouvez également corriger des renseignements inexacts ou incomplets ou fournir des renseignements importants qui n’ont pas encore été communiqués à Service Canada.</p>
+													<p>Si votre date de naissance affichée n’est pas exacte, prière de contacter <a href="#" aria-label="Service Canada, externe" rel="external">Service Canada<span class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true" title="externe"></span></a>.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+							</div>
+						</div>
+					</section>
+					</div>
+					<section id="DOByes" style="display: none;">
+						<section id="pensionstart">
+							<div class="row">
+								<div class="col-sm-7">
+									<section class="panel panel-info">
+										<header class="panel-heading">
+											<h3 class="panel-title"><span class="text-danger" aria-hidden="true">* </span>Quand voulez-vous que votre pension commence? <span class="text-danger">(obligatoire)</span></h3>
+										</header>
+										<div class="panel-body">
+										<select id="startdate" class="form-control">
+											<option value="0">Choisissez une option</option>
+											<option value="1">Novembre 2026</option>
+											<option value="2">Décembre 2026</option>
+											<option value="3">Janvier 2027</option>
+											<option value="4">Février 2027</option>
+											<option value="5">Mars 2027</option>
+											<option value="6">Avril 2027</option>
+											<option value="7">Mai 2027</option>
+											<option value="8">Juin 2027</option>
+											<option value="9">Juillet 2027</option>
+											<option value="19">Août 2027</option>
+											<option value="11">Septembre 2027</option>
+											<option value="12">Octobre 2027</option>
+										</select>
+										</div>
+									</section>
+								</div>
+							</div>
+						</section>
+						<section id="langpref">
+							<div class="row">
+								<div class="col-sm-7">
+									<section class="panel panel-info">
+										<header class="panel-heading">
+											<h3 class="panel-title"><span class="text-danger" aria-hidden="true">* </span>Voulez-vous que Service Canada communique avec vous en français ou en anglais? <span class="text-danger">(obligatoire)</span></h3>
+										</header>
+										<div class="panel-body">
+											<div class="c-radio-list">
+												<span class="c-radio">
+													<label>
+															<input name="langcorrect"  type="radio" class="navBtnClick">
+														<span class="spacer">
+															<span class="radio-text">
+																Anglais
+															</span>
+														</span>
+													</label>
+												</span>
+												<span class="c-radio">
+													<label>
+															<input name="langcorrect" type="radio" class="navBtnClick">
+														<span class="spacer">
+															<span class="radio-text">
+																Français
+															</span>
+														</span>
+													</label>
+												</span>
+											</div>
+										</div>	
+									</section>								
+								</div>
+							</div>
+						</section>						
+						<section id="taxslips">
+							<div class="row">
+								<div class="col-sm-7">
+									<section class="panel panel-info">
+										<header class="panel-heading">
+											<h3 class="panel-title"><span class="text-danger" aria-hidden="true">* </span>Comment voulez-vous recevoir vos feuillets de renseignements fiscaux (T4A, NR4)? <span class="text-danger">(obligatoire)</span></h3>
+										</header>
+										<div class="panel-body">
+											<div class="c-radio-list">
+												<span class="c-radio">
+													<label>
+															<input name="Slipscorrect"  type="radio" class="navBtnClick">
+														<span class="spacer">
+															<span class="radio-text">
+																Par la poste
+															</span>
+														</span>
+													</label>
+												</span>
+												<span class="c-radio">
+													<label>
+															<input name="Slipscorrect" type="radio" class="navBtnClick">
+														<span class="spacer">
+															<span class="radio-text">
+																En ligne
+															</span>
+														</span>
+													</label>
+												</span>
+											</div>
+										</div>	
+									</section>								
+								</div>
+							</div>
+						</section>
+						<section id="fvtd">
+							<div class="row">
+								<div class="col-sm-7">
+									<section class="panel panel-info">
+										<header class="panel-heading">
+											<h3 class="panel-title"><span class="text-danger" aria-hidden="true">* </span>Voulez-vous que Service Canada déduise une retenue volontaire d’impôt fédéral de vos prestations mensuelles? <span class="text-danger">(obligatoire)</span></h3>
+										</header>
+										<div class="panel-body" id="FVTDconfirmed" style="display: none;">
+											<p>Une retenue volontaire d’impôt fédéral de (15%) sera déduite de votre paiement mensuel du RPC.</p>
+										</div>
+										<div class="panel-body" id="FVTDquestion">
+											<span id="error1" class="error-block" style="display: none;">
+												<em class="fa fa-exclamation-triangle" aria-hidden="true"></em>
+												Vous devez ajouter votre Impôt fédéral volontaire. (erreur B105)
+											</span>
+											<p>Votre pension du Régime de pensions du Canada est un revenu imposable.</p>
+											<div class="c-radio-list">
+												<span class="c-radio">
+													<label>
+															<input  name="FVTDcheck" value="1" type="radio" class="navBtnClick">
+														<span class="spacer">
+															<span class="radio-text">
+																Oui
+															</span>
+														</span>
+													</label>
+												</span>
+												<span class="c-radio">
+													<label>
+															<input name="FVTDcheck" value="2" type="radio" class="navBtnClick">
+														<span class="spacer">
+															<span class="radio-text">
+																Non
+															</span>
+														</span>
+													</label>
+												</span>
+											</div>
+											<div id="FVTDno" class="mrgn-tp-md" style="display: none;">
+											<div class="label-danger">	
+												<div class="alert alert-danger">
+													<p>La pension de retraite du RPC est imposable. Si vous avez demandé qu’une retenue d’impôt fédéral soit déduit de votre pension de retraite du RPC, nous déduirons l’impôt fédéral à la source en fonction de votre demande. Si vous n’avez pas demandé une retenue d’impôt fédéral, Service Canada ne retiendra pas d’impôt sur votre paiement mensuel de retraite du RPC. Une fois votre pension approuvée, Service Canada vous enverras une lettre indiquant le montant que vous recevrez. Vous pouvez demander qu’une retenue d’impôt fédéral soit déduit de votre pension du RPC en remplissant la demande en ligne de Retenue Volontaire d’Impôt Fédéral.</p>
+												</div>
+											</div>
+											</div>
+										</div>
+									<footer class="panel-footer" id="FVTDyes" style="display: none;">
+										<a href="./fvtd1.html" class="btn btn-primary" >Ajouter <span class="glyphicon glyphicon-plus mrgn-lft-sm"></span></a>
+									</footer>
+									<footer class="panel-footer" id="FVTDchange" style="display: none;">
+										<a id="change-fvtd-button" href="#" class="btn btn-primary">Modifier<span class="wb-inv">&nbsp;– Retenue volontaire d’impôt fédéral</span> <span class="glyphicon glyphicon-pencil"></span></a>
+									</footer>										
+									</section>
+								</div>
+							</div>
+						</section>
+						<section id="othercountry">
+							<div class="row">
+								<div class="col-sm-7">
+									<section class="panel panel-info">
+										<header class="panel-heading">
+											<h3 class="panel-title">Prestations d’autres pays</h3>
+										</header>
+										<div class="panel-body">
+										<p>Si vous avez vécu ou travaillé dans un pays autre que le Canada, vous pourriez avoir droit à des prestations de ce pays.</p>
+											<section class="mrgn-lft-sm">
+												<fieldset class="s-radio-list" >
+													<label for="informationAboutDeceasedPart1Form.countryOfBirthCode-select" class="control-label required requiredlabel mrgn-lft-md">	<span>Avez-vous déjà vécu ou travaillé dans un autre pays?</span>
+														<strong class="required">(obligatoire)</strong></label>
+													<div>
+											<div class="c-radio-list">
+											<span class="c-radio">
+												<label>
+														<input name="othCountry" value="1" type="radio"   class="navBtnClick"/>
+													<span class="spacer">
+														<span class="radio-text">
+															Oui
+														</span>
+													</span>
+												</label>
+											</span>
+											<span class="c-radio">
+												<label>
+														<input name="othCountry" value="2" type="radio"   class="navBtnClick"/>
+													<span class="spacer">
+														<span class="radio-text">
+															Non
+														</span>
+													</span>
+												</label>
+											</span>
+											</div>
+													</div>
+												</fieldset>
+											</section>
+											<section id="countryYes" style="display: none;">
+												<div class="s-select">
+													<div id="informationAboutDeceasedPart1Form.countryOfBirthCode" class="c-select">
+														<div class="form-group">
+
+															<label for="informationAboutDeceasedPart1Form.countryOfBirthCode-select" class="control-label required requiredlabel mrgn-lft-md mrgn-tp-md">		<span>Pays</span>
+														<strong class="required">(obligatoire)</strong>
+														
+												</label>
+
+															<select id="informationAboutDeceasedPart1Form.countryOfBirthCode-select" name="informationAboutDeceasedPart1Form.countryOfBirthCode" class="form-control "  >
+	<option value="" selected="">Choisissez une option</option>
+
+	<option value="42">Canada</option>
+	<option value="16">Açores</option>
+	<option value="1">Afghanistan</option>
+	<option value="207">Afrique du sud</option>
+	<option value="2">Albanie</option>
+	<option value="3">Algérie</option>
+	<option value="86">Allemagne</option>
+	<option value="251">Allemagne de l'Ouest</option>
+	<option value="5">Andorre</option>
+	<option value="6">Angola</option>
+	<option value="7">Anguilla</option>
+	<option value="8">Antarctique</option>
+	<option value="9">Antigua et Barbuda</option>
+	<option value="164">Antilles néerlandaises</option>
+	<option value="198">Arabie Saoudite</option>
+	<option value="10">Argentine</option>
+	<option value="11">Arménie</option>
+	<option value="12">Aruba</option>
+	<option value="212">Ascension et Sainte-Hélène</option>
+	<option value="13">Australie</option>
+	<option value="175">Autres</option>
+	<option value="14">Autriche</option>
+	<option value="15">Azerbaïdjan</option>
+	<option value="17">Bahamas</option>
+	<option value="18">Bahreïn</option>
+	<option value="19">Bangladesh</option>
+	<option value="20">Barbades</option>
+	<option value="21">Bélarus</option>
+	<option value="23">Belgique</option>
+	<option value="24">Belize</option>
+	<option value="25">Bénin</option>
+	<option value="27">Bermudes</option>
+	<option value="29">Bhoutan</option>
+	<option value="30">Bolivie</option>
+	<option value="31">Bosnie-et-Herzégovine</option>
+	<option value="32">Botswana</option>
+	<option value="34">Brésil</option>
+	<option value="36">Brunéi Darussalam</option>
+	<option value="37">Bulgarie</option>
+	<option value="38">Burkina Fasco (Haute-Volta)</option>
+	<option value="39">Burundi</option>
+	<option value="45">Caïmanes, Îles</option>
+	<option value="40">Cambodge (Kampuchea)</option>
+	<option value="41">Cameroun</option>
+	<option value="43">Canaries,Îles</option>
+	<option value="44">Cap-Vert</option>
+	<option value="46">Centrafricaine, République</option>
+	<option value="48">Chili</option>
+	<option value="49">Chine, République populaire</option>
+	<option value="50">Christmas (Australie) île</option>
+	<option value="60">Chypre</option>
+	<option value="51">Cocos (Keeling) Îles</option>
+	<option value="52">Colombie</option>
+	<option value="53">Comores</option>
+	<option value="55">Congo</option>
+	<option value="54">Congo, Rép. démocratique du (Anciennement Zaïre)</option>
+	<option value="56">Cook, Îles</option>
+	<option value="125">Corée, République de (Sud)</option>
+	<option value="124">Corée, République populaire démocratique de (Nord)</option>
+	<option value="57">Costa Rica</option>
+	<option value="116">Côte d'Ivoire</option>
+	<option value="58">Croatie</option>
+	<option value="59">Cuba</option>
+	<option value="62">Danemark</option>
+	<option value="63">Djibouti</option>
+	<option value="65">Dominicaine, République</option>
+	<option value="64">Dominique</option>
+	<option value="69">Égypte</option>
+	<option value="70">El Salvador</option>
+	<option value="238">Émirats arabes unis</option>
+	<option value="68">Équateur</option>
+	<option value="72">Erythrée</option>
+	<option value="210">Espagne</option>
+	<option value="73">Estonie</option>
+	<option value="152">États fédérés de Micronésie</option>
+	<option value="240">États-Unis</option>
+	<option value="74">Ethiopie</option>
+	<option value="75">Falkland, Îles (Malvinas)</option>
+	<option value="76">Féroé, Îles</option>
+	<option value="77">Fidji</option>
+	<option value="78">Finlande</option>
+	<option value="79">France</option>
+	<option value="83">Gabon</option>
+	<option value="84">Gambie</option>
+	<option value="85">Georgie</option>
+	<option value="208">Georgie du sud et Sandwich du sud, Îles</option>
+	<option value="87">Ghana</option>
+	<option value="88">Gibraltar</option>
+	<option value="89">Grèce</option>
+	<option value="91">Grenade</option>
+	<option value="90">Groenland</option>
+	<option value="92">Guadeloupe</option>
+	<option value="93">Guam</option>
+	<option value="94">Guatemala</option>
+	<option value="95">Guernesey</option>
+	<option value="257">Guernesey/Jersey</option>
+	<option value="96">Guinée</option>
+	<option value="97">Guinée-Bissau</option>
+	<option value="71">Guinée équatoriale</option>
+	<option value="98">Guyane</option>
+	<option value="80">Guyane française</option>
+	<option value="99">Haïti</option>
+	<option value="100">Heard-et-McDonald, îles</option>
+	<option value="103">Honduras</option>
+	<option value="104">Hong Kong</option>
+	<option value="105">Hongrie</option>
+	<option value="33">Île Bouvet</option>
+	<option value="113">Île de Man</option>
+	<option value="172">Îles Mariannes du Nord</option>
+	<option value="241">Îles Mineures Éloignées des États-Unis</option>
+	<option value="248">Îles Vierges (Britanniques)</option>
+	<option value="249">îles Vierges (États-Unis)</option>
+	<option value="108">Inde</option>
+	<option value="109">Indonésie</option>
+	<option value="110">Iran</option>
+	<option value="111">Iraq</option>
+	<option value="112">Irlande</option>
+	<option value="106">Islande</option>
+	<option value="114">Israël</option>
+	<option value="115">Italie</option>
+	<option value="117">Jamaïque</option>
+	<option value="118">Japon</option>
+	<option value="119">Jersey</option>
+	<option value="120">Jordanie</option>
+	<option value="121">Kazakhstan</option>
+	<option value="122">Kenya</option>
+	<option value="123">Kiribati</option>
+	<option value="259">Kosovo</option>
+	<option value="126">Koweït</option>
+	<option value="127">Kyrgyzstan</option>
+	<option value="128">Lao</option>
+	<option value="131">Lesotho</option>
+	<option value="129">Lettonie</option>
+	<option value="130">Liban</option>
+	<option value="132">Libéria</option>
+	<option value="133">Libyenne, Jamahiriya arabe</option>
+	<option value="134">Liechtenstein</option>
+	<option value="135">Lituanie</option>
+	<option value="136">Luxembourg</option>
+	<option value="138">Macédoine du Nord</option>
+	<option value="137">Macoa</option>
+	<option value="139">Madagascar</option>
+	<option value="140">Madère, Îles</option>
+	<option value="142">Malaisie</option>
+	<option value="141">Malawi</option>
+	<option value="143">Maldives</option>
+	<option value="144">Mali</option>
+	<option value="145">Malte</option>
+	<option value="157">Maroc</option>
+	<option value="146">Marshall, Îles</option>
+	<option value="147">Martinique</option>
+	<option value="149">Maurice</option>
+	<option value="148">Mauritanie</option>
+	<option value="150">Mayotte</option>
+	<option value="151">Mexique</option>
+	<option value="153">Moldova, République de</option>
+	<option value="154">Monaco</option>
+	<option value="155">Mongolie</option>
+	<option value="261">Monténégro</option>
+	<option value="156">Montserrat</option>
+	<option value="158">Mozambique</option>
+	<option value="159">Myanmar (Birmanie)</option>
+	<option value="160">Namibie</option>
+	<option value="161">Nauru</option>
+	<option value="162">Népal</option>
+	<option value="167">Nicaragua</option>
+	<option value="168">Niger</option>
+	<option value="169">Nigeria</option>
+	<option value="170">Nioué</option>
+	<option value="171">Norfolk, Île</option>
+	<option value="173">Norvège</option>
+	<option value="165">Nouvelle-Calédonie</option>
+	<option value="166">Nouvelle-Zélande</option>
+	<option value="35">Océan Indien, Territoire britannique</option>
+	<option value="174">Oman</option>
+	<option value="236">Ouganda</option>
+	<option value="244">Ouzbékistan</option>
+	<option value="176">Pakistan</option>
+	<option value="177">Palau</option>
+	<option value="178">Panama</option>
+	<option value="179">Papouasie-Nouvelle-Guinée</option>
+	<option value="180">Paraguay</option>
+	<option value="163">Pays-Bas</option>
+	<option value="181">Pérou</option>
+	<option value="182">Philippines</option>
+	<option value="183">Pitcairn</option>
+	<option value="184">Pologne</option>
+	<option value="81">Polynésie française</option>
+	<option value="186">Porto Rico</option>
+	<option value="185">Portugal</option>
+	<option value="187">Qatar</option>
+	<option value="188">Réunion</option>
+	<option value="189">Roumanie</option>
+	<option value="239">Royaume-Uni</option>
+	<option value="190">Russie, Fédération de</option>
+	<option value="191">Rwanda</option>
+	<option value="252">Sahara occidental</option>
+	<option value="193">Sainte-Lucie</option>
+	<option value="192">Saint-Kitts-et-Névis</option>
+	<option value="196">Saint-Marin</option>
+	<option value="213">Saint-Pierre-et-Miquelon</option>
+	<option value="102">Saint-Siège (État de la Cité du Vatican)</option>
+	<option value="194">Saint-Vincent-et-les-Grenadines</option>
+	<option value="205">Salomon, Îles</option>
+	<option value="195">Samoa</option>
+	<option value="4">Samoa américaines</option>
+	<option value="197">Sao Tomé-et-Principe</option>
+	<option value="199">Sénégal</option>
+	<option value="260">Serbie</option>
+	<option value="254">Serbie et Montenegro</option>
+	<option value="200">Seychelles</option>
+	<option value="201">Sierra Léone</option>
+	<option value="202">Singapour</option>
+	<option value="203">Slovaquie (République Slovaque)</option>
+	<option value="204">Slovénie</option>
+	<option value="206">Somalie</option>
+	<option value="215">Soudan</option>
+	<option value="211">Sri Lanka</option>
+	<option value="219">Suède</option>
+	<option value="220">Suisse</option>
+	<option value="216">Surinam</option>
+	<option value="217">Svalbard-et-Île-Jan Mayen</option>
+	<option value="218">Swaziland</option>
+	<option value="221">Syrie</option>
+	<option value="222">Syrienne, République arabe</option>
+	<option value="223">Taïwan</option>
+	<option value="224">Tajikistan</option>
+	<option value="225">Tanzanie</option>
+	<option value="47">Tchad</option>
+	<option value="61">Tchèque, République</option>
+	<option value="82">Terres Australes Françaises</option>
+	<option value="258">Territoire palestinien occupé</option>
+	<option value="226">Thaïlande</option>
+	<option value="67">Timor-Leste</option>
+	<option value="227">Togo</option>
+	<option value="228">Tokélaou</option>
+	<option value="229">Tonga</option>
+	<option value="230">Trinité-et-Tobago</option>
+	<option value="231">Tunisie</option>
+	<option value="232">Türkiye</option>
+	<option value="233">Turkménistan</option>
+	<option value="234">Turks et Caicos, Îles</option>
+	<option value="235">Tuvalu</option>
+	<option value="237">Ukraine</option>
+	<option value="242">Uruguay</option>
+	<option value="245">Vanuatu (Nouvelles-Hébrides)</option>
+	<option value="246">Venezuela, République bolivarienne du</option>
+	<option value="247">Viêt Nam</option>
+	<option value="250">Wallis-et-Futuna, Îles</option>
+	<option value="253">Yémen</option>
+	<option value="255">Zambie</option>
+	<option value="256">Zimbabwe</option>
+															</select>
+														</div>
+													</div>
+													</div>
+													<div class="form-group mrgn-lft-sm"><label for="insurance-number"><span class="field-name">Numéro d’assurance dans ce pays</span></label> <input id="insurance-number" class="form-control" name="insurance-number" type="text"></div>
+													<section>
+													<h4 class="mrgn-lft-sm">Période</h4>
+													<form>
+													<div class="mrgn-lft-md">
+													<div class="form-group"><label for="date1" class="required"><span class="field-name">De</span> <strong class="required">(obligatoire)</strong> <span class="datepicker-format"> (<abbr title="Les quatres chiffres de l’année, tiret, les deux chiffres du mois, tiret, les deux chiffres du jour">AAAA-MM-JJ</abbr>)</span></label> <input id="date1" class="form-control" name="date1" type="date" data-rule-dateiso="true"></div>
+													<div class="form-group"><label for="date2" class="required"><span class="field-name">À</span> <strong class="required">(obligatoire)</strong> <span class="datepicker-format"> (<abbr title="Les quatres chiffres de l’année, tiret, les deux chiffres du mois, tiret, les deux chiffres du jour">AAAA-MM-JJ</abbr>)</span></label> <input id="date2" class="form-control" name="date2" type="date" data-rule-dateiso="true"></div>
+													</div>
+													</form></section>
+													<div>
+													<section class="mrgn-lft-sm">
+												<fieldset class="s-radio-list" >
+													<label class="control-label required requiredlabel mrgn-lft-md">	<span>Avez-vous demandé ou reçu une prestation de ce pays? </span>
+														<strong class="required">(obligatoire)</strong></label>
+													<div>
+											<div class="c-radio-list">
+											<span class="c-radio">
+												<label>
+														<input name="othBenefit" value="1" type="radio"   class="navBtnClick"/>
+													<span class="spacer">
+														<span class="radio-text">
+															Oui
+														</span>
+													</span>
+												</label>
+											</span>
+											<span class="c-radio">
+												<label>
+														<input name="othBenefit" value="2" type="radio"   class="navBtnClick"/>
+													<span class="spacer">
+														<span class="radio-text">
+															Non
+														</span>
+													</span>
+												</label>
+											</span>
+											</div>
+													</div>
+												</fieldset>
+											</section>
+											</section>
+											<section id="countryNo" style="display: none;">
+											</section>
+											</div>
+										<footer class="panel-footer" id="countryYesfoot" style="display: none;">
+										<a href="#" class="btn btn-primary" >Ajouter un autre pays ou une période</a>
+									</footer>
+									</section>
+									
+								</div>
+							</div>
+							
+						</section>
+						<p>Service Canada dispose actuellement des renseignements suivants dans votre dossier. Veuillez en vérifier l’exactitude et les mettre à jour au besoin.</p>
+						<section id="addressID">
+							<div class="row">
+								<div class="col-sm-7">
+									<section class="panel panel-info">
+										<header class="panel-heading">
+											<h2 class="panel-title">
+												<span class="glyphicon glyphicon-envelope pull-right"></span>
+												<span class="text-danger" aria-hidden="true">* </span>Adresse domiciliaire : <span class="text-danger">(obligatoire)</span>
+											</h2>
+										</header>
+										<div class="panel-body" id="change-address.text">
+											321 KING STREET
+											<br>
+											OTTAWA                      ON
+											<br>
+											K1Y1P5							
+										</div>
+										<footer class="panel-footer">
+											<a id="change-addr-button" href="./funcunvl.html" class="btn btn-primary">Modifier<span class="wb-inv">&nbsp;l’adresse domiciliaire</span> <span class="glyphicon glyphicon-pencil"></span></a>
+										</footer>
+									</section>
+								</div>
+							</div>
+						</section>
+						<section id="phoneID">
+							<div class="row">
+								<div class="col-sm-7">
+									<section class="panel panel-info">
+										<header class="panel-heading">
+											<h2 class="panel-title">
+												<span class="glyphicon glyphicon-phone-alt pull-right"></span>
+												<span class="text-danger" aria-hidden="true">* </span>Numéro de téléphone : <span class="text-danger">(obligatoire)</span>
+											</h2>
+					<div id="phone">
+					</div>
+										</header>
+										<div class="panel-body" id="phone-empty">  
+												Nous n’avons aucun numéro de téléphone dans votre dossier.									
+										</div>
+										<div class="panel-body" id="phone-list" style="display: none;">
+											<ul class="list-unstyled">
+												<li>
+													<div class="row">
+														<div class="col-md-4"><strong>Maison :</strong></div>
+														<div class="col-md-8"></div>
+													</div>
+												</li>
+												<li>
+													<div class="row">
+														<div class="col-md-4"><strong>Mobile :</strong></div>
+														<div class="col-md-8" id="phone-list-mobile"></div>
+													</div>
+												</li>
+												<li>
+													<div class="row">
+														<div class="col-md-4"><strong>Travail :</strong></div>
+														<div class="col-md-8"></div>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<footer class="panel-footer" id="phone-add-footer">
+												<a id="add-phone-button" href="./phonenum1.html" class="btn btn-primary">Ajouter <span class="glyphicon glyphicon-plus mrgn-lft-sm"></span></a>							
+										</footer>
+										<footer class="panel-footer" id="phone-change-footer" style="display: none;">
+											<a id="change-phone-button" href="#" class="btn btn-primary">Modifier<span class="wb-inv">&nbsp;le numéro de téléphone</span> <span class="glyphicon glyphicon-pencil"></span></a>
+										</footer>
+									</section>
+								</div>
+							</div>
+						</section>
+						<section id="directDepositID">
+							<div class="row">
+								<div class="col-sm-7">
+									<section class="panel panel-info">
+										<header class="panel-heading">
+											<h2 class="panel-title">
+												<span class="glyphicon glyphicon-credit-card pull-right"></span>
+												<span class="text-danger" aria-hidden="true">* </span>Dépôt direct (renseignements bancaires) : <span class="text-danger">(obligatoire)</span>
+											</h2>
+					<div id="directDeposit">
+					</div>
+										</header>
+										<div class="panel-body" id="dd-empty">
+												<p>Service Canada versera vos paiements de pension dans votre compte bancaire par dépôt direct, un moyen sûr, rapide et fiable de recevoir vos paiements. Le compte doit être à votre nom. Un compte joint est également acceptable.</p>
+												<p>Si vous désirez recevoir vos chèques par la poste, veuillez annuler votre demande en ligne, puis remplir la <a href="#" target="_blank">version papier de la demande</a> et l’envoyez à Service Canada.</p>
+										</div>
+										<div class="panel-body" id="dd-list" style="display: none;">
+											<ul class="list-unstyled">
+												<li>
+													<div class="row">
+														<div class="col-md-5"><strong>Numéro de succursale :</strong></div>
+														<div class="col-md-7" id="dd-list-branch"></div>
+													</div>
+												</li>
+												<li>
+													<div class="row">
+														<div class="col-md-5"><strong>Numéro de l’institution :</strong></div>
+														<div class="col-md-7" id="dd-list-institution"></div>
+													</div>
+												</li>
+												<li>
+													<div class="row">
+														<div class="col-md-5"><strong>Numéro de compte :</strong></div>
+														<div class="col-md-7" id="dd-list-account"></div>
+													</div>
+												</li>
+												<li>
+													<div class="row">
+														<div class="col-md-5"><strong>Nom du(des) titulaire(s) du compte :</strong></div>
+														<div class="col-md-7" id="dd-list-names"></div>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<footer class="panel-footer" id="dd-add-footer">
+												<a id="add-dd-button" href="./dd1.html" class="btn btn-primary">Ajouter <span class="glyphicon glyphicon-plus mrgn-lft-sm"></span></a>
+										</footer>
+										<footer class="panel-footer" id="dd-change-footer" style="display: none;">
+											<a id="change-dd-button" href="#" class="btn btn-primary">Modifier<span class="wb-inv">&nbsp;– renseignements bancaires</span> <span class="glyphicon glyphicon-pencil"></span></a>
+										</footer>
+									</section>
+								</div>
+							</div>
+						</section>
+						<section id="crpID">
+							<div class="row">
+								<div class="col-sm-7">
+									<section class="panel panel-info">
+										<header class="panel-heading">
+											<h2 class="panel-title">
+												Clause pour élever des enfants :
+											</h2>
+					<div id="directDeposit">
+					</div>
+										</header>
+										<div class="panel-body" id="crp-empty">
+												<p>Votre dossier ne contient aucune clause pour élever des enfants.</p>
+												<p>Si vous avez arrêté de travailler ou votre revenu a été moins élevé pendant que vous éleviez vos jeunes enfants, vous pourriez faire appliquer la clause pour élever des enfants afin d’augmenter vos prestations du RPC.<p>
+										</div>
+										<div class="panel-body" id="crp-summary" style="display: none;">
+											<p>Vous avez fourni les renseignements suivants concernant la clause pour élever des enfants.</p>
+											<table class="table">
+												<thead>
+													<tr>
+														<th scope="col">Nom</th>
+														<th scope="col">Date de naissance</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>SAM TREMBLAY</td>
+														<td id="crp-summary-dob"></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										
+										<footer class="panel-footer" id="crp-request-footer">
+												<a id="request-crp-button" href="./crp1.html" class="btn btn-primary">Demande la clause pour élever des enfants</a>
+										</footer>
+									</section>
+								</div>
+							</div>
+						</section>
+					</section>
+					<p class="mrgn-tp-lg"><a id="step1-continue" href="./step2.html" class="btn btn-primary btn-lg" role="button">Continuer<span class="wb-inv"> – Demande de pension de retraite du RPC - Confirmation de vos renseignements</span></a> <a href="../index.html" class="btn btn-danger btn-lg" role="button">Annuler<span class="wb-inv"> la demande de pension de retraite du RPC</span></a></p>
+  
+                </div>
+            </form>
+            <section
+                id="logout-warning-message-popup"
+                class="mfp-hide modal-dialog modal-content overlay-def wb-popup-mid"
+            >
+                <header class="modal-header">
+                    <h2 class="modal-title">Fermer la session</h2>
+                </header>
+                <div class="modal-body">
+                    <p tabindex="0">Vous avez sélectionné de « Fermer la session ».</p>
+                    <div id="continue">
+                        <p tabindex="0">
+                            Si vous « Fermer la session » avant d'avoir terminé une « Étape », vous perdrez vos informations pour cette « Étape ». Les informations des étapes précédentes seront sauvegardées pendant 90 jours.
+                        </p>
+                        <p tabindex="0">
+                            Service Canada ne traitera pas une demande avant qu'elle soit complète et soumise.
+                        </p>
+                    </div>
+                    <div id="end">
+                        <p tabindex="0">
+                            Sélectionnez <strong>« Fermer la session »</strong> pour abandonner votre demande et vous déconnecter de Mon compte Service Canada ou sélectionnez <strong>« Continuer la session »</strong> pour revenir à la demande de PIRPC.
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-danger" href="/sc/msca-mdsc/portal-portail/pro/cppd-rpci/logout"
+                        ><span class="glyphicon glyphicon-log-out"></span>Fermer la session</a
+                    >
+                    <a
+                        class="btn btn-primary popup-modal-dismiss"
+                        href="/sc/msca-mdsc/portal-portail/pro/cppd-rpci/logout"
+                        >Continuer la session</a
+                    >
+                </div>
+            </section>
+
+            <div id="def-preFooter">
+                <noscript>
+                    <div class="row pagedetails">
+                        <div class="datemod col-xs-12 mrgn-tp-lg">
+                            <dl id="wb-dtmd">
+                                <dt class="pull-left">Identificateur d'écran :</dt>
+                                <dd class="pull-left mrgn-bttm-sm mrgn-lft-sm" property="identifier">SBT K 003</dd>
+
+                                <dt class="pull-left">Date de modification :</dt>
+                                <dd class="pull-left mrgn-bttm-sm mrgn-lft-sm">
+                                    <time property="dateModified">2026-08-14</time>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </noscript>
+            </div>
+
+            <script type="text/javascript">
+                document.getElementById("def-preFooter").outerHTML = wet.builder.preFooter({
+                    cdnEnv: "prod",
+                    dateModified: "2026-08-14",
+                    showPostContent: false,
+                    showFeedback: false,
+                    showShare: false,
+                    screenIdentifier: "SBT K 003",
+                });
+                adobeDataLayer.push({
+                    page: {
+                        id: "SBT K 003",
+                    },
+                });
+            </script>
+        </main>
+
+        <div id="def-footer">
+            <noscript>
+                <footer id="wb-info">
+                    <h2 class="wb-inv">À propos de ce site</h2>
+                    <div class="gc-contextual">
+                        <div class="container">
+                            <nav>
+                                <h3>Mon dossier Service Canada</h3>
+                                <ul class="list-col-xs-1 list-col-sm-2 list-col-md-3">
+                                    <li><a href="https://service.canada.ca/fr/contactez-nous">Contactez-nous</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="gc-sub-footer">
+                        <div class="container d-flex align-items-center">
+                            <nav>
+                                <h3 class="wb-inv">Government of Canada</h3>
+                                <ul>
+                                    <li>
+                                        <a
+                                            href="https://srv136.services.gc.ca/ecas-seca/rascl/SCL/TC.aspx?mode=ReadOnly&amp;lang=fra#terms"
+                                            >Avis</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href="https://srv136.services.gc.ca/ecas-seca/rascl/SCL/TC.aspx?mode=ReadOnly&amp;lang=fra#privacy"
+                                            >Confidentialité</a
+                                        >
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="wtrmrk align-self-end">
+                                <img
+                                    src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/wet-boew/assets/wmms-blk.svg"
+                                    alt="Symbole du gouvernement du Canada"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </noscript>
+        </div>
+
+        <script type="text/javascript">
+            document.getElementById("def-footer").outerHTML = wet.builder.appFooter({
+                cdnEnv: "prod",
+                footerSections: {
+                    title: "Mon dossier Service Canada",
+                    links: [
+                        {
+                            href: "https://service.canada.ca/fr/contactez-nous",
+                            text: "Contactez-nous",
+                        },
+                    ],
+                },
+                termsLink: [
+                    {
+                        href: "https://srv136.services.gc.ca/ecas-seca/rascl/SCL/TC.aspx?mode=ReadOnly&amp;lang=fra#terms",
+                    },
+                ],
+                privacyLink: [
+                    {
+                        href: "https://srv136.services.gc.ca/ecas-seca/rascl/SCL/TC.aspx?mode=ReadOnly&amp;lang=fra#privacy",
+                    },
+                ],
+            });
+        </script>
+
+        <script type="text/javascript">
+            document.write(
+                wet.builder.refFooter({
+                    cdnEnv: "prod",
+                    isApplication: true,
+                    exitSecureSite: {
+                        exitScript: true,
+                        displayModal: true,
+                        exitURL: "/sc/msca-mdsc/portal-portail/pro/cppd-rpci/logout",
+                        exitMsg:
+                            "Les renseignements demandés se trouvent à l&#39;extérieur de notre environnement sécurisé. Choisissez « Oui » pour accéder ces renseignements. Lorsque vous serez prêt à revenir, sélectionnez le bouton retour de votre navigateur pour revenir à votre session. Sachez que si vous ne revenez pas à votre session dans les 15 minutes, vous serez déconnecté par mesure de sécurité.",
+                        cancelMsg: "Annuler",
+                        yesMsg: "Oui",
+                        exitDomains: "service.canada.ca",
+                        displayModalForNewWindow: false,
+                    },
+                    webAnalytics: true,
+                })
+            );
+        </script>
+        <script>
+            $(function () {
+                var yesVal = "1";
+                var noVal = "2";
+				let yespath = document.getElementById("DOByes");
+				let nopath = document.getElementById("DOBno");
+                $("[name='DOBcorrect']").on("click", function () {
+                    handleCheckedDOB($(this).val());
+                });
+
+                function handleCheckedDOB(checkedValue) {
+                    if (checkedValue === yesVal) {
+                        yespath.setAttribute("style", "");
+						nopath.setAttribute("style", "display: none");
+                    } else if (checkedValue === noVal) {
+                        nopath.setAttribute("style", "");
+						yespath.setAttribute("style", "display: none");
+                    }
+                }
+
+                handleCheckedDOB($("[name='hasStoppedWorking']:checked").val());
+
+                $(document).on("click", ".helpDiv", function () {
+                    $(".helpTextMessage").toggle();
+                });
+
+                $("#formId").submit(function (e) {
+                    $("#continue-button").attr("disabled", "disabled");
+                });
+            });
+            $(document).ready(function () {
+                $("#cdts-signout-btn").on("click", function (e) {
+                    e.preventDefault();
+                    $(document).trigger("open.wb-lbx", [[{ src: "#logout-warning-message-popup", type: "inline" }]]);
+                });
+            });
+        </script>
+		<script>
+            $(function () {
+                var yesVal = "1";
+                var noVal = "2";
+				let yespath = document.getElementById("FVTDyes");
+				let nopath = document.getElementById("FVTDno");
+                $("[name='FVTDcheck']").on("click", function () {
+                    handleCheckedFVTD($(this).val());
+                });
+
+                function handleCheckedFVTD(checkedValue) {
+                    if (checkedValue === yesVal) {
+                        yespath.setAttribute("style", "");
+						nopath.setAttribute("style", "display: none");
+                    } else if (checkedValue === noVal) {
+                        nopath.setAttribute("style", "");
+						yespath.setAttribute("style", "display: none");
+                    }
+                }
+
+                handleCheckedFVTD($("[name='hasStoppedWorking']:checked").val());
+
+                $(document).on("click", ".helpDiv", function () {
+                    $(".helpTextMessage").toggle();
+                });
+
+                $("#formId").submit(function (e) {
+                    $("#continue-button").attr("disabled", "disabled");
+                });
+            });
+            $(document).ready(function () {
+                $("#cdts-signout-btn").on("click", function (e) {
+                    e.preventDefault();
+                    $(document).trigger("open.wb-lbx", [[{ src: "#logout-warning-message-popup", type: "inline" }]]);
+                });
+            });
+        </script>
+		<script>
+            $(function () {
+                var yesVal = "1";
+                var noVal = "2";
+				let yespath = document.getElementById("countryYes");
+				let yesfoot = document.getElementById("countryYesfoot");
+				let nopath = document.getElementById("countryNo");
+                $("[name='othCountry']").on("click", function () {
+                    handleCheckedcountry($(this).val());
+                });
+
+                function handleCheckedcountry(checkedValue) {
+                    if (checkedValue === yesVal) {
+                        yespath.setAttribute("style", "");
+						yesfoot.setAttribute("style", "");
+						nopath.setAttribute("style", "display: none");
+                    } else if (checkedValue === noVal) {
+                        nopath.setAttribute("style", "");
+						yespath.setAttribute("style", "display: none");
+						yesfoot.setAttribute("style", "display: none");
+                    }
+                }
+
+                handleCheckedcountry($("[name='hasStoppedWorking']:checked").val());
+
+                $(document).on("click", ".helpDiv", function () {
+                    $(".helpTextMessage").toggle();
+                });
+
+                $("#formId").submit(function (e) {
+                    $("#continue-button").attr("disabled", "disabled");
+                });
+            });
+            $(document).ready(function () {
+                $("#cdts-signout-btn").on("click", function (e) {
+                    e.preventDefault();
+                    $(document).trigger("open.wb-lbx", [[{ src: "#logout-warning-message-popup", type: "inline" }]]);
+                });
+            });
+        </script>
+		<script>
+            // Persist step 1 selections in sessionStorage so they survive leaving and returning to the page
+            $(function () {
+                var storageKey = "step1Selections";
+                var $fields = $("main").find("input, select, textarea").not("[type='hidden'], [type='submit'], [type='button']");
+
+                function fieldKey(el) {
+                    return el.name || el.id;
+                }
+
+                function loadSelections() {
+                    try {
+                        return JSON.parse(sessionStorage.getItem(storageKey)) || {};
+                    } catch (e) {
+                        return {};
+                    }
+                }
+
+                function saveSelections() {
+                    var data = {};
+                    $fields.each(function () {
+                        var key = fieldKey(this);
+                        if (!key) return;
+                        if (this.type === "radio") {
+                            // Store the index within the group, since some radio groups have no value attributes
+                            var $group = $fields.filter("[name='" + key + "']");
+                            var idx = $group.index($group.filter(":checked"));
+                            if (idx > -1) data[key] = idx;
+                        } else if (this.type === "checkbox") {
+                            data[key] = this.checked;
+                        } else {
+                            data[key] = $(this).val();
+                            // Also keep the visible label of dropdowns so other pages (step2) can display it
+                            if (this.tagName === "SELECT") data[key + "Text"] = $.trim($(this).find("option:selected").text());
+                        }
+                    });
+                    try {
+                        sessionStorage.setItem(storageKey, JSON.stringify(data));
+                    } catch (e) {}
+                }
+
+                function restoreSelections() {
+                    var data = loadSelections();
+                    var restoredGroups = {};
+                    $fields.each(function () {
+                        var key = fieldKey(this);
+                        if (!key || !(key in data)) return;
+                        if (this.type === "radio") {
+                            if (restoredGroups[key]) return;
+                            restoredGroups[key] = true;
+                            var radio = $fields.filter("[name='" + key + "']").get(data[key]);
+                            // Trigger click so the existing show/hide handlers reveal the dependent sections
+                            if (radio) $(radio).prop("checked", true).trigger("click");
+                        } else if (this.type === "checkbox") {
+                            $(this).prop("checked", !!data[key]);
+                        } else {
+                            $(this).val(data[key]);
+                        }
+                    });
+                }
+
+                restoreSelections();
+                $fields.on("change input click", saveSelections);
+                $(window).on("pagehide", saveSelections);
+            });
+
+            // Show the confirmed deduction only after Continue was clicked on fvtd1-1.html
+            $(function () {
+                var confirmed = false;
+                try {
+                    confirmed = sessionStorage.getItem("fvtdConfirmed") === "true";
+                } catch (e) {}
+                if (!confirmed) return;
+
+                $("#FVTDquestion, #FVTDyes").hide();
+                $("#FVTDconfirmed, #FVTDchange").show();
+
+                // Dummy button: intentionally does nothing
+                $("#change-fvtd-button").on("click", function (e) {
+                    e.preventDefault();
+                });
+            });
+
+            // Show the updated address once the user has returned from funcunvl.html
+            $(function () {
+                var changed = false;
+                try {
+                    changed = sessionStorage.getItem("addressChanged") === "true";
+                } catch (e) {}
+                if (!changed) return;
+
+                document.getElementById("change-address.text").innerHTML =
+                    "457 QUEEN STREET<br>OTTAWA                      ON<br>K1P5G3";
+            });
+
+            // Show the mobile number once it was confirmed on phonenum1-2.html
+            $(function () {
+                var phone = null;
+                try {
+                    phone = JSON.parse(sessionStorage.getItem("mobilePhone"));
+                } catch (e) {}
+                if (!phone) return;
+
+                // Format as (000) 000-0000, prefixed with +country code when one was entered
+                var number = phone.number.length === 7 ? phone.number.slice(0, 3) + "-" + phone.number.slice(3) : phone.number;
+                var display = "(" + phone.areaCode + ") " + number;
+                if (phone.countryCode) display = "+" + phone.countryCode + " " + display;
+
+                $("#phone-list-mobile").text(display);
+                $("#phone-empty, #phone-add-footer").hide();
+                $("#phone-list, #phone-change-footer").show();
+
+                // Dummy button: intentionally does nothing
+                $("#change-phone-button").on("click", function (e) {
+                    e.preventDefault();
+                });
+            });
+
+            // Show the banking details once they were confirmed on dd1-3.html
+            $(function () {
+                var dd = null;
+                try {
+                    dd = JSON.parse(sessionStorage.getItem("directDeposit"));
+                } catch (e) {}
+                if (!dd) return;
+
+                $("#dd-list-branch").text(dd.branchNumber || "");
+                $("#dd-list-institution").text(dd.institutionNumber || "");
+                $("#dd-list-account").text(dd.accountNumber || "");
+                $("#dd-list-names").text([dd.accountHolder1, dd.accountHolder2].filter(Boolean).join(" ET "));
+                $("#dd-empty, #dd-add-footer").hide();
+                $("#dd-list, #dd-change-footer").show();
+
+                // Dummy button: intentionally does nothing
+                $("#change-dd-button").on("click", function (e) {
+                    e.preventDefault();
+                });
+            });
+
+            // Show the child-rearing provision summary once Continue was clicked on crp1-3.html
+            $(function () {
+                var child = null;
+                try {
+                    child = JSON.parse(sessionStorage.getItem("crpConfirmed"));
+                } catch (e) {}
+                if (!child) return;
+
+                // YYYY-MM-DD -> "Month YYYY"
+                var monthNames = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"];
+                var parts = (child.dob || "").split("-");
+                var dobText = parts.length === 3 ? monthNames[parseInt(parts[1], 10) - 1] + " " + parts[0] : "";
+
+                $("#crp-summary-dob").text(dobText);
+                $("#crp-empty, #crp-request-footer").hide();
+                $("#crp-summary").show();
+            });
+
+            // Continue requires the FVTD question to be answered "No", or "Yes" with the add flow completed
+            $(function () {
+                function fvtdIsValid() {
+                    var fvtdConfirmed = false;
+                    try {
+                        fvtdConfirmed = sessionStorage.getItem("fvtdConfirmed") === "true";
+                    } catch (e) {}
+                    return fvtdConfirmed || $("[name='FVTDcheck']:checked").val() === "2";
+                }
+
+                function showErrors(show) {
+                    $("#error-alert, #error1").toggle(show);
+                }
+
+                $("#step1-continue").on("click", function (e) {
+                    if (fvtdIsValid()) return;
+                    e.preventDefault();
+                    showErrors(true);
+                    $("#error-alert").trigger("focus")[0].scrollIntoView();
+                });
+
+                // Clear the errors as soon as the answer becomes valid
+                $("[name='FVTDcheck']").on("change", function () {
+                    if (fvtdIsValid()) showErrors(false);
+                });
+            });
+        </script>
+
+        <script src="/sc/msca-mdsc/portal-portail/pro/cppd-rpci/static/cppd/js/cppd.js"></script>
+        <link
+            href="/sc/msca-mdsc/portal-portail/pro/cppd-rpci/static/cppd/css/cppd.css"
+            media="screen"
+            rel="stylesheet"
+        />
+        <link
+            href="/sc/msca-mdsc/portal-portail/pro/cppd-rpci/static/cppd/css/filepond.css"
+            media="screen"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" />
+    </body>
+</html>
+
+<script>
+    /**
+     * CPPD JavaScript Template
+     */
+    $(document).ready(function () {
+        const errorFields = [];
+        var name = "ESDC-EDSC_MSCA-MDSC_CPPD-RPCI:";
+
+        if (false) {
+        }
+        if (false) {
+            var errorFieldsJoined = errorFields.join("|");
+            var fullName = name.concat(errorFieldsJoined);
+
+            adobeDataLayer.push({
+                event: "error",
+                error: {
+                    name: fullName,
+                },
+            });
+        }
+    });
+</script>

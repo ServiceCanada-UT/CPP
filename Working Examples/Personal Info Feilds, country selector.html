@@ -1,0 +1,2006 @@
+
+
+	<!DOCTYPE html>
+	<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+	<!--[if gt IE 8]><!--><html class="no-js" lang="en" dir="ltr"><!--<![endif]-->
+		<head>
+<meta charset="utf-8"/>
+
+<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
+     wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html -->
+
+<title>Canada Pension Plan – Disability Benefits Application – Medical condition</title>
+
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/cdts/compiled/soyutils.js"></script>
+<script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/cdts/compiled/wet-en.js"></script>
+
+<noscript>
+	<!--[if gte IE 9 | !IE ]><!-->
+	<link href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/assets/favicon.ico" rel="icon" type="image/x-icon"/>
+	<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/css/theme.min.css" />
+	<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/cdts/cdtsfixes.css">
+	<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/cdts/cdtsapps.css">
+	 <link rel="stylesheet" href="https://srv136.services.gc.ca/sc/msca-mdsc/portal-portail/pro/cppd-rpci/static/cppd/css/cppd.css">
+	 <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/wet-boew/css/theme.min.css">
+	 
+	<!--<![endif]-->
+
+	<!--[if lt IE 9]>
+	<link rel="shortcut icon" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/assets/favicon.ico" />
+	<![endif]-->
+
+	<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/css/noscript.min.css" />
+	<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/cdts/cdtsnoscript.css" />
+</noscript>
+
+<script type="text/javascript">
+	document.write(wet.builder.refTop({
+		"cdnEnv": "prod",
+		"isApplication" : true,
+		"secure" : true,
+			"webAnalytics" : [{
+				"custom" : ""
+			}],
+	}));
+</script>
+<style>
+/*!
+ * cppd CSS Template
+ * Copyright (C) 2018 Employment and Social Development Canada - Canada.ca
+ *
+ * Vendor resources:
+ *
+ *   WETv4 by Treasury Board of Canada Secretariat - Canada.ca
+ *   License - https://wet-boew.github.io/v4.0-ci/License-en.html
+ */
+
+/** Custom styled radio lists */
+.c-radio
+:has
+ 
+(
+input
+:checked
+ 
+)
+{
+z-index
+:
+ 
+1
+}
+.c-radio:focus-within {
+	z-index: 1
+}
+
+.c-radio-list {
+	font-size: 0px; /* font size 0 to get rid of small gaps */
+	display: flex;
+}
+
+.c-radio-list .c-radio:focus-within {
+	outline: 2px dotted;
+}
+
+.c-radio-list .form-group {
+	margin: 0;
+	left: 0;
+	top: 0;
+}
+
+.c-radio-list [type=radio] {
+	position: absolute;
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.c-radio-list [type=radio]+.spacer {
+	min-height: 45px;
+	height: 100%;
+	background-color: #ffffff;
+	left: 0;
+	-webkit-border-radius: inherit;
+	-moz-border-radius: inherit;
+	border-radius: inherit;
+	display: flex;
+	align-items: center;
+}
+
+.c-radio-list [type=radio]:checked+.spacer {
+	background-color: #335075;
+}
+
+.c-radio-list .radio-text {
+	font-size: 16px;
+	padding: 0px 20px 0px 20px;
+}
+
+.c-radio-list [type=radio]:checked+.spacer>.radio-text {
+	color: #ffffff;
+}
+
+.c-radio-list fieldset {
+	padding: 0;
+}
+
+.c-radio-list legend {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+
+.c-radio-list .c-radio {
+	border: 1px solid #cccccc;
+	border-right-width: 0px;
+	display: flex;
+}
+
+.c-radio-list .c-radio:first-child {
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	-webkit-border-top-right-radius: 0px;
+	-moz-border-radius-topright: 0px;
+	border-top-right-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+	-moz-border-radius-bottomright: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+.c-radio-list .c-radio:last-child {
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	-webkit-border-top-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	border-top-left-radius: 0px;
+	-webkit-border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	border-bottom-left-radius: 0px;
+	border-right-width: 1px;
+}
+
+.c-radio-list label {
+	-webkit-border-radius: inherit;
+	-moz-border-radius: inherit;
+	border-radius: inherit;
+	margin: 0;
+}
+
+.s-text-input-group-error {
+	background-color: #f3e9e8;
+	border: 1px solid #d3080c;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	margin-bottom: 15px;
+	padding: 10px;
+}
+
+header .error-block {
+	color: #d3080c;
+	display: block;
+	font-size: 90%;
+	font-style: normal;
+	font-weight: 700;
+}
+
+label  .error-block {
+	color: #d3080c;
+	display: block;
+	font-size: 90%;
+	font-style: normal;
+	font-weight: 700;
+	padding: 3px;
+}
+
+legend .error-block {
+	color: #d3080c;
+	display: block;
+	font-size: 90%;
+	font-style: normal;
+	font-weight: 700;
+	padding: 3px;
+}
+
+.error-panel {
+	border: 1px solid #d3080c;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.s-radio-list-error .panel {
+	background-color: #f3e9e8;
+	border: 1px solid #d3080c;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+/** Circles **/
+.progress-icon {
+	
+}
+
+.circle-large {
+	display: inline-block;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	vertical-align: top;
+}
+
+.circle-large-superscript {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	height: 28px;
+	width: 28px;
+	position: absolute;
+	left: 32px;
+	bottom: 32px;
+	z-index: 10;
+}
+
+.check-large-superscript {
+	position: absolute;
+	left: 32px;
+	bottom: 32px;
+	z-index: 11;
+}
+
+.circle-small {
+	display: inline-block;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	vertical-align: top;
+}
+
+.circle-small-superscript {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	height: 18px;
+	width: 18px;
+	position: absolute;
+	left: 27px;
+	bottom: 27px;
+	z-index: 10;
+}
+
+.check-small-superscript {
+	position: absolute;
+	left: 27px;
+	bottom: 27px;
+	z-index: 11;
+}
+
+.circle-active {
+	background-color: #2572B4;
+	-webkit-box-shadow: inset 0px 0px 0px 2px rgba(109, 210, 218, 1);
+	-moz-box-shadow: inset 0px 0px 0px 2px rgba(109, 210, 218, 1);
+	box-shadow: inset 0px 0px 0px 2px rgba(109, 210, 218, 1);
+}
+
+.circle-complete {
+	background-color: #278400;
+	-webkit-box-shadow: inset 0px 0px 0px 2px rgba(216, 238, 202, 1);
+	-moz-box-shadow: inset 0px 0px 0px 2px rgba(216, 238, 202, 1);
+	box-shadow: inset 0px 0px 0px 2px rgba(216, 238, 202, 1);
+}
+
+.circle-incomplete {
+	background-color: #ffffff;
+	-webkit-box-shadow: inset 0px 0px 0px 2px rgba(215, 215, 215, 1);
+	-moz-box-shadow: inset 0px 0px 0px 2px rgba(215, 215, 215, 1);
+	box-shadow: inset 0px 0px 0px 2px rgba(215, 215, 215, 1);
+}
+
+.circle-hiddenOrDisabled {
+	background-color: #ffffff;
+	-webkit-box-shadow: inset 0px 0px 0px 2px rgba(215, 215, 215, 1);
+	-moz-box-shadow: inset 0px 0px 0px 2px rgba(215, 215, 215, 1);
+	box-shadow: inset 0px 0px 0px 2px rgba(215, 215, 215, 1);
+}
+
+.progress-text {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 18px;
+}
+
+.progress-text .active {
+	color: #ffffff;
+}
+
+.progress-text .complete {
+	color: #ffffff;
+}
+
+.progress-text .incomplete {
+	color: #000000;
+}
+
+a.main-menu-step-link {
+	text-decoration: none;
+}
+
+.main-menu-step {
+	margin-right: 23%;
+	padding-bottom: 1%;
+	padding-top: 1%;
+	border-top: 1px solid #D3D3D3;
+	white-space: normal;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.main-menu-step div {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.main-menu-step:last-child {
+	border-bottom: 1px solid #D3D3D3;
+}
+
+.main-menu-step>:last-child {
+	text-align: right;
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	-moz-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+}
+
+.main-menu-step-subsection {
+	text-align: left;
+	margin-left: 5%;
+	padding-bottom: 1%;
+	padding-top: 2%;
+	border-top: 1px solid #D3D3D3;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+}
+
+.main-menu-step-subsection>:last-child {
+	text-align: right;
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	-moz-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+}
+
+.sectionProgressStatus {
+	margin-left: 10px
+}
+
+.sectionTitle {
+	margin-left: 10px;
+	font-size: 20px
+}
+
+.continueButton {
+	font-family: 'sans-serif';
+	font-weight: 700;
+}
+
+.progress-icon2 {
+	margin-right: 10px;
+}
+
+hr {
+	height: 2px;
+	color: #000000;
+	/*border:solid 1px;*/
+}
+
+.hideDiv {
+	display: none;
+}
+
+.helpTextMessage {
+	display: none;
+}
+
+.disableButton {
+	display: none;
+}
+
+}
+.displayBlock {
+	display: block;
+}
+
+.maritalStatus {
+	margin-left: 10px;
+}
+
+.btn-new-app {
+	margin-left: 30px
+}
+
+.btn-add-illness {
+	margin-left: 5px
+}
+
+.terminalIllnessNoDesc {
+	margin-bottom: 10px;
+}
+/** Used for toggling hidden sections.  The initial state will be hidden. This css is used in conjunction with toggleSection**/
+.indentToggleSection {
+	margin-left: 30px;
+	display: none;
+}
+/** Used to add margin starting from the left side **/
+.indentSection {
+	margin-left: 30px;
+}
+
+.radioBtnFormat {
+	margin: 40px 40px 40px 40px;
+}
+/** Align more than one form controls in the same row **/
+.alignInOneRow {
+	display: inline-block;
+}
+/** Used to display the left arrow on the previous button **/
+.glyphiconArrowLeft {
+	margin-right: 5px;
+}
+/** Used to display the left arrow on the next or submit or start application button **/
+.glyphiconArrowRight {
+	margin-left: 5px;
+}
+/** Used to add space below form controls **/
+.addMarginBelowControl {
+	margin-bottom: 10px;
+}
+/** Used to add space above form controls **/
+.addMarginAboveControl {
+	margin-top: 10px;
+}
+/** Used to add margin starting from the right side **/
+.indentSectionRight {
+	margin-right: 30px;
+}
+
+.subSectionProgressStatus {
+	display: none;
+	margin-top: 10px;
+	width: 100%;
+}
+
+.addMarginAbove {
+	margin-top: 100px
+}
+
+.panel-body dl * {
+	border-top: none;
+	padding: 0;
+}
+
+.textarea-div textarea {
+	resize: none;
+}
+
+.text-limit {
+	float: left;
+	margin-top: -38px;
+	margin-left: 11px;
+	opacity: 0.8;
+	font-size: 14px;
+}
+
+.lbx-modal, .lbx-modal:hover {
+	text-decoration: none
+}
+
+input[type="date"].form-control, input[type="datetime-local"].form-control,
+	input[type="month"].form-control, input[type="time"].form-control {
+	line-height: 24px;
+}
+
+.removeTextBoxBorder {
+	background-color: transparent;
+	border: 0px solid;
+}
+
+#helpPageMedicalConditionTable th {
+	background: #D3D3D3;
+}
+
+#medical-conditions-col-group {
+	text-align: center;
+}
+
+ul.dashed {
+	list-style-type: none;
+}
+
+ul.dashed>li::before {
+	content: "- ";
+	margin-left: -10px;
+}
+
+.vertical-centered {
+	vertical-align: middle;
+}
+
+dl.grouped-dl dt {
+	margin-bottom: 0;
+	padding: 5px;
+	padding-bottom: 0;
+	border: solid 0 #ccc;
+	border-width: 1px;
+	border-bottom: 0;
+}
+
+dl.grouped-dl dd {
+	border: solid 0 #ccc;
+	border-width: 1px;
+	border-top: 0;
+	padding: 5px;
+	padding-top: 0;
+}
+
+/***
+ *
+ * progress stepper styles
+ *
+ ***/
+ol.steps {
+	counter-reset: step;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	position: relative;
+	font-family: Arial;
+	font-size: 16px;
+	line-height: 1.25;
+	margin: auto;
+	padding: 0;
+	overflow: hidden;
+	text-align: center;
+}
+
+ol.steps li {
+	list-style-type: none;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	position: relative;
+	padding: 0 5px;
+}
+
+ol.steps li:before {
+	display: block;
+	content: counter(step);
+	counter-increment: step;
+	background-color: #fff;
+	color: #000;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+	margin: 0 auto 10px auto;
+	border: 2px solid #d7d7d7;
+	font-weight: bold;
+}
+
+ol.steps li:first-child:after {
+	content: none;
+}
+
+ol.steps li:after {
+	content: "";
+	width: 100%;
+	height: 4px;
+	background-color: #d7d7d7;
+	position: absolute;
+	left: -50%;
+	top: 24px;
+	z-index: -1;
+}
+
+ol.steps li.active {
+	font-weight: bold;
+}
+
+ol.steps li.complete { /* placeholder */
+	
+}
+
+ol.steps li.incomplete {
+	color: #6f6f6f;
+}
+
+ol.steps li.active:before {
+	background-color: #2572B4;
+	color: #fff;
+	border-color: #6dd2da;
+}
+
+ol.steps li.complete:before {
+	content: "\2714"; /* unicode checkmark */
+	background-color: #278400;
+	color: #fff;
+	border-color: #d8eeca;
+}
+
+ol.steps li.incomplete:before { /* placeholder */
+	
+}
+
+@media ( max-width : 992px) {
+	ol.steps {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+	ol.steps li {
+		list-style-type: none;
+		-webkit-box-flex: 1;
+		-ms-flex: 1;
+		flex: 1;
+		position: relative;
+		text-align: left;
+		display: -webkit-inline-box;
+		display: -ms-inline-flexbox;
+		display: inline-flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+	ol.steps li:before {
+		display: inline-block;
+		float: none;
+		width: 35px;
+		height: 35px;
+		line-height: 35px;
+		margin: 5px 10px;
+		text-align: center;
+		-ms-flex-negative: 0;
+		flex-shrink: 0;
+	}
+	ol.steps li:first-child:after {
+		content: none;
+	}
+	ol.steps li:after {
+		content: "";
+		width: 4px;
+		height: 100%;
+		background-color: #d7d7d7;
+		position: absolute;
+		left: 30px;
+		top: -50%;
+		z-index: -1;
+	}
+	ol.steps li.active:before {
+		background-color: #2572B4;
+		color: #fff;
+		border-color: #6dd2da;
+	}
+}
+
+/* hack to target IE10+ */
+@media ( max-width : 992px) and screen and (-ms-high-contrast: active) , (
+		max-width : 992px) and (-ms-high-contrast: none) {
+	/* IE flex implementation does not like not having a height with column flex */
+	ol.steps {
+		height: 100vh;
+	}
+
+	/* These custom radio styled prevent overflow, upholding the letter of the law, but does so by horribly violating the spirit of the law */
+	/* I am confident few people will use IE on a resolution small enough that it matters (note: it still looks the same on resolution >~700px) */
+	.c-radio-list {
+		flex-wrap: wrap;
+		/* TODO: Make this look nicer on 400-700px resolutions */
+	}
+	.c-radio-list [type=radio]+.spacer {
+		display: table;
+	}
+	.c-radio-list .radio-text {
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+
+/***
+ *
+ * END progress stepper styles
+ *
+ ***/
+
+/** increase filepond font size by 75% */
+.filepond--root {
+	font-size: 1.75rem;
+}
+
+/** ensure that the upload button does not appear for upload files*/
+.filepond--action-process-item {
+	visibility: hidden;
+}
+
+.filepond--file-info .filepond--file-info-sub {
+	opacity: 0.8;
+}
+
+label[id^=filepond--drop-label] .help-block {
+	color: #6b6b6b;
+}
+
+li[data-filepond-item-state='busy'] .filepond--file-status-sub, li[data-filepond-item-state='processing'] .filepond--file-status-sub
+	{
+	display: none;
+}
+
+li[data-filepond-item-state='load-invalid'] .filepond--file-status-sub {
+	opacity: 0.98;
+}
+
+.filepond--file-action-button.filepond--action-retry-item-processing,
+	.filepond--file-action-button.filepond--action-abort-item-processing {
+	display: none;
+}
+/** warning message */
+.label-text-input-warning {
+	color: #d3080c;
+	font-weight: bold;
+	margin-bottom: 15px;
+	padding: 10px;
+}
+
+dl.review-grouped-dl dd:after {
+	content: '';
+	display: block;
+}
+
+dl.review-grouped-dl dd {
+	margin-left: 5px;
+	display: inline;
+	font-weight: bold;
+}
+
+dl.review-grouped-dl dt {
+	min-width: 50px;
+	display: inline;
+	font-weight: normal;
+}
+
+span.section-glyphicon {
+	font-size: 12px;
+}
+
+.span-tag-no-wrap {
+	white-space: nowrap;
+}
+
+.span-tag-new-line {
+	display: block;
+	padding-top: 10px;
+}
+
+.focusWidth {
+	padding: 2px;
+}
+
+strong.required{
+	color:#d3080c;
+	font-weight: bold;
+}
+
+#certification .fa-asterisk::before {
+	font-weight: 700;
+	color: #d3080c
+}
+
+#certification span.required {
+	font-weight: 700;
+	color: #d3080c
+}
+</style>
+	<meta property="dcterms:title" content="Canada Pension Plan – Disability Benefits Application – Medical condition-cppd"/>
+	<meta property="dcterms:language" content="eng"/>
+	<meta property="dcterms:creator" content="Employment and Social Development Canada"/>
+	<meta property="dcterms:service" content="ESDC-EDSC_MSCA-MDSC_CPPD-RPCI"/>
+	<meta property="dcterms:accessRights" content="1"/>
+		</head>
+		
+		<body vocab="http://schema.org/" typeof="WebPage">
+
+<div id="def-top">
+	<noscript>
+		
+<ul id="wb-tphp">
+	<li class="wb-slc"><a class="wb-sl" href="#wb-cont">Skip to main content</a></li>
+	<li class="wb-slc visible-sm visible-md visible-lg"><a class="wb-sl" href="#wb-info">Skip to &quot;About this site&quot;</a></li>
+	<li class="wb-slc"><a class="wb-sl" rel="alternate" href="?wbdisable=true">Switch to basic HTML version</a></li>
+</ul>
+
+<header role="banner">
+	<div id="wb-bnr" class="container">
+		<div class="row">
+			<div class="brand col-xs-8 col-sm-9 col-md-6">
+				<a href="https://www.canada.ca/en.html">
+					<object type="image/svg+xml" tabindex="-1" data="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/assets/sig-blk-en.svg"></object>
+					<span class="wb-inv">
+						<span>
+							Government of Canada
+						</span>
+						<span>/</span>
+						<span lang="fr">
+							Gouvernement du Canada
+						</span>
+					</span>
+				</a>
+			</div>
+			<section id="wb-lng" class="text-right col-xs-3 col-sm-4 col-md-6">
+				<h2 class="wb-inv">Language selection</h2>
+				<ul class="list-inline margin-bottom-none">
+					<li>
+						<a href="/sc/msca-mdsc/portal-portail/pro/svr-surv/survivor-benefit-application?step=information-about-deceased-part1&amp;cache-key=c5a95fa6-fb54-461b-8777-cf25f946ab71&amp;Lang=fra" lang="fr" >
+								Français
+						</a>
+					</li>
+				</ul>
+			</section>
+		</div>
+	</div>
+	<nav role="navigation" id="wb-bc" property="breadcrumb">
+		<h2>You are here:</h2>
+		<div class="container">
+			<div class="row">
+				<ol class="breadcrumb">
+					<li>
+						<a href="https://srv136.services.gc.ca/sc/msca-mdsc/portal-portail/pro/home-accueil">
+							Home
+						</a>
+					</li>
+					<li><a href='http://srv136.services.gc.ca/sc/msca-mdsc/portal-portail/pro/svr-surv/survivor-benefit-application?step=information-about-deceased-part1#cancel-to-cpp-lobby'>Canada Pension Plan</a></li><li><span>CPP survivor's pension and surviving child's benefit</span></li>
+				</ol>
+			</div>
+		</div>
+	</nav>
+</header>
+	</noscript>
+</div>
+
+<script type="text/javascript">
+	document.getElementById("def-top").outerHTML = wet.builder.appTop({
+		"appName" : [{
+			"text" : "My Service Canada Account",
+			"href" : "https://srv136.services.gc.ca/sc/msca-mdsc/portal-portail/pro/home-accueil"
+		}],
+		"cdnEnv": "prod",
+		"lngLinks" : [{
+			"lang" : "fr",
+			"text" : "Français",
+			"href" : "/sc/msca-mdsc/portal-portail/pro/svr-surv/survivor-benefit-application?step=information-about-deceased-part1&amp;cache-key=c5a95fa6-fb54-461b-8777-cf25f946ab71&amp;Lang=fra"
+		}],
+		"breadcrumbs" : [{"title":"My Service Canada Account","href":"http://srv136.services.gc.ca/sc/msca-mdsc/portal-portail/pro/svr-surv/survivor-benefit-application?step=information-about-deceased-part1#cancel-application"},{"title":"Canada Pension Plan","href":"http://srv136.services.gc.ca/sc/msca-mdsc/portal-portail/pro/svr-surv/survivor-benefit-application?step=information-about-deceased-part1#cancel-application"},{"title":"CPP survivor's pension and surviving child's benefit"}],
+		"search" : false,
+		"signOut" : [{
+			"href" : "/sc/msca-mdsc/portal-portail/pro/svr-surv/logout"
+		}],
+		"siteMenu" : false,
+		"showPreContent" : false
+	});
+</script>
+
+				<section id="wb-so">
+	<h2 class="wb-inv">Application Information</h2>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 text-left">
+				<a href="#help" aria-controls="help" class="overlay-lnk btn btn-default btn-lg" role="button">
+					Help
+				</a>
+				<section id="help" class="wb-overlay modal-content overlay-def wb-popup-mid">
+<header class="modal-header">
+	<h2 class="modal-title" id="help-title">Help - Canada Pension Plan (CPP) survivor's pension and surviving child's benefit</h2>
+</header>
+
+<div class="modal-body">
+	<p>This page contains general information concerning the Canada Pension Plan (CPP) survivor&#39;s pension and surviving child&#39;s benefit and uploading support documents.</p>
+
+	<hr/>
+
+	<ul id="back-to-top">
+		<li><a href="#general-info">General information</a></li>
+		<li><a href="#eligibility">Eligibility</a></li>
+		<li><a href="#how-much-could-you-receive">How much could you receive?</a></li>
+		<li><a href="#info-about-deceased">Information about the deceased contributor</a></li>
+		<li><a href="#acceptable-proofs-of-death">Acceptable proof of death</a></li>
+		<li><a href="#definition-spouse-common-law">Definition of spouse and common-law partner</a></li>
+		<li><a href="#acceptable-proof-marriage-common-law">Acceptable proof of legal marriage or common-law union</a></li>
+		<li><a href="#certified-copies">Copies of original documents</a></li>
+		<li><a href="#tax-deductions">Voluntary income tax deduction</a></li>
+		<li><a href="#info-about-you">Information about you</a></li>
+		<li><a href="#mandatory-fields">Mandatory fields</a></li>
+		<li>
+			<a href="#doc-types">Uploading supporting documents for your application</a>
+			<ul>	
+				<li><a href="#doc-types">What types of documents can I upload?</a></li>
+				<li><a href="#how-to-submit">How to submit a document</a></li>
+				<li><a href="#virus">Virus Scan</a></li>
+				<li><a href="#contact">Contact Service Canada</a></li>
+			</ul>
+		</li>
+	</ul>
+
+	<hr/>
+
+	<section id="general-info">
+		<h3>General information</h3>
+		<p>There are two types of Canada Pension Plan (CPP) survivor benefits: <strong>the survivor's pension</strong> and <strong>the surviving child's benefit</strong>. For the surviving spouse/common-law partner/children to be eligible for benefits, the deceased person (the contributor) must have made enough contributions to the CPP.</p>
+		<p><strong>The Canada Pension Plan (CPP) survivor's pension</strong> is paid to the person who is the legal spouse or common-law partner of the deceased contributor at the time of their death. If you are a separated legal spouse or common-law partner, and the deceased was not living with another common-law partner when they died, you may qualify for this benefit.</p>
+		<p><strong>The Canada Pension Plan (CPP) surviving child's benefit</strong> provides monthly payments to the dependent children of deceased CPP contributors. Children must be either under age 18 or under age 25 and in full-time or part-time attendance at a recognized school or university. If the child is under 18, this benefit is paid on their behalf to the person or agency who has decision-making responsibility and care of the child. If the child is aged 18 to 25, the benefit is paid directly to the child.</p>
+		<div class="text-center">
+			<span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+			<a class="back-to-top" href="#help-title">Return to top</a>
+		</div>
+	</section>
+	
+	<hr/>
+	
+	<section id="eligibility">
+		<h3>Eligibility</h3>
+		<p>To qualify for the CPP  survivor&#39;s pension:</p>
+		<ul>
+			<li>You must have been legally married or in a common-law union with your deceased spouse or common-law partner at the time of their death; AND</li>
+			<li>Your deceased spouse or common-law partner must have made enough contributions to the Canada Pension Plan</li>
+		</ul>
+		<p>The international social security agreements that Canada has with other countries may be used to satisfy these requirements.</p>
+		<p><strong>Note: </strong>An individual who is approved for a credit split with their separated spouse or common-law partner in January 2025 or later is not eligible for a Canada Pension Plan Survivor's benefit due to the death of the same separated spouse.</p>
+		<div class="text-center">
+			<span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+			<a class="back-to-top" href="#help-title">Return to top</a>
+		</div>
+	</section>
+	
+	<hr/>
+	
+	<section id="how-much-could-you-receive">
+		<h3>How much could you receive?</h3>
+		<p>The amount you receive as a surviving spouse or common-law partner will depend on:</p>
+		<ul>
+			<li>whether you are younger or older than age 65</li>
+			<li>how much, and for how long, the deceased contributor has paid into the CPP</li>
+		</ul>
+		
+		<p>We first calculate the amount that the <a href="https://www.canada.ca/en/services/benefits/publicpensions/cpp.html" target="_blank">CPP retirement pension</a> is, or would have been if the deceased had been age 65 at the time of death. Then, a further calculation is done based on the survivor's age at the time of the contributor's death.</p>
+		<table class="table table-bordered">
+		<thead><p class="h4">If the survivor is:</p></thead>
+		
+		<tbody>
+			<tr>
+			<td class="col-sm-2"><strong>age 65 or more</strong> </dt>
+			<td class="col-sm-10">then the survivor&#39;s pension is 60% of the contributor&#39;s retirement pension if the surviving spouse or common-law partner is not receiving other CPP benefits</dd>
+			</tr>
+			<tr>
+			<td><strong>under age 65</strong></dt>
+			<td>then the survivor's pension is 60% of the contributor's retirement pension if the surviving spouse or common-law partner is not receiving other CPP benefits <strong>plus</strong> 37.5% of the contributor's retirement pension, if the surviving spouse or common-law partner is not receiving other CPP benefits</dd>
+			</tr>
+		</tbody>
+		</table>
+		<p><strong>Canada Pension Plan: Pensions and benefits payment amounts</strong></p>
+		<a href="https://www.canada.ca/en/services/benefits/publicpensions/cpp/payment-amounts.html" target="_blank">https://www.canada.ca/en/services/benefits/publicpensions/cpp/payment-amounts.html</a>
+		<p>The enhancement will further increase the amount of the survivor&#39;s pension depending on how much and for how long the deceased contributor paid into</p>
+		
+		<div class="text-center">
+			<span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+			<a class="back-to-top" href="#help-title">Return to top</a>
+		</div>
+	</section>
+	
+	<hr/>
+	
+	<section id="info-about-deceased">
+		<h3>Information about the deceased contributor</h3>
+		<p>You must provide the following information about the deceased contributor: Last province of residence, client name, Social Insurance Number, date of birth, date of death and marital status at time of death.</p>
+		<div class="text-center">
+			<span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+			<a class="back-to-top" href="#help-title">Return to top</a>
+		</div>
+	</section>
+	
+	<hr/>
+	
+	<section id="acceptable-proofs-of-death">
+		<h3>What documents can be used as proof of death?</h3>
+		<p><strong>NOTE: Proof is not required at the time of your application.</strong></p>
+		<p>The Canada Pension Plan program reserves the right to request supporting documents. When documents are requested, copies are acceptable; however, Service Canada may ask for an original or certified copy at any time.</p>
+		<p>The following documents will be accepted as the proof of the date of death under the CPP Act and the OAS Act:</p>
+		<ul>
+			<li>Official Death Certificate issued under the authority of some level of government (domestic or foreign) where the death occurred</li>
+			<li>A document issued by a level of domestic or foreign government (federal, provincial/state/territorial, municipal, etc,) indicating the date of death (for example, Japanese Family Register, Portuguese Cédula Pessoal, etc.)</li>
+			<li>Funeral Home Burial or Death Certificate issued</li>
+			<li>
+				<ul>
+					<li>in accordance with the custom of any religious denomination by an ordained religious leader, or</li>
+					<li>by the funeral director, or</li>
+					<li>by any person who is authorized to issue such documents through the funeral home (these may differ from province to province)</li>
+				</ul>
+			</li>
+			<li>Medical Certificate of Death issued by the attending doctor or coroner</li>
+			<li>Statement by a doctor last in attendance, a coroner or a funeral director using stationery with the appropriate identifying letterhead</li>
+			<li>Registration of death under a provincial or territorial authority</li>
+			<li>Certification of death from another country, if an international agreement on social security exists with that country</li>
+			<li>Memorandum of Notification of Death issued by the Chief of National Defence Staff, Department of National Defence Canada, where the death of a member of the Canadian Forces occurs outside of Canada</li>
+			<li>Statement of Verification of Death from the Department of Veterans Affairs Canada written on the letterhead of the Department</li>
+			<li>Official Notification from the Administrator of the Estate appointed by a court</li>
+			<li>Copy of the Letters of Probate</li>
+			<li>Life or Group Insurance Claim provided it includes a statement signed by a medical doctor</li>
+			<li>An official notification written on the letterhead of a Provincial Public Trustee or Administrator of Estates</li>
+		</ul>
+		<div class="text-center">
+			<span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+			<a class="back-to-top" href="#help-title">Return to top</a>
+		</div>
+	</section>
+	
+	<hr/>
+	
+	<section id="definition-spouse-common-law">
+		<h3>Definition of spouse and common-law partner</h3>
+		<p>Under the Canada Pension Plan:</p>
+		<ul>
+			<li>a spouse is a person to whom you are legally married</li>
+			<li>a common-law partner is a person of the opposite sex or same sex who has been living in a conjugal relationship for at least one year</li>
+		</ul>
+		<div class="text-center">
+			<span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+			<a class="back-to-top" href="#help-title">Return to top</a>
+		</div>
+	</section>
+	
+	<hr/>
+	
+	<section id="acceptable-proof-marriage-common-law">
+		<h3>Acceptable proof of legal marriage or common-law union </h3>
+
+		<p><strong>NOTE: Proof is not required at the time of your application.</strong></p>
+		<p>The Canada Pension Plan program reserves the right to request supporting documents. When documents are requested, copies are acceptable; however, Service Canada may ask for an original or certified copy at any time.</p>
+		
+		<h4>Legal marriage</h4>
+		<ul>
+			<li>Marriage Certificate - official copy or extract of the church, synagogue, mosque, temple etc., or civil record of marriage as issued by a competent authority, or certified true copy of the record. </li>
+			<li>Marriage Registration Forms, if they are an official copy or extract of the record from Vital Statistics and indicate evidence of registration i.e. registration number. </li>
+			<li>Statutory Declaration of Legal Marriage (ISP1809B) - must contain the name of the couple, the date and the location of the marriage</li>
+		</ul>
+		
+		<h4>Common-law union</h4>
+		<ul>
+			<li><a href="https://catalogue.servicecanada.gc.ca/content/EForms/en/Detail.html?Form=ISP3104CPP">Statutory Declaration of Common-law Union form – single signature (ISP3104CPP)</a></li>
+			<li>Adult Interdependent Partner Agreement (AB)</li>
+			<li>Certificate of Civil Union (QC)</li>
+			<li>Certificate of Common-Law Relationship (MB)</li>
+			<li>Child custody or school records</li>
+			<li>Cohabitation or Prenuptial Agreement</li>
+			<li>Domestic Partners Certificate (NS) (SK)</li>
+			<li>Income Tax and Benefit Returns</li>
+			<li>Joint: will, acct, bill, receipt, ins, contract</li>
+			<li>Loan Agreement with both names</li>
+			<li>Medical Insurance Coverage</li>
+			<li>Prescription/medical records indicating the nature of relationship</li>
+			<li>Provincial Registration Forms</li>
+			<li>RRSPs naming each other as beneficiaries</li>
+			<li>Records showing same address e.g. driver&#39;s license</li>
+			<li>Statements from Third Parties</li>
+			<li>Other type of record which reflects the nature of the relationship</li>
+		</ul>
+		
+		<div class="text-center">
+			<span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+			<a class="back-to-top" href="#help-title">Return to top</a>
+		</div>
+	</section>
+	
+	<hr/>
+	
+	<section id="certified-copies">
+		<h3>Copies of original documents</h3>
+		<p><strong>Please send copies rather than original documents</strong> whenever submitting documents to Service Canada. If you must send your original documents, we suggest you send them by registered mail. We will return the original documents to you.</p>
+		<ul>
+			<li>We can only accept a copy of an original document if it is readable.</li>
+			<li>If the document has information on more than one page, copy all pages.</li>
+		</ul>
+		
+		<p>Please write your Social Insurance Number on any document or copy that you send to Service Canada.</p>
+		
+		<p><strong>Note:</strong> If your copy is missing any of the above elements, it will not be accepted and you will have to submit a new copy. This could result in delays in processing your application. Service Canada may request an original or certified copy at any time.</p>
+	</section>
+	
+	<hr/>
+	
+	<section id="tax-deductions">
+		<h3>Voluntary income tax deduction</h3>
+		<p>Your Canada Pension Plan benefit is taxable income. If you want Service Canada to deduct income tax each month, you must indicate the amount or a percentage.</p>
+		<div class="text-center">
+			<span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+			<a class="back-to-top" href="#help-title">Return to top</a>
+		</div>
+	</section>
+	
+	<hr/>
+	
+	<section id="info-about-you">
+		<h3>Information about you</h3>
+
+		<p>Applicants living in Canada may view and change their address, telephone number and language of communication.</p>
+		<hr/>
+
+		<h4 id="mandatory-fields">Mandatory fields</h4>
+		<p>Fields marked with an asterisk (*) must be completed.</p>
+		<div class="text-center">
+			<span class="glyphicon glyphicon-chevron-up"  aria-hidden="true"></span>
+			<a class="back-to-top" href="#help-title">Return to top</a>
+		</div>
+	</section>
+
+	<hr/>
+
+	<h3>Uploading supporting documents for your application</h3>
+	<section id="doc-types">
+		<h4>What types of documents can I upload?</h4>
+		<p>You can upload and send Service Canada supporting documents related to:</p>
+		<ul>
+			<li>CPP disability benefit and post-retirement disability benefit</li>
+			<li>request for reconsideration for a CPP disability benefit</li>
+			<li>CPP death benefit</li>
+			<li>CPP survivor&#39;s pension and surviving child&#39;s benefit</li>
+		</ul>
+		<p>The supporting documents can be for:</p>
+		<ul>
+			<li>an application you completed online in the My Service Canada Account; or</li>
+			<li>a paper application that you sent Service Canada.</li>
+		</ul>
+	</section>
+	
+	<hr/>
+			
+	<section id="how-to-submit">
+		<h4>How to submit a document</h4>
+		<p>Before uploading any document(s), you must agree to the Privacy Notice and Terms of use.</p>
+		<p>Only one document at a time can be uploaded. Maximum document size is 4 MB. Documents must be in one of the following file formats: .bmp, .gif, .jpg/.jpeg, .pdf, .png or .txt.</p>
+	</section>
+	
+	<hr/>
+	
+	<section id="virus">
+		<h4>Virus scan</h4>
+		<p>All documents will be scanned for viruses. Files that contain viruses will be securely deleted. You will see a message on the screen saying that your document contained viruses. If you make 3 attempts to upload a document that contains viruses, you will be blocked from accessing the document upload service for 24 hours.</p>
+	</section>
+	
+	<hr/>
+	
+	<section id="contact">
+		<h4>Contact Service Canada</h4>
+		<p>If you have any questions or concerns about the document(s) you are trying to submit or that you have submitted, please <a href="https://service.canada.ca/en/contact-us">contact us</a>.</p>
+		<div class="text-center">
+			<span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+			<a class="back-to-top" href="#help-title">Return to top</a>
+		</div>
+	</section>
+	
+</div>				</section>
+
+			</div>
+			<div class="col-md-6 text-right">
+				<span class="mrgn-rght-md">
+					Signed in as
+					<span class="wb-so-uname"><strong>MUHAMMAD KHAN</strong></span>
+				</span>
+			</div>
+		</div>
+	 </div>
+	<div class="modal-body">
+<section id="logout-application" class="mfp-hide modal-dialog modal-content overlay-def wb-popup-mid">
+	<header class="modal-header">
+		<h2 class="modal-title">Logout</h2>
+	</header>
+	<div class="modal-body">
+		<div id="logoutLink">
+			<p>You have clicked to &quot;Logout&quot;.</p>
+		</div>
+		<div id="continueLogout">
+			<p>If you logout before you submit your application, you will lose your information.</p>
+		</div>
+		<div id="endLogout">
+			<p>Select &lt;strong&gt;&quot;Logout&quot;&lt;/strong&gt; to abandon your application and log out of My Service Canada Account or select &lt;strong&gt;&quot;Continue session&quot;&lt;/strong&gt; to return to the Death benefit application.</p>
+		</div>
+	</div>
+	<div class="modal-footer">
+		<a href="/sc/msca-mdsc/portal-portail/pro/svr-surv/logout" class="btn btn-danger btn-lg">Logout</a>
+		<a href="#" class="btn btn-primary popup-modal-dismiss">Continue session</a>
+	</div>
+</section>	</div>
+	<script>
+		function logoutApplication() {
+			$(document).trigger('open.wb-lbx',[[{src:'#logout-application',type:'inline'}]]);
+		}
+	</script>
+</section>
+
+			<main role="main" property="mainContentOfPage" class="container">
+					<section id="progress-bar">
+	<div class="container mrgn-tp-md">
+		<div class="row">
+			<ol class="steps"><li class="active">Information about the deceased contributor - Part 1</li><li class="incomplete">Information about the deceased contributor - Part 2</li><li class="incomplete">Information about the applicant</li><li class="incomplete">Information about the child(ren) of the deceased</li><li class="incomplete">Additional information</li><li class="incomplete">Review and submit</li></ol>
+		</div>
+	</div>
+</section>
+
+
+	<h1 property="name" id="wb-cont">Step 1 of 6 - Information about the deceased contributor - Part 1</h1>
+	
+	<div class="alert alert-info">
+		<p>All fields are mandatory.</p>
+	</div>
+	
+
+	<form action="/sc/msca-mdsc/portal-portail/pro/svr-surv/survivor-benefit-application?step=information-about-deceased-part1" method="POST"
+	id="information-about-deceased-part1">
+	<input type="hidden" name="_csrf" value="e89b7aff-3cf6-40a2-9e02-0d99d878ee40"/>
+	
+		<div class="form-group">
+
+	<div class="s-select">
+	<div id="informationAboutDeceasedPart1Form.provinceOrTerritoryLastResidedCode" class="c-select">
+		<div class="form-group">
+
+			<label for="informationAboutDeceasedPart1Form.provinceOrTerritoryLastResidedCode-select" class="control-label required requiredlabel">		<span>Select the province or territory the deceased last resided in:</span>
+		<strong class="required">(required)</strong>
+		
+</label>
+
+			<select id="informationAboutDeceasedPart1Form.provinceOrTerritoryLastResidedCode-select" name="informationAboutDeceasedPart1Form.provinceOrTerritoryLastResidedCode" class="form-control "  >
+
+	<option value="" selected   >Select one</option>
+
+	<option value="8"    >Alberta</option>
+	<option value="9"    >British Columbia</option>
+	<option value="6"    >Manitoba</option>
+	<option value="3"    >New Brunswick</option>
+	<option value="12"    >Newfoundland and Labrador</option>
+	<option value="10"    >Northwest Territories</option>
+	<option value="2"    >Nova Scotia</option>
+	<option value="13"    >Nunavut</option>
+	<option value="5"    >Ontario</option>
+	<option value="1"    >Prince Edward Island</option>
+	<option value="4"    >Quebec</option>
+	<option value="7"    >Saskatchewan</option>
+	<option value="11"    >Yukon</option>
+			</select>
+		</div>
+	</div>
+	</div>
+			
+			<div id="questions">
+				<fieldset>
+					<legend class="h4">Please enter the following information about the deceased:</legend>
+	<div class="s-text-input">
+
+	<div id="informationAboutDeceasedPart1Form.name" class="c-text-input">
+		<div class="form-group">
+				<label for="informationAboutDeceasedPart1Form.name-text-input" class="requiredlabel control-label required">		<span>First name, initial and last name</span>
+		<strong class="required requiredlabel ">(required)</strong>
+		
+</label>
+			<input id="informationAboutDeceasedPart1Form.name-text-input" name="informationAboutDeceasedPart1Form.name" type="text" value="" class="form-control name-field"  maxlength="110"/>
+		</div>
+	</div>
+	</div>
+	<div class="s-text-input">
+
+	<div id="informationAboutDeceasedPart1Form.sin" class="c-text-input">
+		<div class="form-group">
+				<label for="informationAboutDeceasedPart1Form.sin-text-input" class="requiredlabel control-label required">		<span>Social Insurance Number</span>
+		<strong class="required requiredlabel ">(required)</strong>
+		
+</label>
+			<input id="informationAboutDeceasedPart1Form.sin-text-input" name="informationAboutDeceasedPart1Form.sin" type="text" value="" class="form-control "  maxlength="9"/>
+		</div>
+	</div>
+	</div>
+	<div class="s-text-input">
+
+	<div id="informationAboutDeceasedPart1Form.dateOfBirth" class="c-text-input">
+		<div class="form-group">
+				<label for="informationAboutDeceasedPart1Form.dateOfBirth-text-input" class="requiredlabel control-label required">		<span>Date of birth:</span>
+		<strong class="required requiredlabel ">(required)</strong>
+		
+</label>
+			<input id="informationAboutDeceasedPart1Form.dateOfBirth-text-input" name="informationAboutDeceasedPart1Form.dateOfBirth" type="date" value="" class="form-control "  max="3000-01-01"/>
+		</div>
+	</div>
+	</div>
+
+	<div class="s-select">
+	<div id="informationAboutDeceasedPart1Form.countryOfBirthCode" class="c-select">
+		<div class="form-group">
+
+			<label for="informationAboutDeceasedPart1Form.countryOfBirthCode-select" class="control-label required requiredlabel">		<span>Country of birth</span>
+		<strong class="required">(required)</strong>
+		
+</label>
+
+			<select id="informationAboutDeceasedPart1Form.countryOfBirthCode-select" name="informationAboutDeceasedPart1Form.countryOfBirthCode" class="form-control "  >
+
+	<option value="" selected   >Select one</option>
+
+	<option value="42"    >Canada</option>
+	<option value="1"    >Afghanistan</option>
+	<option value="2"    >Albania</option>
+	<option value="3"    >Algeria</option>
+	<option value="4"    >American Samoa</option>
+	<option value="5"    >Andorra</option>
+	<option value="6"    >Angola</option>
+	<option value="7"    >Anguilla</option>
+	<option value="8"    >Antarctica</option>
+	<option value="9"    >Antigua &amp; Barbuda</option>
+	<option value="10"    >Argentina</option>
+	<option value="11"    >Armenia</option>
+	<option value="12"    >Aruba</option>
+	<option value="212"    >Ascension and St Helena</option>
+	<option value="13"    >Australia</option>
+	<option value="14"    >Austria</option>
+	<option value="15"    >Azerbaijan</option>
+	<option value="16"    >Azores</option>
+	<option value="17"    >Bahamas</option>
+	<option value="18"    >Bahrain</option>
+	<option value="19"    >Bangladesh</option>
+	<option value="20"    >Barbados</option>
+	<option value="21"    >Belarus</option>
+	<option value="23"    >Belgium</option>
+	<option value="24"    >Belize</option>
+	<option value="25"    >Benin</option>
+	<option value="27"    >Bermuda</option>
+	<option value="29"    >Bhutan</option>
+	<option value="30"    >Bolivia</option>
+	<option value="31"    >Bosnia &amp; Herzegovina</option>
+	<option value="32"    >Botswana</option>
+	<option value="33"    >Bouvet Island</option>
+	<option value="34"    >Brazil</option>
+	<option value="35"    >British Indian Ocean Territory</option>
+	<option value="36"    >Brunei Darussalam</option>
+	<option value="37"    >Bulgaria</option>
+	<option value="38"    >Burkina Faso (Upper Volta)</option>
+	<option value="39"    >Burundi</option>
+	<option value="40"    >Cambodia (Kampuchea)</option>
+	<option value="41"    >Cameroon</option>
+	<option value="43"    >Canary Islands</option>
+	<option value="44"    >Cape Verde</option>
+	<option value="45"    >Cayman Islands</option>
+	<option value="46"    >Central African Republic</option>
+	<option value="47"    >Chad</option>
+	<option value="48"    >Chile</option>
+	<option value="49"    >China (Mainland)</option>
+	<option value="50"    >Christmas Island (Australia)</option>
+	<option value="51"    >Cocos (Keeling) Islands</option>
+	<option value="52"    >Colombia</option>
+	<option value="53"    >Comoros</option>
+	<option value="55"    >Congo</option>
+	<option value="54"    >Congo, Democratic Republic of (formerly Zaire)</option>
+	<option value="56"    >Cook Islands</option>
+	<option value="57"    >Costa Rica</option>
+	<option value="116"    >Côte d&#39;Ivoire</option>
+	<option value="58"    >Croatia</option>
+	<option value="59"    >Cuba</option>
+	<option value="60"    >Cyprus</option>
+	<option value="61"    >Czech Republic</option>
+	<option value="62"    >Denmark</option>
+	<option value="63"    >Djibouti</option>
+	<option value="64"    >Dominica</option>
+	<option value="65"    >Dominican Republic</option>
+	<option value="68"    >Ecuador</option>
+	<option value="69"    >Egypt</option>
+	<option value="70"    >El Salvador</option>
+	<option value="71"    >Equatorial Guinea</option>
+	<option value="72"    >Eritrea</option>
+	<option value="73"    >Estonia</option>
+	<option value="74"    >Ethiopia</option>
+	<option value="75"    >Falkland Islands (Malvinas)</option>
+	<option value="76"    >Faroe Islands</option>
+	<option value="152"    >Federated States of Micronesia</option>
+	<option value="77"    >Fiji</option>
+	<option value="78"    >Finland</option>
+	<option value="79"    >France</option>
+	<option value="80"    >French Guiana</option>
+	<option value="81"    >French Polynesia</option>
+	<option value="82"    >French Southern Territories</option>
+	<option value="83"    >Gabon</option>
+	<option value="84"    >Gambia</option>
+	<option value="85"    >Georgia</option>
+	<option value="86"    >Germany</option>
+	<option value="87"    >Ghana</option>
+	<option value="88"    >Gibraltar</option>
+	<option value="89"    >Greece</option>
+	<option value="90"    >Greenland</option>
+	<option value="91"    >Grenada</option>
+	<option value="92"    >Guadeloupe</option>
+	<option value="93"    >Guam</option>
+	<option value="94"    >Guatemala</option>
+	<option value="95"    >Guernsey</option>
+	<option value="257"    >Guernsey/Jersey</option>
+	<option value="96"    >Guinea</option>
+	<option value="97"    >Guinea-Bissau</option>
+	<option value="98"    >Guyana</option>
+	<option value="99"    >Haiti</option>
+	<option value="100"    >Heard Island and McDonald Islands</option>
+	<option value="102"    >Holy See (Vatican City State)</option>
+	<option value="103"    >Honduras</option>
+	<option value="104"    >Hong Kong</option>
+	<option value="105"    >Hungary</option>
+	<option value="106"    >Iceland</option>
+	<option value="108"    >India</option>
+	<option value="109"    >Indonesia</option>
+	<option value="110"    >Iran</option>
+	<option value="111"    >Iraq</option>
+	<option value="112"    >Ireland (Eire)</option>
+	<option value="113"    >Isle of Man</option>
+	<option value="114"    >Israel</option>
+	<option value="115"    >Italy</option>
+	<option value="117"    >Jamaica</option>
+	<option value="118"    >Japan</option>
+	<option value="119"    >Jersey</option>
+	<option value="120"    >Jordan</option>
+	<option value="121"    >Kazakhstan</option>
+	<option value="122"    >Kenya</option>
+	<option value="123"    >Kiribati</option>
+	<option value="124"    >Korea, Democratic People&#39;s Republic of (North)</option>
+	<option value="125"    >Korea, Republic of (South)</option>
+	<option value="259"    >Kosovo</option>
+	<option value="126"    >Kuwait</option>
+	<option value="127"    >Kyrgyzstan</option>
+	<option value="128"    >Laos</option>
+	<option value="129"    >Latvia</option>
+	<option value="130"    >Lebanon</option>
+	<option value="131"    >Lesotho</option>
+	<option value="132"    >Liberia</option>
+	<option value="133"    >Libyan Arab Jamahiriya</option>
+	<option value="134"    >Liechtenstein</option>
+	<option value="135"    >Lithuania</option>
+	<option value="136"    >Luxembourg</option>
+	<option value="137"    >Macau</option>
+	<option value="139"    >Madagascar</option>
+	<option value="140"    >Madeira Islands</option>
+	<option value="141"    >Malawi</option>
+	<option value="142"    >Malaysia</option>
+	<option value="143"    >Maldives</option>
+	<option value="144"    >Mali</option>
+	<option value="145"    >Malta</option>
+	<option value="146"    >Marshall Islands</option>
+	<option value="147"    >Martinique</option>
+	<option value="148"    >Mauritania</option>
+	<option value="149"    >Mauritius</option>
+	<option value="150"    >Mayotte</option>
+	<option value="151"    >Mexico</option>
+	<option value="153"    >Moldova, Republic of</option>
+	<option value="154"    >Monaco</option>
+	<option value="155"    >Mongolia</option>
+	<option value="261"    >Montenegro</option>
+	<option value="156"    >Montserrat</option>
+	<option value="157"    >Morocco</option>
+	<option value="158"    >Mozambique</option>
+	<option value="159"    >Myanmar (Burma)</option>
+	<option value="160"    >Namibia</option>
+	<option value="161"    >Nauru</option>
+	<option value="162"    >Nepal</option>
+	<option value="163"    >Netherlands</option>
+	<option value="164"    >Netherlands Antilles</option>
+	<option value="165"    >New Caledonia</option>
+	<option value="166"    >New Zealand</option>
+	<option value="167"    >Nicaragua</option>
+	<option value="168"    >Niger</option>
+	<option value="169"    >Nigeria</option>
+	<option value="170"    >Niue</option>
+	<option value="171"    >Norfolk Islands</option>
+	<option value="172"    >Northern Mariana Islands</option>
+	<option value="138"    >North Macedonia</option>
+	<option value="173"    >Norway</option>
+	<option value="258"    >Occupied Palestinian Territory</option>
+	<option value="174"    >Oman</option>
+	<option value="175"    >Other</option>
+	<option value="176"    >Pakistan</option>
+	<option value="177"    >Palau</option>
+	<option value="178"    >Panama</option>
+	<option value="179"    >Papua New Guinea</option>
+	<option value="180"    >Paraguay</option>
+	<option value="181"    >Peru</option>
+	<option value="182"    >Philippines</option>
+	<option value="183"    >Pitcairn</option>
+	<option value="184"    >Poland</option>
+	<option value="185"    >Portugal</option>
+	<option value="186"    >Puerto Rico</option>
+	<option value="187"    >Qatar</option>
+	<option value="188"    >Reunion</option>
+	<option value="189"    >Romania</option>
+	<option value="190"    >Russian Federation</option>
+	<option value="191"    >Rwanda</option>
+	<option value="192"    >Saint Kitts and Nevis</option>
+	<option value="193"    >Saint Lucia</option>
+	<option value="194"    >Saint Vincent and the Grenadines</option>
+	<option value="195"    >Samoa</option>
+	<option value="196"    >San Marino</option>
+	<option value="197"    >Sao Tome and Principe</option>
+	<option value="198"    >Saudi Arabia</option>
+	<option value="199"    >Senegal</option>
+	<option value="260"    >Serbia</option>
+	<option value="254"    >Serbia and Montenegro</option>
+	<option value="200"    >Seychelles</option>
+	<option value="201"    >Sierra Leone</option>
+	<option value="202"    >Singapore</option>
+	<option value="203"    >Slovakia (Slovak Republic)</option>
+	<option value="204"    >Slovenia</option>
+	<option value="205"    >Solomon Islands</option>
+	<option value="206"    >Somalia</option>
+	<option value="207"    >South Africa</option>
+	<option value="208"    >South Georgia and the South Sandwich Islands</option>
+	<option value="210"    >Spain</option>
+	<option value="211"    >Sri Lanka</option>
+	<option value="213"    >St. Pierre-Miquelon</option>
+	<option value="215"    >Sudan</option>
+	<option value="216"    >Suriname</option>
+	<option value="217"    >Svalbard and Jan Mayen</option>
+	<option value="218"    >Swaziland</option>
+	<option value="219"    >Sweden</option>
+	<option value="220"    >Switzerland</option>
+	<option value="221"    >Syria</option>
+	<option value="222"    >Syrian Arab Republic</option>
+	<option value="223"    >Taiwan</option>
+	<option value="224"    >Tajikistan</option>
+	<option value="225"    >Tanzania</option>
+	<option value="226"    >Thailand</option>
+	<option value="67"    >Timor-Leste</option>
+	<option value="227"    >Togo</option>
+	<option value="228"    >Tokelau</option>
+	<option value="229"    >Tonga</option>
+	<option value="230"    >Trinidad and Tobago</option>
+	<option value="231"    >Tunisia</option>
+	<option value="232"    >Türkiye</option>
+	<option value="233"    >Turkmenistan</option>
+	<option value="234"    >Turks and Caicos Islands</option>
+	<option value="235"    >Tuvalu</option>
+	<option value="236"    >Uganda</option>
+	<option value="237"    >Ukraine</option>
+	<option value="238"    >United Arab Emirates</option>
+	<option value="239"    >United Kingdom</option>
+	<option value="240"    >United States</option>
+	<option value="241"    >United States Minor Outlying Islands</option>
+	<option value="242"    >Uruguay</option>
+	<option value="244"    >Uzbekistan</option>
+	<option value="245"    >Vanuatu (New Hebrides)</option>
+	<option value="246"    >Venezuela, Bolivarian Republic of</option>
+	<option value="247"    >Vietnam</option>
+	<option value="248"    >Virgin Islands (British)</option>
+	<option value="249"    >Virgin Islands (U.S.)</option>
+	<option value="250"    >Wallis and Futuna Islands</option>
+	<option value="252"    >Western Sahara</option>
+	<option value="251"    >West Germany</option>
+	<option value="253"    >Yemen</option>
+	<option value="255"    >Zambia</option>
+	<option value="256"    >Zimbabwe</option>
+			</select>
+		</div>
+	</div>
+	</div>
+					<div class="hidden" id="province">
+
+	<div class="s-select">
+	<div id="informationAboutDeceasedPart1Form.provinceOfBirthCode" class="c-select">
+		<div class="form-group">
+
+			<label for="informationAboutDeceasedPart1Form.provinceOfBirthCode-select" class="control-label required requiredlabel">		<span>Province/territory</span>
+		<strong class="required">(required)</strong>
+		
+</label>
+
+			<select id="informationAboutDeceasedPart1Form.provinceOfBirthCode-select" name="informationAboutDeceasedPart1Form.provinceOfBirthCode" class="form-control "  >
+
+	<option value="" selected   >Select one</option>
+
+	<option value="8"    >Alberta</option>
+	<option value="9"    >British Columbia</option>
+	<option value="6"    >Manitoba</option>
+	<option value="3"    >New Brunswick</option>
+	<option value="12"    >Newfoundland and Labrador</option>
+	<option value="10"    >Northwest Territories</option>
+	<option value="2"    >Nova Scotia</option>
+	<option value="13"    >Nunavut</option>
+	<option value="5"    >Ontario</option>
+	<option value="1"    >Prince Edward Island</option>
+	<option value="4"    >Quebec</option>
+	<option value="7"    >Saskatchewan</option>
+	<option value="11"    >Yukon</option>
+	<option value="997"  hidden  >Outside of Canada</option>
+			</select>
+		</div>
+	</div>
+	</div>
+					</div>
+	<div class="s-text-input">
+
+	<div id="informationAboutDeceasedPart1Form.dateOfDeath" class="c-text-input">
+		<div class="form-group">
+				<label for="informationAboutDeceasedPart1Form.dateOfDeath-text-input" class="requiredlabel control-label required">		<span>Date of death:</span>
+		<strong class="required requiredlabel ">(required)</strong>
+		
+</label>
+			<input id="informationAboutDeceasedPart1Form.dateOfDeath-text-input" name="informationAboutDeceasedPart1Form.dateOfDeath" type="date" value="" class="form-control "  max="3000-01-01"/>
+		</div>
+	</div>
+	</div>
+	<div id="informationAboutDeceasedPart1Form.maritalStatusCode" class="s-radio-list">
+		<fieldset>
+			<legend class="mrgn-tp-sm h3  requiredlabel">
+				Marital status at time of death:
+				
+				
+			</legend>
+			
+			<div class="form-group">
+				<div class="c-radio-list">
+	<span id="informationAboutDeceasedPart1Form.maritalStatusCode-1" class="c-radio">
+		<label for="informationAboutDeceasedPart1Form.maritalStatusCode-1-radio">
+			<input id="informationAboutDeceasedPart1Form.maritalStatusCode-1-radio" name="informationAboutDeceasedPart1Form.maritalStatusCode" value="1" type="radio"   />
+			<span class="spacer">
+				<span class="radio-text">
+					Single
+				</span>
+			</span>
+		</label>
+	</span>
+	<span id="informationAboutDeceasedPart1Form.maritalStatusCode-3" class="c-radio">
+		<label for="informationAboutDeceasedPart1Form.maritalStatusCode-3-radio">
+			<input id="informationAboutDeceasedPart1Form.maritalStatusCode-3-radio" name="informationAboutDeceasedPart1Form.maritalStatusCode" value="3" type="radio"   />
+			<span class="spacer">
+				<span class="radio-text">
+					Married
+				</span>
+			</span>
+		</label>
+	</span>
+	<span id="informationAboutDeceasedPart1Form.maritalStatusCode-5" class="c-radio">
+		<label for="informationAboutDeceasedPart1Form.maritalStatusCode-5-radio">
+			<input id="informationAboutDeceasedPart1Form.maritalStatusCode-5-radio" name="informationAboutDeceasedPart1Form.maritalStatusCode" value="5" type="radio"   />
+			<span class="spacer">
+				<span class="radio-text">
+					Common-law
+				</span>
+			</span>
+		</label>
+	</span>
+	<span id="informationAboutDeceasedPart1Form.maritalStatusCode-6" class="c-radio">
+		<label for="informationAboutDeceasedPart1Form.maritalStatusCode-6-radio">
+			<input id="informationAboutDeceasedPart1Form.maritalStatusCode-6-radio" name="informationAboutDeceasedPart1Form.maritalStatusCode" value="6" type="radio"   />
+			<span class="spacer">
+				<span class="radio-text">
+					Separated
+				</span>
+			</span>
+		</label>
+	</span>
+	<span id="informationAboutDeceasedPart1Form.maritalStatusCode-2" class="c-radio">
+		<label for="informationAboutDeceasedPart1Form.maritalStatusCode-2-radio">
+			<input id="informationAboutDeceasedPart1Form.maritalStatusCode-2-radio" name="informationAboutDeceasedPart1Form.maritalStatusCode" value="2" type="radio"   />
+			<span class="spacer">
+				<span class="radio-text">
+					Divorced
+				</span>
+			</span>
+		</label>
+	</span>
+	<span id="informationAboutDeceasedPart1Form.maritalStatusCode-4" class="c-radio">
+		<label for="informationAboutDeceasedPart1Form.maritalStatusCode-4-radio">
+			<input id="informationAboutDeceasedPart1Form.maritalStatusCode-4-radio" name="informationAboutDeceasedPart1Form.maritalStatusCode" value="4" type="radio"   />
+			<span class="spacer">
+				<span class="radio-text">
+					Surviving spouse/common-law partner
+				</span>
+			</span>
+		</label>
+	</span>
+				</div>
+			</div>
+		</fieldset>
+	</div>
+				</fieldset>
+
+
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-sm-12">	
+				
+				<ul class="pager mrgn-tp-lg">
+					<li>
+						<a href="#cancel-application" id="cancel-button" aria-controls="cancel-application" role="button"
+							class="wb-lbx lbx-modal btn btn-lg btn-default pull-left mrgn-rght-md" onClick="cancelApplication()">Cancel</a>
+					</li>
+					<li>
+						<button id="submit-button" class="btn btn-lg btn-primary pull-left" rel="continue" data-gc-analytics-customclick="ESDC-EDSC_MSCA-MDSC_SVR-SURV:Application - Step 1 Information about the deceased contributor part 1:Next"
+								type="submit">Next <span
+									class="glyphicon glyphicon-arrow-right glyphiconArrowRight" aria-hidden="true"></span></button>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</form>
+
+					<div id="return-msca">
+		<a href="#cancel-application" aria-controls="cancel-application" onClick="cancelApplication()">Return to My Service Canada Account home page</a>
+</div>
+
+
+<section id="cancel-application" class="mfp-hide modal-dialog modal-content overlay-def wb-popup-mid" tabindex="-1">
+	<header class="modal-header">
+		<h2 class="modal-title" aria-labelledby="Cancel Application" aria-describedby="cancel-confirmation-title">Cancel Application</h2>
+	</header>
+	<div class="modal-body">
+		<div id="cancelLink">
+			<p aria-describedby="cancel-confirmation-close-session-link">You have clicked a link that would end your application.</p>
+		</div>
+		<div id="continue">
+			<p aria-describedby="cancel-confirmation-close-session-text">If you cancel your application before you submit it, you will lose all your information.</p>
+		</div>
+		<div id="end">
+			<p aria-describedby="cancel-confirmation-end-text">Select <strong>"Cancel"</strong> to abandon your application and return to My Service Canada Account or select <strong>"Continue session"</strong> to return to the survivor's pension and surviving child's benefit application.</p>
+		</div>
+	</div>
+	<div class="modal-footer">
+		<a href="https://srv136.services.gc.ca/sc/msca-mdsc/portal-portail/pro/home-accueil?Lang=eng" class="btn btn-danger btn-lg">Cancel</a>
+		<a href="#" class="btn btn-primary popup-modal-dismiss">Continue session</a>
+	</div>
+</section>
+
+<section id="cancel-to-cpp-lobby" class="mfp-hide modal-dialog modal-content overlay-def wb-popup-mid" tabindex="-1">
+	<header class="modal-header">
+		<h2 class="modal-title" aria-labelledby="Cancel Application" aria-describedby="cancel-confirmation-title">Cancel Application</h2>
+	</header>
+	<div class="modal-body">
+		<div id="cancelLinkCpp">
+			<p aria-describedby="cancel-confirmation-close-session-link">You have clicked a link that would end your application.</p>
+		</div>
+		<div id="continueCpp">
+			<p aria-describedby="cancel-confirmation-close-session-text">If you cancel your application before you submit it, you will lose all your information.</p>
+		</div>
+		<div id="endCpp">
+			<p aria-describedby="cancel-confirmation-end-text">Select <strong>"Cancel"</strong> to abandon your application and return to Canada Pension Plan or select <strong>"Continue session"</strong> to return to the survivor's pension and surviving child's benefit application.</p>
+		</div>
+	</div>
+	<div class="modal-footer">
+		<a href="https://srv136.services.gc.ca/sc/msca-mdsc/portal-portail/pro/home-accueil/landing-page-cpp-oas?Lang=eng" class="btn btn-danger btn-lg">Cancel</a>
+		<a href="#" class="btn btn-primary popup-modal-dismiss">Continue session</a>
+	</div>
+</section>
+
+<script>
+	function cancelApplication() {
+		$(document).trigger('open.wb-lbx',[[{src:'#cancel-application',type:'inline'}]]);
+	}
+	
+	function cancelApplicationToCppLobby() {
+		$(document).trigger('open.wb-lbx', [[{src: '#cancel-to-cpp-lobby', type: 'inline'}]]);
+	}
+</script>				
+
+<div id="def-preFooter">
+	<noscript>
+		
+<div class="row pagedetails">	
+	<div class="datemod col-xs-12 mrgn-tp-lg">
+		<dl id="wb-dtmd">
+							<dt class="pull-left">Screen Identifier:</dt>
+				<dd class="pull-left mrgn-bttm-sm mrgn-lft-sm" property="identifier">
+					SBT V 103
+				</dd>
+			
+			<dt class="pull-left">Date modified:</dt>
+			<dd class="pull-left mrgn-bttm-sm mrgn-lft-sm">
+				<time property="dateModified">2026-08-14</time>
+			</dd>
+		</dl>
+	</div>
+</div>
+	</noscript>
+</div>
+
+<script type="text/javascript">
+	document.getElementById("def-preFooter").outerHTML = wet.builder.preFooter({
+		"cdnEnv": "prod",
+		"dateModified" : "2026-08-14",
+		"showPostContent" : false,
+		"showFeedback" : false,
+		"showShare" : false,
+		"screenIdentifier" : "SBT V 103"
+	});
+		adobeDataLayer.push({ 
+			"page": {
+				"id": "SBT V 103"
+			}
+		});
+</script>
+			</main>
+			
+
+<div id="def-footer">
+	<noscript>
+<footer id="wb-info">
+<h2 class="wb-inv">About this site</h2>
+	<div class="gc-contextual">
+		<div class="container">
+			<nav>
+				<h3>My Service Canada Account</h3>
+				<ul class="list-col-xs-1 list-col-sm-2 list-col-md-3"><li><a href="https://service.canada.ca/en/contact-us">Contact us</a></li></ul>
+			</nav>
+		</div>
+	</div>
+	<div class="gc-sub-footer">
+		<div class="container d-flex align-items-center">
+			<nav>
+				<h3 class="wb-inv">Government of Canada</h3>
+				<ul>
+					<li><a href="https://srv136.services.gc.ca/ecas-seca/rascl/SCL/TC.aspx?mode=ReadOnly&amp;lang=eng#terms">Terms and conditions</a></li>
+					<li><a href="https://srv136.services.gc.ca/ecas-seca/rascl/SCL/TC.aspx?mode=ReadOnly&amp;lang=eng#privacy">Privacy</a></li>
+				</ul>
+			</nav>
+			<div class="wtrmrk align-self-end">
+				<img src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v5_0_4/wet-boew/assets/wmms-blk.svg" alt="Symbol of the Government of Canada"/>
+			</div>
+		</div>
+	</div>
+</footer>	</noscript>
+</div>
+
+<script type="text/javascript">
+	document.getElementById("def-footer").outerHTML = wet.builder.appFooter({
+		"cdnEnv": "prod",
+		"footerSections": {
+	        "title":"My Service Canada Account",
+	        "links": [{
+	            "href": "https://service.canada.ca/en/contact-us",
+	            "text": "Contact us"
+	        }]
+    	},
+		"termsLink" : [{
+			"href" : "https://srv136.services.gc.ca/ecas-seca/rascl/SCL/TC.aspx?mode=ReadOnly&amp;lang=eng#terms"
+		}],
+		"privacyLink" : [{
+			"href" : "https://srv136.services.gc.ca/ecas-seca/rascl/SCL/TC.aspx?mode=ReadOnly&amp;lang=eng#privacy"
+		}]
+	});
+</script>
+	
+<script type="text/javascript">
+	document.write(wet.builder.refFooter({
+		"cdnEnv": "prod",
+		"isApplication" : true,
+		"exitSecureSite" : {
+        	"exitScript" : true,
+        	"displayModal" : true,
+        	"exitURL": "/sc/msca-mdsc/portal-portail/pro/svr-surv/logout",
+				"exitMsg": "The information you have requested is located outside our secure environment.  Select &quot;Yes&quot; to access the information.  When you are ready to return, select the back button from your browser to return to your session. Be aware that if you do not return to your session within 15 minutes, you will be logged out as a security measure.",
+        		"cancelMsg": "Cancel",
+        		"yesMsg" : "Yes",
+        	"exitDomains": "service.canada.ca",
+        	"displayModalForNewWindow" : false,
+    	},
+			"webAnalytics": true
+
+	}));
+</script>
+
+
+<span class="wb-sessto" data-wb-sessto='{
+	"inactivity" : 900000,
+	"logouturl" : "/sc/msca-mdsc/portal-portail/pro/svr-surv/logout",
+	"method" : "GET",
+	"reactionTime" : 180000,
+	"refreshCallbackUrl" : "/sc/msca-mdsc/portal-portail/pro/svr-surv/session-refresh",
+	"refreshOnClick" : false
+}'></span>
+			
+				<script>$(document).ready( function() {
+	var initValCountry = $("select[name$='countryOfBirthCode']").val();
+	showProvinces(initValCountry);
+
+	$("select[name$='countryOfBirthCode']").change(function() {
+		var selectedVal = $("select[name$='countryOfBirthCode']").val();
+		showProvinces(selectedVal);
+	});
+});
+
+function showProvinces(selectedVal) {
+	var province = $("#province");
+	if (selectedVal === "42") {
+		province.removeClass("hidden");
+		if ($("select[name$='provinceOfBirthCode']").val() === "997") {
+			$("select[name$='provinceOfBirthCode']").val(null);
+		}
+	} else {
+		province.addClass("hidden");
+		if (selectedVal !== "") {
+			$("select[name$='provinceOfBirthCode']").val("997");
+		}
+	}
+}/**
+ * svr JavaScript Template
+ * Copyright (C) 2018 Employment and Social Development Canada - Canada.ca
+ */
+$(document).ready(function() { 
+	const errorFields = [];
+	var name = "ESDC-EDSC_MSCA-MDSC_SVR-SURV:"
+			
+	if(false) {
+	}
+	if(false) {
+		var errorFieldsJoined = errorFields.join("|");
+		var fullName = name.concat(errorFieldsJoined);
+		
+		adobeDataLayer.push({ 
+			"event": "error",
+			"error": {
+				"name": fullName
+			}
+		});
+	}
+});</script>
+
+				<script src="/sc/msca-mdsc/portal-portail/pro/svr-surv/static/svr/js/svr.js"></script>
+			<link href="/sc/msca-mdsc/portal-portail/pro/svr-surv/static/svr/css/svr.css" media="screen" rel="stylesheet"/>
+			<link rel="stylesheet" href="/sc/msca-mdsc/portal-portail/pro/svr-surv/static/svr/css/filepond.css" />
+			<script src="/sc/msca-mdsc/portal-portail/pro/svr-surv/static/svr/js/svr.js"></script>
+			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+		</body>

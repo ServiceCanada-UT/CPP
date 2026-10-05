@@ -1,0 +1,1077 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://service.canada.ca/assets/tailwind-H2sTHRtV.css" />
+        <link rel="stylesheet" href="https://service.canada.ca/assets/skip-navigation-links-Cuu2wICX.css" />
+        <link rel="stylesheet" href="https://service.canada.ca/assets/index-3sUZCrBy.css" />
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preload" as="image" href="https://www.canada.ca/etc/designs/canada/wet-boew/assets/sig-blk-en.svg" />
+        <link rel="preload" as="image" href="https://www.canada.ca/etc/designs/canada/wet-boew/assets/wmms-blk.svg" />
+        <meta name="dcterms.language" content="eng" />
+        <meta name="dcterms.creator" content="Employment and Social Development Canada" />
+        <meta name="dcterms.accessRights" content="1" />
+        <meta name="gcaaterms.sitename" content="ESDC-EDSC_MSCA-MSDC-SCH" />
+        <title>My dashboard - My Service Canada Account</title>
+        <meta name="dcterms.title" content="My dashboard - My Service Canada Account" />
+        <link rel="stylesheet" href="https://service.canada.ca/assets/skip-navigation-links-Cuu2wICX.css#" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;family=Noto+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://service.canada.ca/assets/index-3sUZCrBy.css" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://service.canada.ca/assets/tailwind-H2sTHRtV.css" crossorigin="anonymous" />
+        <script nonce="e2c1f6e8-e807-4a7d-9778-35f8d720b30e" src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script>
+            let heading1 = document.getElementById("wb-cont");
+            let h1value = heading1.innerHTML;
+            h1value = h1value.replace("Agent help:", "<span class='text-muted small'>Agent Help</span> <br>");
+            heading1.innerHTML = h1value;
+
+            function doThis(elm, ic, pt) {
+                let element = document.getElementById(elm);
+                let icon = document.getElementById(ic);
+                let path = document.getElementById(pt);
+                if (element.classList.contains("hidden")) {
+                    element.classList.remove("hidden");
+                    icon.setAttribute("class", "svg-inline--fa fa-circle-chevron-up pr-3 text-[46px]");
+                    icon.setAttribute("data-icon", "circle-chevron-up");
+                    path.setAttribute(
+                        "d",
+                        "M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512zM377 271c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-87-87-87 87c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9L239 167c9.4-9.4 24.6-9.4 33.9 0L377 271z"
+                    );
+                } else {
+                    element.classList.add("hidden");
+                    icon.setAttribute("class", "svg-inline--fa fa-circle-chevron-down pr-3 text-[46px]");
+                    icon.setAttribute("data-icon", "circle-chevron-down");
+                    path.setAttribute(
+                        "d",
+                        "M256 0a256 256 0 1 0 0 512 256 256 0 1 0 0-512zM135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87 87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0L135 241z"
+                    );
+                }
+            }
+        </script>
+    </head>
+    <body vocab="http://schema.org/" typeof="WebPage">
+        <header class="print:hidden" data-testid="header">
+            <div id="wb-bnr">
+                <div class="container flex items-center justify-between gap-6 py-2.5 sm:py-4.5">
+                    <a href=""
+                        ><img
+                            class="max-h-4.75 max-w-51.5 md:max-h-8.5 md:max-w-90"
+                            src="https://www.canada.ca/etc/designs/canada/wet-boew/assets/sig-blk-en.svg"
+                            alt="Government of Canada"
+                            width="300"
+                            height="28"
+                            decoding="async"
+                        /><span class="sr-only"> <!-- -->/<span lang="fr">Gouvernement du Canada</span></span></a
+                    ><a
+                        lang="fr"
+                        class="underline hover:text-blue-700 focus:text-blue-700 text-slate-700 sm:text-lg hidden sm:inline"
+                        data-gc-analytics-customclick="ESDC-EDSC_MSCA-MDSC-SCH:My dashboard:Français"
+                        href="../fr/app/start.html"
+                        data-discover="true"
+                        >Français</a
+                    ><a
+                        lang="fr"
+                        class="underline hover:text-blue-700 focus:text-blue-700 text-slate-700 sm:text-lg inline sm:hidden"
+                        data-gc-analytics-customclick="ESDC-EDSC_MSCA-MDSC-SCH:My dashboard:FR"
+                        href="../fr/app/start.html"
+                        data-discover="true"
+                        >FR</a
+                    >
+                </div>
+            </div>
+            <div class="sm:bg-blue-primary sm:h-15">
+                <div class="align-center mx-auto flex flex-wrap justify-between sm:container sm:flex-nowrap">
+                    <div class="bg-blue-primary order-1 flex h-15 w-full sm:w-auto">
+                        <span
+                            id="msca-app-bar-menu-label"
+                            class="font-lato my-auto px-3 text-[19px] font-bold text-white md:px-1 md:text-2xl"
+                            >My Service Canada Account</span
+                        >
+                    </div>
+                    <div
+                        class="order-3 mt-8 mr-8 ml-auto w-full px-4 sm:order-2 sm:mt-1 sm:w-auto lg:order-2 lg:w-auto"
+                    >
+                        <a
+                            class="inline-flex items-center justify-center align-middle font-sans no-underline outline-offset-4 md:px-[15px] px-[15px] py-2.5 text-slate-700 hover:bg-neutral-300 focus:bg-neutral-300 h-[45px] rounded-md border-2 border-[#2B4380] bg-white md:h-[48px]"
+                            data-gc-analytics-customclick="ESDC-EDSC_MSCA-MDSC-SCH:Nav:inbox-button"
+                            id="inbox-button"
+                            href=""
+                            data-discover="true"
+                            ><svg
+                                data-prefix="fas"
+                                data-icon="envelope"
+                                class="svg-inline--fa fa-envelope ml-3 h-[20px] w-[26.67px] md:ml-3.75 md:h-[22px] md:w-[29.67px]"
+                                role="img"
+                                viewBox="0 0 512 512"
+                                aria-hidden="true"
+                                style="transform-origin: 0.5em 0.5em"
+                            >
+                                <g transform="translate(256 256)">
+                                    <g transform="translate(0, 0)  scale(1.625, 1.625)  rotate(0 0 0)">
+                                        <path
+                                            fill="currentColor"
+                                            d="M48 64c-26.5 0-48 21.5-48 48 0 15.1 7.1 29.3 19.2 38.4l208 156c17.1 12.8 40.5 12.8 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48L48 64zM0 196L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-188-198.4 148.8c-34.1 25.6-81.1 25.6-115.2 0L0 196z"
+                                            transform="translate(-256 -256)"
+                                        ></path>
+                                    </g>
+                                </g></svg
+                            ><span
+                                class="ml-2 font-sans text-[18px] leading-[1.55] font-medium whitespace-nowrap md:ml-3.75 md:text-[20px] md:leading-[1.6]"
+                                aria-label="View Inbox Letters"
+                                >Inbox</span
+                            ></a
+                        >
+                    </div>
+                    <div
+                        class="ring-blue-hover items-left order-2 flex w-full text-right text-2xl ring-offset-2 focus:ring-2 focus:outline-none sm:order-3 sm:w-65 lg:order-3"
+                    >
+                        <button
+                            type="button"
+                            id="radix-_R_uj5_"
+                            aria-haspopup="menu"
+                            aria-expanded="false"
+                            data-state="closed"
+                            class="bg-bright-blue-pale text-blue-primary flex h-full w-full flex-nowrap space-x-2 px-4 hover:bg-neutral-300 focus:rounded-md focus:bg-neutral-300 focus:ring-offset-2 focus:outline-hidden aria-expanded:bg-neutral-300 aria-expanded:text-slate-700 sm:space-x-4 ring-blue-hover focus:ring-blue-hover active:ring-blue-hover ring-offset-2 focus:ring-2 active:ring-2"
+                        >
+                            <div class="my-auto flex flex-nowrap items-center space-x-2 py-2 text-base">
+                                <span class="flex items-center"
+                                    ><svg
+                                        class="mr-4"
+                                        width="35"
+                                        height="35"
+                                        viewBox="0 0 35 36"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M17.5 0.499756C7.84 0.499756 0 8.33976 0 17.9998C0 27.6598 7.84 35.4998 17.5 35.4998C27.16 35.4998 35 27.6598 35 17.9998C35 8.33976 27.16 0.499756 17.5 0.499756ZM17.5 7.49976C20.8775 7.49976 23.625 10.2473 23.625 13.6248C23.625 17.0023 20.8775 19.7498 17.5 19.7498C14.1225 19.7498 11.375 17.0023 11.375 13.6248C11.375 10.2473 14.1225 7.49976 17.5 7.49976ZM17.5 31.9998C13.9475 31.9998 9.7475 30.5648 6.755 26.9598C9.7125 24.6498 13.44 23.2498 17.5 23.2498C21.56 23.2498 25.2875 24.6498 28.245 26.9598C25.2525 30.5648 21.0525 31.9998 17.5 31.9998Z"
+                                            fill="#26374A"
+                                        ></path></svg></span
+                                ><span
+                                    id="account-drop-bar-menu-label"
+                                    class="ring-blue-hover ml-2 py-2 font-sans text-base font-bold"
+                                    >Account</span
+                                >
+                            </div>
+                            <svg
+                                data-prefix="fas"
+                                data-icon="chevron-down"
+                                class="svg-inline--fa fa-chevron-down my-auto ml-auto size-4"
+                                role="img"
+                                viewBox="0 0 448 512"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    d="M201.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 338.7 54.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                                ></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="container print:w-full print:max-w-none">
+            <div class="pb-2" id="myDashboardContent" data-testid="myDashboardContent-test">
+                <div class="mb-8">
+                    <div class="mt-10 mb-8">
+                        <h1
+                            id="wb-cont"
+                            tabindex="-1"
+                            class="text-[37px]/11 focus-visible:ring-3 md:text-[41px]/12 after:mt-2 after:block after:h-1.5 after:w-18 after:bg-red-700"
+                        >
+                            My dashboard
+                        </h1>
+                    </div>
+                </div>
+                <div class="my-6 rounded border border-gray-300 shadow" data-cy="cards">
+                    <h2
+                        class="px-3 py-4 sm:px-8 md:mt-2 md:px-15 md:py-8 md:text-[39px] md:leading-[1.23]"
+                        data-cy="cardtitle"
+                    >
+                        Canadian Dental Care Plan
+                    </h2>
+                    <button
+                        class="text-deep-blue-60d hover:text-blue-hover focus:text-blue-hover text-lg/7 text-blue-default w-full px-3 pb-6 sm:px-8 md:px-15 md:pt-4 md:pb-8"
+                        data-cy="viewMoreLessButton"
+                        id="card-canadian-dental-care-plan-expand-collapsetest-card-button-"
+                        data-testid="card-canadian-dental-care-plan-expand-collapsedataTestId"
+                        aria-expanded="false"
+                        aria-label="Canadian Dental Care Plan - Applications, coverage, personal information"
+                        data-gc-analytics-customclick="ESDC-EDSC_MSCA-MSDC-SCH:My dashboard - CDCP:ViewMoreLessButton open"
+                    >
+                        <div class="flex sm:items-center">
+                            <svg
+                                data-prefix="fas"
+                                data-icon="circle-chevron-down"
+                                class="svg-inline--fa fa-circle-chevron-down pr-3 text-[46px]"
+                                role="img"
+                                viewBox="0 0 512 512"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    d="M256 0a256 256 0 1 0 0 512 256 256 0 1 0 0-512zM135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87 87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0L135 241z"
+                                ></path></svg
+                            ><span class="text-left leading-7">Applications, coverage, personal information</span>
+                        </div>
+                    </button>
+                </div>
+                <div class="my-6 rounded border border-gray-300 shadow" data-cy="cards">
+                    <h2
+                        class="px-3 py-4 sm:px-8 md:mt-2 md:px-15 md:py-8 md:text-[39px] md:leading-[1.23]"
+                        data-cy="cardtitle"
+                    >
+                        Employment Insurance
+                    </h2>
+                    <button
+                        class="text-deep-blue-60d hover:text-blue-hover focus:text-blue-hover text-lg/7 text-blue-default w-full px-3 pb-6 sm:px-8 md:px-15 md:pt-4 md:pb-8"
+                        data-cy="viewMoreLessButton"
+                        id="card-employment-insurance-expand-collapsetest-card-button-"
+                        data-testid="card-employment-insurance-expand-collapsedataTestId"
+                        aria-expanded="false"
+                        aria-label="Employment Insurance - Employment Insurance benefits"
+                        data-gc-analytics-customclick="ESDC-EDSC_MSCA-MSDC-SCH:My dashboard - EI Benefits:ViewMoreLessButton open"
+                    >
+                        <div class="flex sm:items-center">
+                            <svg
+                                data-prefix="fas"
+                                data-icon="circle-chevron-down"
+                                class="svg-inline--fa fa-circle-chevron-down pr-3 text-[46px]"
+                                role="img"
+                                viewBox="0 0 512 512"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    d="M256 0a256 256 0 1 0 0 512 256 256 0 1 0 0-512zM135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87 87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0L135 241z"
+                                ></path></svg
+                            ><span class="text-left leading-7">Employment Insurance benefits</span>
+                        </div></button
+                    ><button
+                        class="text-deep-blue-60d hover:text-blue-hover focus:text-blue-hover text-lg/7 text-blue-default w-full px-3 pb-6 sm:px-8 md:px-15 md:pt-4 md:pb-8"
+                        data-cy="viewMoreLessButton"
+                        id="card-employment-insurance-ccb-expand-collapsetest-card-button-"
+                        data-testid="card-employment-insurance-ccb-expand-collapsedataTestId"
+                        aria-expanded="false"
+                        aria-label="Employment Insurance - Benefits for self-employed people: Compassionate care and family caregiver"
+                        data-gc-analytics-customclick="ESDC-EDSC_MSCA-MSDC-SCH:My dashboard - UND:ViewMoreLessButton open"
+                    >
+                        <div class="flex sm:items-center">
+                            <svg
+                                data-prefix="fas"
+                                data-icon="circle-chevron-down"
+                                class="svg-inline--fa fa-circle-chevron-down pr-3 text-[46px]"
+                                role="img"
+                                viewBox="0 0 512 512"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    d="M256 0a256 256 0 1 0 0 512 256 256 0 1 0 0-512zM135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87 87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0L135 241z"
+                                ></path></svg
+                            ><span class="text-left leading-7"
+                                >Benefits for self-employed people: Compassionate care and family caregiver</span
+                            >
+                        </div>
+                    </button>
+                </div>
+                <div class="my-6 rounded border border-gray-300 shadow" data-cy="cards">
+                    <h2
+                        class="px-3 py-4 sm:px-8 md:mt-2 md:px-15 md:py-8 md:text-[39px] md:leading-[1.23]"
+                        data-cy="cardtitle"
+                    >
+                        Canada Pension Plan
+                    </h2>
+                    <button
+                        class="text-deep-blue-60d hover:text-blue-hover focus:text-blue-hover text-lg/7 text-blue-default w-full px-3 pb-6 sm:px-8 md:px-15 md:pt-4 md:pb-8"
+                        onclick="doThis('body_3', 'icon3', 'path3')"
+                        id="s-3"
+                        aria-expanded="false"
+                        aria-label="Canada Pension Plan - Applications, payments, taxes, documents, provisions, personal information"
+                    >
+                        <div class="flex sm:items-center">
+                            <svg
+                                data-prefix="fas"
+                                data-icon="circle-chevron-down"
+                                class="svg-inline--fa fa-circle-chevron-down pr-3 text-[46px]"
+                                role="img"
+                                viewBox="0 0 512 512"
+                                aria-hidden="true"
+                                id="icon3"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    d="M256 0a256 256 0 1 0 0 512 256 256 0 1 0 0-512zM135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87 87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0L135 241z"
+                                    id="path3"
+                                ></path>
+                            </svg>
+
+                            <span class="text-left leading-7"
+                                >Applications, payments, taxes, documents, provisions, personal information</span
+                            >
+                        </div>
+                    </button>
+                    <div id="body_3" class="hidden">
+                        <div>
+                            <div class="text-deep-blue-dark w-full pb-3 font-sans text-xl sm:px-8 sm:pb-6 md:px-15">
+                                <div class="relative pl-4 sm:pl-6 bg-white">
+                                    <div class="absolute top-3 left-2.25 pt-1 pb-1 sm:left-4.25 bg-white">
+                                        <svg
+                                            data-prefix="fas"
+                                            data-icon="circle-info"
+                                            class="svg-inline--fa fa-circle-info text-brighter-blue-dark h-6 w-6"
+                                            role="img"
+                                            viewBox="0 0 512 512"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                fill="currentColor"
+                                                d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512zM224 160a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm-8 64l48 0c13.3 0 24 10.7 24 24l0 88 8 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-80 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l24 0 0-64-24 0c-13.3 0-24-10.7-24-24s10.7-24 24-24z"
+                                            ></path>
+                                        </svg>
+                                    </div>
+                                    <div class="overflow-auto border-l-10 pt-2.5 pb-4.5 pl-6 border-brighter-blue-dark">
+                                        <h2 class="text-gray-darker text-[28px] font-bold">Information</h2>
+                                        Please note that information for the CPP post-retirement disability benefit
+                                        (PRDB) is not available at this time.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-deep-blue-dark w-full pb-3 font-sans text-xl sm:px-8 sm:pb-6 md:px-15">
+                                <div class="relative pl-4 sm:pl-6 bg-white">
+                                    <div class="absolute top-3 left-2.25 pt-1 pb-1 sm:left-4.25 bg-white">
+                                        <svg
+                                            data-prefix="fas"
+                                            data-icon="circle-info"
+                                            class="svg-inline--fa fa-circle-info text-brighter-blue-dark h-6 w-6"
+                                            role="img"
+                                            viewBox="0 0 512 512"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                fill="currentColor"
+                                                d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512zM224 160a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm-8 64l48 0c13.3 0 24 10.7 24 24l0 88 8 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-80 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l24 0 0-64-24 0c-13.3 0-24-10.7-24-24s10.7-24 24-24z"
+                                            ></path>
+                                        </svg>
+                                    </div>
+                                    <div class="overflow-auto border-l-10 pt-2.5 pb-4.5 pl-6 border-brighter-blue-dark">
+                                        <h2 class="text-gray-darker text-[28px] font-bold">Information</h2>
+                                        <div>
+                                            <p class="mb-3">
+                                                Please be aware that Service Canada receives all online applications
+                                                from My Service Canada Account in Moncton, New Brunswick. As a result,
+                                                your online application will be received and recorded by the Service
+                                                Canada Moncton office in the Atlantic Standard Time.
+                                            </p>
+                                            <p class="mb-3">
+                                                If applying on the last day of the month, the time of day you submit
+                                                your online application could affect the start date of your monthly
+                                                benefits.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pb-6" data-cy="sectionList">
+                                <div class="bg-deep-blue-60d" data-cy="most-requested-section">
+                                    <div class="h-full">
+                                        <h3
+                                            class="pt-6 pl-3 text-white sm:pl-8 md:pl-15 md:text-[29px] md:leading-[1.38]"
+                                            data-cy="most-requested"
+                                            id="staypage"
+                                        >
+                                            Most requested
+                                        </h3>
+                                        <ul
+                                            class="grid list-outside list-disc grid-cols-1 px-9 pt-2 pb-5 text-white sm:px-14 md:px-[100px] md:pt-4"
+                                            data-cy="most-req-links"
+                                        >
+                                            <li
+                                                class="break-inside-avoid-column py-2 font-bold"
+                                                data-cy="most-req-tasklink"
+                                            >
+                                                <a
+                                                    aria-label="Most requested - View my status updates -
+                            "
+                                                    data-gc-analytics-customclick="ESDC-EDSC_MSCA-MSDC-SCH:My dashboard CPP Most requested:cpp-view-my-status-updates"
+                                                    class="hover:text-gray-50a rounded-sm text-white underline focus:outline-1 focus:outline-white"
+                                                    href="#staypage"
+                                                    target="_self"
+                                                    ><span class="static text-xl font-normal"
+                                                        >View my status updates<span></span></span
+                                                ></a>
+                                            </li>
+                                            <li
+                                                class="break-inside-avoid-column py-2 font-bold"
+                                                data-cy="most-req-tasklink"
+                                            >
+                                                <a
+                                                    aria-label="Most requested - View my payments -
+                            "
+                                                    data-gc-analytics-customclick="ESDC-EDSC_MSCA-MSDC-SCH:My dashboard CPP Most requested:cpp-oas-view-my-payments"
+                                                    class="hover:text-gray-50a rounded-sm text-white underline focus:outline-1 focus:outline-white"
+                                                    href="#staypage"
+                                                    target="_self"
+                                                    ><span class="static text-xl font-normal"
+                                                        >View my payments<span></span></span
+                                                ></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="gap-x-[60px] pt-8 pl-3 sm:pl-8 md:columns-2 md:px-15" data-cy="task-list">
+                                    <div data-cy="Task">
+                                        <div class="inline-block w-full" data-testid="benefitTasks-test">
+                                            <h3 class="md:text-[29px] md:leading-[1.38]" data-cy="task-group-list">
+                                                Applications
+                                            </h3>
+                                            <ul
+                                                class="w-full space-y-4 px-6 pt-3 pb-8 md:pb-12 md:pl-8 lg:pl-10"
+                                                data-cy="taskList"
+                                            >
+                                                <li class="text-deep-blue-dark list-disc font-bold" data-cy="task-link">
+                                                    <a
+                                                        aria-label="Applications - View my status updates - 
+                "
+                                                        data-gc-analytics-customclick="ESDC-EDSC_MSCA-MSDC-SCH:My dashboard CPP:cpp-view-my-status-updates"
+                                                        class="text-deep-blue-dark hover:text-blue-hover focus:outline-blue-hover flex items-center rounded-sm py-1 underline focus:outline-1"
+                                                        href="#staypage"
+                                                        target="_self"
+                                                        ><span
+                                                            class="static flex flex-nowrap text-xl font-normal md:flex-wrap"
+                                                            >View my status updates</span
+                                                        ></a
+                                                    >
+                                                </li>
+                                                <li class="text-deep-blue-dark list-disc font-bold" data-cy="task-link">
+                                                    <a
+                                                        aria-label="Applications - Apply for Canada Pension Plan retirement pension - 
+                "
+                                                        data-gc-analytics-customclick="ESDC-EDSC_MSCA-MSDC-SCH:My dashboard CPP:apply-for-canada-pension-plan"
+                                                        class="text-deep-blue-dark hover:text-blue-hover focus:outline-blue-hover flex items-center rounded-sm py-1 underline focus:outline-1"
+                                                        href="./UnableCont.html"
+                                                        target="_self"
+                                                        ><span
+                                                            class="static flex flex-nowrap text-xl font-normal md:flex-wrap"
+                                                            >Apply for Canada Pension Plan retirement pension</span
+                                                        ></a
+                                                    >
+                                                </li>
+                                                <li class="text-deep-blue-dark list-disc font-bold" data-cy="task-link">
+                                                    <a
+                                                        aria-label="Applications - Apply for Canada Pension Plan disability benefits - 
+                "
+                                                        data-gc-analytics-customclick="ESDC-EDSC_MSCA-MSDC-SCH:My dashboard CPP:apply-for-canada-pension-plan-disability"
+                                                        class="text-deep-blue-dark hover:text-blue-hover focus:outline-blue-hover flex items-center rounded-sm py-1 underline focus:outline-1"
+                                                        href="#staypage"
+                                                        target="_self"
+                                                        ><span
+                                                            class="static flex flex-nowrap text-xl font-normal md:flex-wrap"
+                                                            >Apply for Canada Pension Plan disability benefits</span
+                                                        ></a
+                                                    >
+                                                </li>
+                                                <li class="text-deep-blue-dark list-disc font-bold" data-cy="task-link">
+                                                    <a
+                                                        aria-label="Applications - Apply for Canada Pension Plan death benefit - 
+                "
+                                                        data-gc-analytics-customclick="ESDC-EDSC_MSCA-MSDC-SCH:My dashboard CPP:apply-for-canada-pension-plan-death-benefits"
+                                                        class="text-deep-blue-dark hover:text-blue-hover focus:outline-blue-hover flex items-center rounded-sm py-1 underline focus:outline-1"
+                                                        href="#staypage"
+                                                        target="_self"
+                                                        ><span
+                                                            class="static flex flex-nowrap text-xl font-normal md:flex-wrap"
+                                                            >Apply for Canada Pension Plan death benefit</span
+                                                        ></a
+                                                    >
+                                                </li>
+                                                <li class="text-deep-blue-dark list-disc font-bold" data-cy="task-link">
+                                                    <a
+                                                        aria-label="Applications - Apply for Canada Pension Plan survivor's pension and children's benefits - 
+                "
+                                                        data-gc-analytics-customclick="ESDC-EDSC_MSCA-MSDC-SCH:My dashboard CPP:apply-for-canada-pension-plan-survivors-pension-and-childrens-benefit"
+                                                        class="text-deep-blue-dark hover:text-blue-hover focus:outline-blue-hover flex items-center rounded-sm py-1 underline focus:outline-1"
+                                                        href="#staypage"
+                                                        target="_self"
+                                                        ><span
+                                                            class="static flex flex-nowrap text-xl font-normal md:flex-wrap"
+                                                            >Apply for Canada Pension Plan survivor's pension and
+                                                            children's benefits</span
+                                                        ></a
+                                                    >
+                                                </li>
+                                                <li class="text-deep-blue-dark list-disc font-bold" data-cy="task-link">
+                                                    <a
+                                                        aria-label="Applications - Apply for Canada Pension Plan child’s benefit aged 18 to 25 - 
+                "
+                                                        data-gc-analytics-customclick="ESDC-EDSC_MSCA-MSDC-SCH:My dashboard CPP:apply-for-canada-pension-plan-survivors-pension-and-childrens-benefit-aged-18-25"
+                                                        class="text-deep-blue-dark hover:text-blue-hover focus:outline-blue-hover flex items-center rounded-sm py-1 underline focus:outline-1"
+                                                        href="#staypage"
+                                                        target="_self"
+                                                        ><span
+                                                            class="static flex flex-nowrap text-xl font-normal md:flex-wrap"
+                                                            >Apply for Canada Pension Plan child’s benefit aged 18 to
+                                                            25</span
+                                                        ></a
+                                                    >
+                                                </li>
+                                                <li class="text-deep-blue-dark list-disc font-bold" data-cy="task-link">
+                                                    <a
+                                                        aria-label="Applications - Renew your Canada Pension Plan child’s benefit aged 18 to 25 - 
+                "
+                                                        data-gc-analytics-customclick="ESDC-EDSC_MSCA-MSDC-SCH:My dashboard CPP:cpp-submit-a-declaration-of-attendance-at-school-or-university"
+                                                        class="text-deep-blue-dark hover:text-blue-hover focus:outline-blue-hover flex items-center rounded-sm py-1 underline focus:outline-1"
+                                                        href="#staypage"
+                                                        target="_self"
+                                                        ><span
+                                                            class="static flex flex-nowrap text-xl font-normal md:flex-wrap"
+                                                            >Renew your Canada Pension Plan child’s benefit aged 18 to
+                                                            25</span
+                                                        ></a
+                                                    >
+                                                </li>
+                                                <li class="text-deep-blue-dark list-disc font-bold" data-cy="task-link">
+                                                    <a
+                                                        aria-label="Applications - Request a review of a decision - 
+                "
+                                                        data-gc-analytics-customclick="ESDC-EDSC_MSCA-MSDC-SCH:My dashboard CPP:cpp-oas-request-a-review-of-a-decision"
+                                                        class="text-deep-blue-dark hover:text-blue-hover focus:outline-blue-hover flex items-center rounded-sm py-1 underline focus:outline-1"
+                                                        href="#staypage"
+                                                        target="_self"
+                                                        data-discover="true"
+                                                        ><span
+                                                            class="static flex flex-nowrap text-xl font-normal md:flex-wrap"
+                                                            >Request a review of a decision</span
+                                                        ></a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div data-cy="Task">
+                                        <div class="inline-block w-full" data-testid="benefitTasks-test">
+                                            <h3 class="md:text-[29px] md:leading-[1.38]" data-cy="task-group-list">
+                                                Payments
+                                            </h3>
+                                            <ul
+                                                class="w-full space-y-4 px-6 pt-3 pb-8 md:pb-12 md:pl-8 lg:pl-10"
+                                                data-cy="taskList"
+                                            >
+                                                <li class="text-deep-blue-dark list-disc font-bold" data-cy="task-link">
+                                                    <a
+                                                        aria-label="Payments - View my payments - 
+                "
+                                                        data-gc-analytics-customclick="ESDC-EDSC_MSCA-MSDC-SCH:My dashboard CPP:cpp-oas-view-my-payments"
+                                                        class="text-deep-blue-dark hover:text-blue-hover focus:outline-blue-hover flex items-center rounded-sm py-1 underline focus:outline-1"
+                                                        href="#staypage"
+                                                        target="_self"
+                                                        ><span
+                                                            class="static flex flex-nowrap text-xl font-normal md:flex-wrap"
+                                                            >View my payments</span
+                                                        ></a
+                                                    >
+                                                </li>
+                                                <li class="text-deep-blue-dark list-disc font-bold" data-cy="task-link">
+                                                    <a
+                                                        aria-label="Payments - View my contributions - 
+                "
+                                                        data-gc-analytics-customclick="ESDC-EDSC_MSCA-MSDC-SCH:My dashboard CPP:cpp-view-my-contributions"
+                                                        class="text-deep-blue-dark hover:text-blue-hover focus:outline-blue-hover flex items-center rounded-sm py-1 underline focus:outline-1"
+                                                        href="#staypage"
+                                                        target="_self"
+                                                        ><span
+                                                            class="static flex flex-nowrap text-xl font-normal md:flex-wrap"
+                                                            >View my contributions</span
+                                                        ></a
+                                                    >
+                                                </li>
+                                                <li class="text-deep-blue-dark list-disc font-bold" data-cy="task-link">
+                                                    <a
+                                                        aria-label="Payments - View my benefit estimates - 
+                "
+                                                        data-gc-analytics-customclick="ESDC-EDSC_MSCA-MSDC-SCH:My dashboard CPP:cpp-estimate-my-retirement-income"
+                                                        class="text-deep-blue-dark hover:text-blue-hover focus:outline-blue-hover flex items-center rounded-sm py-1 underline focus:outline-1"
+                                                        href="#staypage"
+                                                        target="_self"
+                                                        ><span
+                                                            class="static flex flex-nowrap text-xl font-normal md:flex-wrap"
+                                                            >View my benefit estimates</span
+                                                        ></a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div data-cy="Task">
+                                        <div class="inline-block w-full" data-testid="benefitTasks-test">
+                                            <h3 class="md:text-[29px] md:leading-[1.38]" data-cy="task-group-list">
+                                                Taxes
+                                            </h3>
+                                            <ul
+                                                class="w-full space-y-4 px-6 pt-3 pb-8 md:pb-12 md:pl-8 lg:pl-10"
+                                                data-cy="taskList"
+                                            >
+                                                <li class="text-deep-blue-dark list-disc font-bold" data-cy="task-link">
+                                                    <a
+                                                        aria-label="Taxes - View my tax slips - 
+                "
+                                                        data-gc-analytics-customclick="ESDC-EDSC_MSCA-MSDC-SCH:My dashboard CPP:view-my-tax-slips"
+                                                        class="text-deep-blue-dark hover:text-blue-hover focus:outline-blue-hover flex items-center rounded-sm py-1 underline focus:outline-1"
+                                                        href="#staypage"
+                                                        target="_self"
+                                                        ><span
+                                                            class="static flex flex-nowrap text-xl font-normal md:flex-wrap"
+                                                            >View my tax slips</span
+                                                        ></a
+                                                    >
+                                                </li>
+                                                <li class="text-deep-blue-dark list-disc font-bold" data-cy="task-link">
+                                                    <a
+                                                        aria-label="Taxes - Change my tax deductions - 
+                "
+                                                        data-gc-analytics-customclick="ESDC-EDSC_MSCA-MSDC-SCH:My dashboard CPP:cpp-change-my-tax-deductions"
+                                                        class="text-deep-blue-dark hover:text-blue-hover focus:outline-blue-hover flex items-center rounded-sm py-1 underline focus:outline-1"
+                                                        href="#staypage"
+                                                        target="_self"
+                                                        ><span
+                                                            class="static flex flex-nowrap text-xl font-normal md:flex-wrap"
+                                                            >Change my tax deductions</span
+                                                        ></a
+                                                    >
+                                                </li>
+                                                <li class="text-deep-blue-dark list-disc font-bold" data-cy="task-link">
+                                                    <a
+                                                        aria-label="Taxes - Change my tax slip delivery options - 
+                "
+                                                        data-gc-analytics-customclick="ESDC-EDSC_MSCA-MSDC-SCH:My dashboard CPP:change-my-tax-slip-delivery-options"
+                                                        class="text-deep-blue-dark hover:text-blue-hover focus:outline-blue-hover flex items-center rounded-sm py-1 underline focus:outline-1"
+                                                        href="#staypage"
+                                                        target="_self"
+                                                        ><span
+                                                            class="static flex flex-nowrap text-xl font-normal md:flex-wrap"
+                                                            >Change my tax slip delivery options</span
+                                                        ></a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div data-cy="Task">
+                                        <div class="inline-block w-full" data-testid="benefitTasks-test">
+                                            <h3 class="md:text-[29px] md:leading-[1.38]" data-cy="task-group-list">
+                                                Documents
+                                            </h3>
+                                            <ul
+                                                class="w-full space-y-4 px-6 pt-3 pb-8 md:pb-12 md:pl-8 lg:pl-10"
+                                                data-cy="taskList"
+                                            >
+                                                <li class="text-deep-blue-dark list-disc font-bold" data-cy="task-link">
+                                                    <a
+                                                        aria-label="Documents - Submit documents for disability benefits - 
+                "
+                                                        data-gc-analytics-customclick="ESDC-EDSC_MSCA-MSDC-SCH:My dashboard CPP:cppd-submit-documents"
+                                                        class="text-deep-blue-dark hover:text-blue-hover focus:outline-blue-hover flex items-center rounded-sm py-1 underline focus:outline-1"
+                                                        href="#staypage"
+                                                        target="_self"
+                                                        ><span
+                                                            class="static flex flex-nowrap text-xl font-normal md:flex-wrap"
+                                                            >Submit documents for disability benefits</span
+                                                        ></a
+                                                    >
+                                                </li>
+                                                <li class="text-deep-blue-dark list-disc font-bold" data-cy="task-link">
+                                                    <a
+                                                        aria-label="Documents - Submit documents for death benefit - 
+                "
+                                                        data-gc-analytics-customclick="ESDC-EDSC_MSCA-MSDC-SCH:My dashboard CPP:cpp-submit-documents-death"
+                                                        class="text-deep-blue-dark hover:text-blue-hover focus:outline-blue-hover flex items-center rounded-sm py-1 underline focus:outline-1"
+                                                        href="#staypage"
+                                                        target="_self"
+                                                        ><span
+                                                            class="static flex flex-nowrap text-xl font-normal md:flex-wrap"
+                                                            >Submit documents for death benefit</span
+                                                        ></a
+                                                    >
+                                                </li>
+                                                <li class="text-deep-blue-dark list-disc font-bold" data-cy="task-link">
+                                                    <a
+                                                        aria-label="Documents - Submit documents for survivor benefits - 
+                "
+                                                        data-gc-analytics-customclick="ESDC-EDSC_MSCA-MSDC-SCH:My dashboard CPP:cpp-submit-documents-survivor"
+                                                        class="text-deep-blue-dark hover:text-blue-hover focus:outline-blue-hover flex items-center rounded-sm py-1 underline focus:outline-1"
+                                                        href="#staypage"
+                                                        target="_self"
+                                                        ><span
+                                                            class="static flex flex-nowrap text-xl font-normal md:flex-wrap"
+                                                            >Submit documents for survivor benefits</span
+                                                        ></a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div data-cy="Task">
+                                        <div class="inline-block w-full" data-testid="benefitTasks-test">
+                                            <h3 class="md:text-[29px] md:leading-[1.38]" data-cy="task-group-list">
+                                                Provisions
+                                            </h3>
+                                            <ul
+                                                class="w-full space-y-4 px-6 pt-3 pb-8 md:pb-12 md:pl-8 lg:pl-10"
+                                                data-cy="taskList"
+                                            >
+                                                <li class="text-deep-blue-dark list-disc font-bold" data-cy="task-link">
+                                                    <a
+                                                        aria-label="Provisions - View or request my child-rearing provision - 
+                "
+                                                        data-gc-analytics-customclick="ESDC-EDSC_MSCA-MSDC-SCH:My dashboard CPP:cpp-view-my-child-rearing-provision"
+                                                        class="text-deep-blue-dark hover:text-blue-hover focus:outline-blue-hover flex items-center rounded-sm py-1 underline focus:outline-1"
+                                                        href="#staypage"
+                                                        target="_self"
+                                                        ><span
+                                                            class="static flex flex-nowrap text-xl font-normal md:flex-wrap"
+                                                            >View or request my child-rearing provision</span
+                                                        ></a
+                                                    >
+                                                </li>
+                                                <li class="text-deep-blue-dark list-disc font-bold" data-cy="task-link">
+                                                    <a
+                                                        aria-label="Provisions - Apply for Canada Pension Plan credit split - 
+                "
+                                                        data-gc-analytics-customclick="ESDC-EDSC_MSCA-MSDC-SCH:My dashboard CPP:apply-for-canada-pension-plan-credit-split"
+                                                        class="text-deep-blue-dark hover:text-blue-hover focus:outline-blue-hover flex items-center rounded-sm py-1 underline focus:outline-1"
+                                                        href="#staypage"
+                                                        target="_self"
+                                                        ><span
+                                                            class="static flex flex-nowrap text-xl font-normal md:flex-wrap"
+                                                            >Apply for Canada Pension Plan credit split</span
+                                                        ></a
+                                                    >
+                                                </li>
+                                                <li class="text-deep-blue-dark list-disc font-bold" data-cy="task-link">
+                                                    <a
+                                                        aria-label="Provisions - Apply for Canada Pension Plan pension sharing - 
+                "
+                                                        data-gc-analytics-customclick="ESDC-EDSC_MSCA-MSDC-SCH:My dashboard CPP:apply-for-canada-pension-plan-sharing"
+                                                        class="text-deep-blue-dark hover:text-blue-hover focus:outline-blue-hover flex items-center rounded-sm py-1 underline focus:outline-1"
+                                                        href="#staypage"
+                                                        target="_self"
+                                                        ><span
+                                                            class="static flex flex-nowrap text-xl font-normal md:flex-wrap"
+                                                            >Apply for Canada Pension Plan pension sharing</span
+                                                        ></a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div data-cy="Task">
+                                        <div class="inline-block w-full" data-testid="benefitTasks-test">
+                                            <h3 class="md:text-[29px] md:leading-[1.38]" data-cy="task-group-list">
+                                                Personal information
+                                            </h3>
+                                            <ul
+                                                class="w-full space-y-4 px-6 pt-3 pb-8 md:pb-12 md:pl-8 lg:pl-10"
+                                                data-cy="taskList"
+                                            >
+                                                <li class="text-deep-blue-dark list-disc font-bold" data-cy="task-link">
+                                                    <a
+                                                        aria-label="Personal information - Update my personal information - 
+                "
+                                                        data-gc-analytics-customclick="ESDC-EDSC_MSCA-MSDC-SCH:My dashboard CPP:update-my-profile"
+                                                        class="text-deep-blue-dark hover:text-blue-hover focus:outline-blue-hover flex items-center rounded-sm py-1 underline focus:outline-1"
+                                                        href="#staypage"
+                                                        target="_self"
+                                                        data-discover="true"
+                                                        ><span
+                                                            class="static flex flex-nowrap text-xl font-normal md:flex-wrap"
+                                                            >Update my personal information</span
+                                                        ></a
+                                                    >
+                                                </li>
+                                                <li class="text-deep-blue-dark list-disc font-bold" data-cy="task-link">
+                                                    <a
+                                                        aria-label="Personal information - Give consent to communicate on my behalf - 
+                "
+                                                        data-gc-analytics-customclick="ESDC-EDSC_MSCA-MSDC-SCH:My dashboard CPP:give-consent-to-communicate-on-my-behalf"
+                                                        class="text-deep-blue-dark hover:text-blue-hover focus:outline-blue-hover flex items-center rounded-sm py-1 underline focus:outline-1"
+                                                        href="#staypage"
+                                                        target="_self"
+                                                        ><span
+                                                            class="static flex flex-nowrap text-xl font-normal md:flex-wrap"
+                                                            >Give consent to communicate on my behalf</span
+                                                        ></a
+                                                    >
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-6 rounded border border-gray-300 shadow" data-cy="cards">
+                    <h2
+                        class="px-3 py-4 sm:px-8 md:mt-2 md:px-15 md:py-8 md:text-[39px] md:leading-[1.23]"
+                        data-cy="cardtitle"
+                    >
+                        Old Age Security
+                    </h2>
+                    <button
+                        class="text-deep-blue-60d hover:text-blue-hover focus:text-blue-hover text-lg/7 text-blue-default w-full px-3 pb-6 sm:px-8 md:px-15 md:pt-4 md:pb-8"
+                        data-cy="viewMoreLessButton"
+                        id="card-old-age-security-expand-collapsetest-card-button-"
+                        data-testid="card-old-age-security-expand-collapsedataTestId"
+                        aria-expanded="false"
+                        aria-label="Old Age Security - Benefit information, taxes"
+                        data-gc-analytics-customclick="ESDC-EDSC_MSCA-MSDC-SCH:My dashboard - OASGIS:ViewMoreLessButton open"
+                    >
+                        <div class="flex sm:items-center">
+                            <svg
+                                data-prefix="fas"
+                                data-icon="circle-chevron-down"
+                                class="svg-inline--fa fa-circle-chevron-down pr-3 text-[46px]"
+                                role="img"
+                                viewBox="0 0 512 512"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    d="M256 0a256 256 0 1 0 0 512 256 256 0 1 0 0-512zM135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87 87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0L135 241z"
+                                ></path></svg
+                            ><span class="text-left leading-7">Benefit information, taxes</span>
+                        </div>
+                    </button>
+                </div>
+                <div class="my-6 rounded border border-gray-300 shadow" data-cy="cards">
+                    <h2
+                        class="px-3 py-4 sm:px-8 md:mt-2 md:px-15 md:py-8 md:text-[39px] md:leading-[1.23]"
+                        data-cy="cardtitle"
+                    >
+                        Canada Disability Benefit
+                    </h2>
+                    <button
+                        class="text-deep-blue-60d hover:text-blue-hover focus:text-blue-hover text-lg/7 text-blue-default w-full px-3 pb-6 sm:px-8 md:px-15 md:pt-4 md:pb-8"
+                        data-cy="viewMoreLessButton"
+                        id="card-canada-disability-benefit-expand-collapsetest-card-button-"
+                        data-testid="card-canada-disability-benefit-expand-collapsedataTestId"
+                        aria-expanded="false"
+                        aria-label="Canada Disability Benefit - Most requested actions"
+                        data-gc-analytics-customclick="ESDC-EDSC_MSCA-MSDC-SCH:My dashboard - CDB:ViewMoreLessButton open"
+                    >
+                        <div class="flex sm:items-center">
+                            <svg
+                                data-prefix="fas"
+                                data-icon="circle-chevron-down"
+                                class="svg-inline--fa fa-circle-chevron-down pr-3 text-[46px]"
+                                role="img"
+                                viewBox="0 0 512 512"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    d="M256 0a256 256 0 1 0 0 512 256 256 0 1 0 0-512zM135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87 87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0L135 241z"
+                                ></path></svg
+                            ><span class="text-left leading-7">Most requested actions</span>
+                        </div>
+                    </button>
+                </div>
+                <div class="my-6 rounded border border-gray-300 shadow" data-cy="cards">
+                    <h2
+                        class="px-3 py-4 sm:px-8 md:mt-2 md:px-15 md:py-8 md:text-[39px] md:leading-[1.23]"
+                        data-cy="cardtitle"
+                    >
+                        Social Insurance Number
+                    </h2>
+                    <button
+                        class="text-deep-blue-60d hover:text-blue-hover focus:text-blue-hover text-lg/7 text-blue-default w-full px-3 pb-6 sm:px-8 md:px-15 md:pt-4 md:pb-8"
+                        data-cy="viewMoreLessButton"
+                        id="card-social-insurance-number-expand-collapsetest-card-button-"
+                        data-testid="card-social-insurance-number-expand-collapsedataTestId"
+                        aria-expanded="false"
+                        aria-label="Social Insurance Number - Most requested actions"
+                        data-gc-analytics-customclick="ESDC-EDSC_MSCA-MSDC-SCH:My dashboard - SINOM:ViewMoreLessButton open"
+                    >
+                        <div class="flex sm:items-center">
+                            <svg
+                                data-prefix="fas"
+                                data-icon="circle-chevron-down"
+                                class="svg-inline--fa fa-circle-chevron-down pr-3 text-[46px]"
+                                role="img"
+                                viewBox="0 0 512 512"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    d="M256 0a256 256 0 1 0 0 512 256 256 0 1 0 0-512zM135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87 87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0L135 241z"
+                                ></path></svg
+                            ><span class="text-left leading-7">Most requested actions</span>
+                        </div>
+                    </button>
+                </div>
+                <div class="my-6 rounded border border-gray-300 shadow" data-cy="cards">
+                    <h2
+                        class="px-3 py-4 sm:px-8 md:mt-2 md:px-15 md:py-8 md:text-[39px] md:leading-[1.23]"
+                        data-cy="cardtitle"
+                    >
+                        National Student Loans Service Centre
+                    </h2>
+                    <button
+                        class="text-deep-blue-60d hover:text-blue-hover focus:text-blue-hover text-lg/7 text-blue-default w-full px-3 pb-6 sm:px-8 md:px-15 md:pt-4 md:pb-8"
+                        data-cy="viewMoreLessButton"
+                        id="card-national-student-loans-service-centre-expand-collapsetest-card-button-"
+                        data-testid="card-national-student-loans-service-centre-expand-collapsedataTestId"
+                        aria-expanded="false"
+                        aria-label="National Student Loans Service Centre - Most requested actions"
+                        data-gc-analytics-customclick="ESDC-EDSC_MSCA-MSDC-SCH:My dashboard - NSLSC:ViewMoreLessButton open"
+                    >
+                        <div class="flex sm:items-center">
+                            <svg
+                                data-prefix="fas"
+                                data-icon="circle-chevron-down"
+                                class="svg-inline--fa fa-circle-chevron-down pr-3 text-[46px]"
+                                role="img"
+                                viewBox="0 0 512 512"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    d="M256 0a256 256 0 1 0 0 512 256 256 0 1 0 0-512zM135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87 87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0L135 241z"
+                                ></path></svg
+                            ><span class="text-left leading-7">Most requested actions</span>
+                        </div>
+                    </button>
+                </div>
+                <div class="my-6 rounded border border-gray-300 shadow" data-cy="cards">
+                    <h2
+                        class="px-3 py-4 sm:px-8 md:mt-2 md:px-15 md:py-8 md:text-[39px] md:leading-[1.23]"
+                        data-cy="cardtitle"
+                    >
+                        Canada Apprentice Loan
+                    </h2>
+                    <button
+                        class="text-deep-blue-60d hover:text-blue-hover focus:text-blue-hover text-lg/7 text-blue-default w-full px-3 pb-6 sm:px-8 md:px-15 md:pt-4 md:pb-8"
+                        data-cy="viewMoreLessButton"
+                        id="card-canada-apprentice-loan-expand-collapsetest-card-button-"
+                        data-testid="card-canada-apprentice-loan-expand-collapsedataTestId"
+                        aria-expanded="false"
+                        aria-label="Canada Apprentice Loan - Most requested actions"
+                        data-gc-analytics-customclick="ESDC-EDSC_MSCA-MSDC-SCH:My dashboard - CALSC:ViewMoreLessButton open"
+                    >
+                        <div class="flex sm:items-center">
+                            <svg
+                                data-prefix="fas"
+                                data-icon="circle-chevron-down"
+                                class="svg-inline--fa fa-circle-chevron-down pr-3 text-[46px]"
+                                role="img"
+                                viewBox="0 0 512 512"
+                                aria-hidden="true"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    d="M256 0a256 256 0 1 0 0 512 256 256 0 1 0 0-512zM135 241c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l87 87 87-87c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L273 345c-9.4 9.4-24.6 9.4-33.9 0L135 241z"
+                                ></path></svg
+                            ><span class="text-left leading-7">Most requested actions</span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <section class="mt-16 mb-8 print:hidden">
+                <h2 class="sr-only md:text-[39px] md:leading-[1.23]">Page details</h2>
+                <dl id="wb-dtmd" class="space-y-1">
+                    <div class="flex gap-2">
+                        <dt>Screen identifier:</dt>
+                        <dd>MSCAD-001</dd>
+                    </div>
+                    <div class="flex gap-2">
+                        <dt>Date modified:</dt>
+                        <dd><time>2026-08-26</time></dd>
+                    </div>
+                    <div class="flex gap-2">
+                        <dt>Version:</dt>
+                        <dd>2.2.0</dd>
+                    </div>
+                </dl>
+            </section>
+        </main>
+        <footer id="wb-info" tabindex="-1" class="mt-8 bg-stone-50 print:hidden">
+            <div>
+                <div class="bg-blue-primary">
+                    <section class="container py-4">
+                        <h2 class="mb-4 text-[26px] text-white md:text-[29px] md:leading-[1.23]">
+                            My Service Canada Account
+                        </h2>
+                        <div class="grid gap-x-4 gap-y-2 text-sm sm:grid-cols-3">
+                            <a
+                                property="item"
+                                typeof="WebPage"
+                                class="text-white hover:underline"
+                                href=""
+                                data-discover="true"
+                                ><span property="name" class="text-white">Contact us</span></a
+                            >
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="container flex justify-between">
+                <h2 class="sr-only md:text-[39px] md:leading-[1.23]">About this site</h2>
+                <div class="md:flow-row flex items-center">
+                    <ul class="flex list-none flex-col pt-4 text-sm whitespace-nowrap md:flex-row">
+                        <li class="mb-4.25 list-inside list-none pr-4">
+                            <a
+                                class="text-deep-blue-dark hover:underline"
+                                data-gc-analytics-navigation="Footer:Footer:Terms and conditions"
+                                href=""
+                                >Terms and conditions</a
+                            >
+                        </li>
+                        <li class="mb-4.25 list-inside list-none pr-4 md:list-disc">
+                            <a
+                                class="text-deep-blue-dark hover:underline"
+                                data-gc-analytics-navigation="Footer:Footer:Privacy"
+                                href=""
+                                >Privacy</a
+                            >
+                        </li>
+                        <li class="float-left cursor-pointer sm:hidden">
+                            <a id="top_btn" href="#top" class="inline-flex items-center"
+                                >Top of Page<svg
+                                    data-prefix="fas"
+                                    data-icon="chevron-up"
+                                    class="svg-inline--fa fa-chevron-up pl-2 sm:hidden"
+                                    role="img"
+                                    viewBox="0 0 448 512"
+                                    aria-hidden="true"
+                                >
+                                    <path
+                                        fill="currentColor"
+                                        d="M201.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 173.3 54.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"
+                                    ></path></svg
+                            ></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mr-1.25 flex min-h-24 shrink-0 items-end md:items-center">
+                    <img
+                        src="https://www.canada.ca/etc/designs/canada/wet-boew/assets/wmms-blk.svg"
+                        alt="Symbol of the Government of Canada"
+                        width="300"
+                        height="71"
+                        class="my-3.75 h-6.25 w-26.25 md:h-10 md:w-41"
+                    />
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
